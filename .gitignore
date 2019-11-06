@@ -1,0 +1,3 @@
+# Ignore folders with OpenNMT-py and virtual environment
+/OpenNMT-py/
+/env/

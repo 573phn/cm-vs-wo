@@ -6,19 +6,14 @@ This will clone the content of this repository to your device.
 ```bash
 git clone https://github.com/573phn/cm-vs-wo.git
 ```
-### Step 2: Assign execute permission to `setup.sh`
-This will allow `setup.sh` to be executed in the next step.
-```bash
-chmod +x ./cm-vs-wo/setup.sh
-```
-### Step 3: Execute `setup.sh`
+### Step 2: Execute `setup.sh`
 Executing this file clones the OpenNMT-py repository and prepares a virtual Python 3 environment with the packages `torch`, `torchvision`, `torchtext` and `configargparse`.
 ```bash
 ./cm-vs-wo/setup.sh
 ```
 
 ### Folder structure after setup
-After going through the three steps above, the folder structure should look as follows:
+After going through the two steps above, the folder structure should look as follows:
 ```bash
 ├── cm-vs-wo
 │   ├── data

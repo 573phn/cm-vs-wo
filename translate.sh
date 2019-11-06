@@ -10,6 +10,6 @@ if [ "$#" -ne 1 ]; then
     echo "$0: Incorrect number of arguments used, halting execution."
     exit
 else
-    python OpenNMT-py/translate.py -model data/"${1}"/trained_model_step_100000.pt -src data/"${1}"/src_test.txt -output data/"${1}"/out_test.txt
+    python OpenNMT-py/translate.py -model data/"${1}"/trained_model_step_100000.pt -src data/"${1}"/src_test.txt -output data/"${1}"/out_test.txt  -beam_size 1
     python get_accuracy.py "${1}"
 fi

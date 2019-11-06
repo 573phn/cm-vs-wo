@@ -58,15 +58,15 @@ if [[ "$1" =~ ^(preprocess|train|translate|all)$ ]] && [[ "$2" =~ ^(vso|vos|mix|
 
     if [[ "$1" == "translate" ]]; then
         if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/translate.py -model data/vso/trained_model_step_100000.pt -src data/vso/src_test.txt -output data/vso/out_test.txt
+            python OpenNMT-py/translate.py -model data/vso/trained_model_step_100000.pt -src data/vso/src_test.txt -output data/vso/out_test.txt -beam_size 1
             python get_accuracy.py vso
         fi
         if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/translate.py -model data/vos/trained_model_step_100000.pt -src data/vos/src_test.txt -output data/vos/out_test.txt
+            python OpenNMT-py/translate.py -model data/vos/trained_model_step_100000.pt -src data/vos/src_test.txt -output data/vos/out_test.txt -beam_size 1
             python get_accuracy.py vos
         fi
         if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/translate.py -model data/mix/trained_model_step_100000.pt -src data/mix/src_test.txt -output data/mix/out_test.txt
+            python OpenNMT-py/translate.py -model data/mix/trained_model_step_100000.pt -src data/mix/src_test.txt -output data/mix/out_test.txt -beam_size 1
             python get_accuracy.py mix
         fi
 

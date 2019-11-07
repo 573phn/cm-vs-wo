@@ -35,7 +35,7 @@ After going through the steps above, the directory structure should look as foll
 ```
 
 ## Usage
-After getting the project up and running, a job script can be submitted to [the Peregrine HPC cluster](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) to pre-process data, train a model and/or translate data using the following command:
+After [getting the project up and running](#getting-started), a job script can be submitted to [the Peregrine HPC cluster](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) to pre-process data, train a model and/or translate data using the following command:
 ```bash
 sbatch jobscript.sh [preprocess|train|translate|all] [vso|vos|mix|all]
 ```

@@ -16,7 +16,7 @@ This will change the current working directory to the newly created `cm-vs-wo` d
 cd cm-vs-wo
 ```
 
-### Step 3: Execute `[setup.sh](setup.sh)`
+### Step 3: Execute `setup.sh`
 This will clone [the OpenNMT-py repository](https://github.com/OpenNMT/OpenNMT-py) and prepare a virtual Python 3 environment with the required packages.
 ```bash
 ./setup.sh
@@ -41,12 +41,12 @@ sbatch jobscript.sh [preprocess|train|translate|all] [vso|vos|mix|all]
 ```
 
 ### Examples
-To pre-process, train and translate all three corpora at once, the command to use would be:
+To pre-process, train and translate all three corpora at once:
 ```bash
 sbatch jobscript.sh all all
 ```
 
-To only train the VSO model (assuming the data has already been pre-processed), the command would be:
+To only train the VSO model (assuming the data has already been pre-processed):
 ```bash
 sbatch jobscript.sh train vso
 ```

@@ -1,4 +1,4 @@
-# Word Order Versus Case Marking in Neural Machine Translation
+# Case Marking Versus Word Order in Neural Machine Translation
 This project compares the accuracy of a NMT system when used on two fixed order languages versus a flexible word order language that uses case marking.
 
 ## Getting Started

@@ -3,13 +3,13 @@
 module load Python
 
 # Clone OpenNMT-py repository
-git clone https://github.com/OpenNMT/OpenNMT-py.git cm-vs-wo/OpenNMT-py
+git clone https://github.com/OpenNMT/OpenNMT-py.git
 
 # Create virtual environment
-python3 -m venv cm-vs-wo/env
+python3 -m venv env
 
 # Activate virtual environment
-source cm-vs-wo/env/bin/activate
+source env/bin/activate
 
 # Upgrade pip (inside virtual environment)
 pip install --upgrade pip

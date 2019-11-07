@@ -10,7 +10,7 @@ Clones the content of this repository to the cluster.
 git clone https://github.com/573phn/cm-vs-wo.git
 ```
 
-### Step 2: Move to the newly created directory
+### Step 2: Change working directory
 Changes the current working directory to the newly created `cm-vs-wo` directory.
 ```bash
 cd cm-vs-wo
@@ -25,13 +25,10 @@ Clones [the OpenNMT-py repository](https://github.com/OpenNMT/OpenNMT-py) and pr
 ### Directory structure after setup
 After going through the steps above, the directory structure should look as follows:
 ```bash
-└── cm-vs-wo
-    ├── data
-    │   └── ...
-    ├── env             # Added after executing setup.sh, contains the virtual Python 3 environment
-    │   └── ...
-    └── OpenNMT-py      # Added after executing setup.sh, contains the OpenNMT-py repository
-        └── ...
+cm-vs-wo
+├── data
+├── env         # Added after executing setup.sh, contains the virtual Python 3 environment
+└── OpenNMT-py  # Added after executing setup.sh, contains the OpenNMT-py repository
 ```
 
 ## Usage

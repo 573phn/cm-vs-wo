@@ -5,8 +5,8 @@
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:k40:2
 
-if [ "$#" -ne 2 ]; then
-    echo "Incorrect number of arguments used, halting execution."
+if [ "$#" -ne 3 ]; then
+    echo "$0: Incorrect number of arguments used, halting execution."
     exit
 fi
 

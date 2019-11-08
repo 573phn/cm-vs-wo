@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
-#SBATCH --time=30:00
+#SBATCH --time=5:00
 #SBATCH --mem=6GB
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:k40:2

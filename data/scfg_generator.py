@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
-""" Run 'python3 scfg_generator.py' to generate all possible sentences. Run
-    'python3 scfg_generator.py > filename.txt' to generate all possible
-    sentences and save them to a file. Adjust filename and add directory if
-    needed. """
+""" Generates a parallel corpus.
+    Usage: python3 scfg_generator.py [vso|vos|mix]
+    Output file will be generated in [vso|vos|mix]/par_corp.txt """
 
 from itertools import product
+from sys import argv
 
 import numpy as np
 
@@ -27,64 +27,90 @@ def combine_nouns_and_adjs(nouns_and_adjs):
 
 
 def main():
-    corpus = 'mix'
+    if len(argv) < 2:
+        print('Add one of the following arguments: vos, vso, mix')
+    elif len(argv) > 2:
+        print('Too many arguments')
+    elif len(argv) == 2:
+        if argv[1] in ('vos', 'vso', 'mix'):
+            corpus = argv[1]
+            open(f'{corpus}/par_corp.txt', 'w+').close()
 
-    nouns = [('the hare', 'de haas'),
-             ('the cat', 'de kat'),
-             ('the dog', 'de hond'),
-             ('the rabbit', 'het konijn'),
-             ('the deer', 'het hert'),
-             ('the sheep', 'het schaap')
-             ]
+            nouns = [('the hare', 'de haas'),
+                     ('the cat', 'de kat'),
+                     ('the dog', 'de hond'),
+                     ('the rabbit', 'het konijn'),
+                     ('the deer', 'het hert'),
+                     ('the sheep', 'het schaap')
+                     ]
 
-    verbs = [('hears', 'hoort'),
-             ('sees', 'ziet'),
-             ('follows', 'volgt'),
-             ('calls', 'roept'),
-             ('hugs', 'knuffelt'),
-             ('admires', 'bewondert')
-             ]
+            verbs = [('hears', 'hoort'),
+                     ('sees', 'ziet'),
+                     ('follows', 'volgt'),
+                     ('calls', 'roept'),
+                     ('hugs', 'knuffelt'),
+                     ('admires', 'bewondert')
+                     ]
 
-    adjs = [('pretty', 'mooie'),
-            ('friendly', 'vriendelijke'),
-            ('big', 'grote'),
-            ('nice', 'leuke'),
-            ('little', 'kleine'),
-            ('sweet', 'lieve')
-            ]
+            adjs = [('pretty', 'mooie'),
+                    ('friendly', 'vriendelijke'),
+                    ('big', 'grote'),
+                    ('nice', 'leuke'),
+                    ('little', 'kleine'),
+                    ('sweet', 'lieve')
+                    ]
 
-    nouns_with_adjs = combine_nouns_and_adjs([[nouns, adjs]])
+            nouns_with_adjs = combine_nouns_and_adjs([[nouns, adjs]])
 
-    sent_types = [[nouns, verbs, nouns],
-                  [nouns, verbs, nouns_with_adjs],
-                  [nouns_with_adjs, verbs, nouns],
-                  [nouns_with_adjs, verbs, nouns_with_adjs]
-                  ]
+            sent_types = [[nouns, verbs, nouns],
+                          [nouns, verbs, nouns_with_adjs],
+                          [nouns_with_adjs, verbs, nouns],
+                          [nouns_with_adjs, verbs, nouns_with_adjs]
+                          ]
 
-    for sent_type in sent_types:
-        for num, i in enumerate(list(product(*sent_type))):
-            # Print all options, both languages in SVO order:
-            # print('\t'.join(' '.join(row) for row in np.array(i).T))
+            for sent_type in sent_types:
+                for num, i in enumerate(list(product(*sent_type))):
+                    # Print all options, both languages in SVO order:
+                    # print('\t'.join(' '.join(row) for row in np.array(i).T))
 
-            en, nl = np.array(i).T
-            en_subj, en_verb, en_obj = en
-            nl_subj, nl_verb, nl_obj = nl
+                    en, nl = np.array(i).T
+                    en_subj, en_verb, en_obj = en
+                    nl_subj, nl_verb, nl_obj = nl
 
-            if en_subj != en_obj and nl_subj != nl_obj:     # Avoid subject and object being the same
-                if corpus == 'svo':     # Fixed order (EN:SVO NL:SVO)
-                    print(en_subj, en_verb, en_obj, '\t', nl_subj, nl_verb, nl_obj)
+                    # Avoid subject and object being the same
+                    if en_subj != en_obj and nl_subj != nl_obj:
+                        with open(f'{corpus}/par_corp.txt', 'a') as par_corp:
+                            # Fixed order (EN:VSO NL:SVO)
+                            if corpus == 'vso':
+                                sent = [en_verb, en_subj, en_obj, '\t',
+                                        nl_subj, nl_verb, nl_obj]
 
-                elif corpus == 'vso':   # Fixed order (EN:VSO NL:SVO)
-                    print(en_verb, en_subj, en_obj, '\t', nl_subj, nl_verb, nl_obj)
+                            # Fixed order (EN:VOS NL:SVO)
+                            elif corpus == 'vos':
+                                sent = [en_verb, en_obj, en_subj, '\t',
+                                        nl_subj, nl_verb, nl_obj]
 
-                elif corpus == 'vos':   # Fixed order (EN:VOS NL:SVO)
-                    print(en_verb, en_obj, en_subj, '\t', nl_subj, nl_verb, nl_obj)
+                            # Mixed order (EN:VSO&VOS NL:SVO) + case marking
+                            elif corpus == 'mix':
 
-                elif corpus == 'mix':   # Mixed order (EN:VSO&VOS NL:SVO) + case marking
-                    if num % 2 == 0:    # Makes sure there is an even amount of VSO and VOS sentences
-                        print(en_verb, en_subj + '_s', en_obj + '_o', '\t', nl_subj, nl_verb, nl_obj)
-                    else:
-                        print(en_verb, en_obj + '_o', en_subj + '_s', '\t', nl_subj, nl_verb, nl_obj)
+                                # Makes sure there is an even amount of VSO
+                                # and VOS sentences
+                                if num % 2 == 0:
+                                    en_subj = en_subj + '_s'
+                                    en_obj = en_obj + '_o'
+                                    sent = [en_verb, en_subj, en_obj, '\t',
+                                            nl_subj, nl_verb, nl_obj]
+                                else:
+                                    en_obj = en_obj + '_o'
+                                    en_subj = en_subj + '_s'
+                                    sent = [en_verb, en_obj, en_subj, '\t',
+                                            nl_subj, nl_verb, nl_obj]
+
+                            par_corp.write(" ".join(sent)+'\n')
+
+        else:
+            print('Incorrect argument. Use one of the following: vos, vso, '
+                  'mix')
 
 
 if __name__ == '__main__':

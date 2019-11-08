@@ -27,7 +27,7 @@ def combine_nouns_and_adjs(nouns_and_adjs):
 
 
 def main():
-    corpus = 'vso'
+    corpus = 'mix'
 
     nouns = [('the hare', 'de haas'),
              ('the cat', 'de kat'),
@@ -62,7 +62,7 @@ def main():
                   ]
 
     for sent_type in sent_types:
-        for i in list(product(*sent_type)):
+        for num, i in enumerate(list(product(*sent_type))):
             # Print all options, both languages in SVO order:
             # print('\t'.join(' '.join(row) for row in np.array(i).T))
 
@@ -81,8 +81,10 @@ def main():
                     print(en_verb, en_obj, en_subj, '\t', nl_subj, nl_verb, nl_obj)
 
                 elif corpus == 'mix':   # Mixed order (EN:VSO&VOS NL:SVO) + case marking
-                    print(en_verb, en_subj + '_s', en_obj + '_o', '\t', nl_subj, nl_verb, nl_obj)
-                    print(en_verb, en_obj + '_o', en_subj + '_s', '\t', nl_subj, nl_verb, nl_obj)
+                    if num % 2 == 0:    # Makes sure there is an even amount of VSO and VOS sentences
+                        print(en_verb, en_subj + '_s', en_obj + '_o', '\t', nl_subj, nl_verb, nl_obj)
+                    else:
+                        print(en_verb, en_obj + '_o', en_subj + '_s', '\t', nl_subj, nl_verb, nl_obj)
 
 
 if __name__ == '__main__':

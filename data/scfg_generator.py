@@ -27,6 +27,8 @@ def combine_nouns_and_adjs(nouns_and_adjs):
 
 
 def main():
+    corpus = 'vso'
+
     nouns = [('the hare', 'de haas'),
              ('the cat', 'de kat'),
              ('the dog', 'de hond'),
@@ -68,23 +70,19 @@ def main():
             en_subj, en_verb, en_obj = en
             nl_subj, nl_verb, nl_obj = nl
 
-            # Avoid subject and object being the same
-            if en_subj != en_obj and nl_subj != nl_obj:
-                '''
-                # Fixed order (EN:SVO NL:SVO):
-                print(en_subj, en_verb, en_obj, '\t', nl_subj, nl_verb, nl_obj)
-                
-                # Fixed order (EN:VSO NL:SVO):
-                print(en_verb, en_subj, en_obj, '\t', nl_subj, nl_verb, nl_obj)
-                
-                # Fixed order (EN:VOS NL:SVO):
-                print(en_verb, en_obj, en_subj, '\t', nl_subj, nl_verb, nl_obj)
-                '''
-                # Mixed order (EN:VSO&VOS NL:SVO) + case marking:
-                print(en_verb, en_subj + '_s', en_obj + '_o', '\t',
-                      nl_subj, nl_verb, nl_obj)
-                print(en_verb, en_obj + '_o', en_subj + '_s', '\t',
-                      nl_subj, nl_verb, nl_obj)
+            if en_subj != en_obj and nl_subj != nl_obj:     # Avoid subject and object being the same
+                if corpus == 'svo':     # Fixed order (EN:SVO NL:SVO)
+                    print(en_subj, en_verb, en_obj, '\t', nl_subj, nl_verb, nl_obj)
+
+                elif corpus == 'vso':   # Fixed order (EN:VSO NL:SVO)
+                    print(en_verb, en_subj, en_obj, '\t', nl_subj, nl_verb, nl_obj)
+
+                elif corpus == 'vos':   # Fixed order (EN:VOS NL:SVO)
+                    print(en_verb, en_obj, en_subj, '\t', nl_subj, nl_verb, nl_obj)
+
+                elif corpus == 'mix':   # Mixed order (EN:VSO&VOS NL:SVO) + case marking
+                    print(en_verb, en_subj + '_s', en_obj + '_o', '\t', nl_subj, nl_verb, nl_obj)
+                    print(en_verb, en_obj + '_o', en_subj + '_s', '\t', nl_subj, nl_verb, nl_obj)
 
 
 if __name__ == '__main__':

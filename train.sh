@@ -19,8 +19,8 @@ else
                                -save_model data/"${1}"/trained_model_"${2}" \
                                -world_size 2 \
                                -gpu_ranks 0 1 \
-                               -train_steps 10000 \
-                               -valid_steps 1000 \
-                               -save_checkpoint_steps 500 \
+                               -train_steps 1000 \
+                               -valid_steps 100 \
+                               -save_checkpoint_steps 50 \
                                -global_attention "${MODEL}"
 fi

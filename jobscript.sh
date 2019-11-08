@@ -1,9 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
-#SBATCH --time=12:00:00
-#SBATCH --mem=8000
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:k40:2
+#SBATCH --time=5:00
+#SBATCH --mem=100MB
+#SBATCH --partition=short
 
 if [ "$#" -ne 3 ]; then
     echo "$0: Incorrect number of arguments used, halting execution."

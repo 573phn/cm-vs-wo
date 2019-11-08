@@ -98,6 +98,6 @@ if [[ "$1" =~ ^(preprocess|train|translate|ptt)$ ]] && [[ "$2" =~ ^(vso|vos|mix|
     fi
 
 else
-    echo "Invalid arguments used, halting execution."
+    echo "$0: Invalid arguments used, halting execution."
     exit
 fi

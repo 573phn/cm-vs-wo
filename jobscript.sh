@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
-#SBATCH --time=3-00:00:00
+#SBATCH --time=12:00:00
 #SBATCH --mem=8000
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:k40:2
@@ -10,7 +10,7 @@ if [ "$#" -ne 2 ]; then
     exit
 fi
 
-if [[ "$1" =~ ^(preprocess|train|translate|all)$ ]] && [[ "$2" =~ ^(vso|vos|mix|all)$ ]]; then
+if [[ "$1" =~ ^(preprocess|train|translate|ptt)$ ]] && [[ "$2" =~ ^(vso|vos|mix|all)$ ]] && [[ "$3" =~ ^(attn|noat|both)$ ]]; then
     # Load Python module
     module load Python
 
@@ -20,65 +20,81 @@ if [[ "$1" =~ ^(preprocess|train|translate|all)$ ]] && [[ "$2" =~ ^(vso|vos|mix|
     # Make environment variable to use GPUs
     export CUDA_VISIBLE_DEVICES=0,1
 
-    if [[ "$1" == "preprocess" ]] || [[ "$1" == "all" ]]; then
+    if [[ "$1" == "preprocess" ]] || [[ "$1" == "ptt" ]]; then
         if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/preprocess.py -train_src data/vso/src_train.txt -train_tgt data/vso/tgt_train.txt -valid_src data/vso/src_val.txt -valid_tgt data/vso/tgt_val.txt -save_data data/vso/prepared_data
+            python OpenNMT-py/preprocess.py -train_src data/vso/src_train.txt \
+                                            -train_tgt data/vso/tgt_train.txt \
+                                            -valid_src data/vso/src_val.txt \
+                                            -valid_tgt data/vso/tgt_val.txt \
+                                            -save_data data/vso/prepared_data
         fi
         if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/preprocess.py -train_src data/vos/src_train.txt -train_tgt data/vos/tgt_train.txt -valid_src data/vos/src_val.txt -valid_tgt data/vos/tgt_val.txt -save_data data/vos/prepared_data
+            python OpenNMT-py/preprocess.py -train_src data/vos/src_train.txt \
+                                            -train_tgt data/vos/tgt_train.txt \
+                                            -valid_src data/vos/src_val.txt \
+                                            -valid_tgt data/vos/tgt_val.txt \
+                                            -save_data data/vos/prepared_data
         fi
         if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/preprocess.py -train_src data/mix/src_train.txt -train_tgt data/mix/tgt_train.txt -valid_src data/mix/src_val.txt -valid_tgt data/mix/tgt_val.txt -save_data data/mix/prepared_data
+            python OpenNMT-py/preprocess.py -train_src data/mix/src_train.txt \
+                                            -train_tgt data/mix/tgt_train.txt \
+                                            -valid_src data/mix/src_val.txt \
+                                            -valid_tgt data/mix/tgt_val.txt \
+                                            -save_data data/mix/prepared_data
         fi
     fi
 
-    if [[ "$1" == "train" ]]; then
-        if [[ "$2" == "vso" ]]; then
-            python OpenNMT-py/train.py -data data/vso/prepared_data -save_model data/vso/trained_model -world_size 2 -gpu_ranks 0 1
-        elif [[ "$2" == "vos" ]]; then
-            python OpenNMT-py/train.py -data data/vos/prepared_data -save_model data/vos/trained_model -world_size 2 -gpu_ranks 0 1
-        elif [[ "$2" == "mix" ]]; then
-            python OpenNMT-py/train.py -data data/mix/prepared_data -save_model data/mix/trained_model -world_size 2 -gpu_ranks 0 1
-        elif [[ "$2" == "all" ]]; then
-            sbatch train.sh vso
-            sbatch train.sh vos
-            sbatch train.sh mix
-        fi
-    elif [[ "$1" == "all" ]]; then
+    if [[ "$1" == "train" ]] || [[ "$1" == "ptt" ]]; then
         if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
-            sbatch train.sh vso
+            if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
+                sbatch train.sh vso attn
+            fi
+            if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
+                sbatch train.sh vso noat
+            fi
         fi
         if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
-            sbatch train.sh vos
+            if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
+                sbatch train.sh vos attn
+            fi
+            if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
+                sbatch train.sh vos noat
+            fi
         fi
         if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
-            sbatch train.sh mix
+            if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
+                sbatch train.sh mix attn
+            fi
+            if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
+                sbatch train.sh mix noat
+            fi
         fi
     fi
 
-    if [[ "$1" == "translate" ]]; then
+    if [[ "$1" == "translate" ]] || [[ "$1" == "ptt" ]]; then
         if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/translate.py -model data/vso/trained_model_step_100000.pt -src data/vso/src_test.txt -output data/vso/out_test.txt -batch_size 1
-            python get_accuracy.py vso
+            if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
+                sbatch translate.sh vso attn
+            fi
+            if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
+                sbatch translate.sh vso noat
+            fi
         fi
         if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/translate.py -model data/vos/trained_model_step_100000.pt -src data/vos/src_test.txt -output data/vos/out_test.txt -batch_size 1
-            python get_accuracy.py vos
+            if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
+                sbatch translate.sh vos attn
+            fi
+            if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
+                sbatch translate.sh vos noat
+            fi
         fi
         if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/translate.py -model data/mix/trained_model_step_100000.pt -src data/mix/src_test.txt -output data/mix/out_test.txt -batch_size 1
-            python get_accuracy.py mix
-        fi
-
-    elif [[ "$1" == "all" ]]; then
-        if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
-            sbatch translate.sh vso
-        fi
-        if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
-            sbatch translate.sh vos
-        fi
-        if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
-            sbatch translate.sh mix
+            if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
+                sbatch translate.sh mix attn
+            fi
+            if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
+                sbatch translate.sh mix noat
+            fi
         fi
     fi
 

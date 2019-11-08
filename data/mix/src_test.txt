@@ -1,1540 +1,513 @@
-sees the pretty sheep_o the deer_s
-calls the sheep_s the nice rabbit_o
-hears the pretty rabbit_s the nice dog_o
-admires the little rabbit_s the sweet dog_o
-sees the sweet dog_o the big cat_s
-hears the pretty rabbit_o the nice dog_s
-calls the deer_s the sweet cat_o
-admires the sweet dog_o the friendly hare_s
-calls the hare_s the rabbit_o
-calls the big cat_o the nice hare_s
-follows the little dog_s the big sheep_o
-hugs the big sheep_o the big deer_s
-hugs the friendly sheep_o the dog_s
-follows the deer_s the pretty cat_o
-follows the little rabbit_o the big hare_s
-sees the sweet deer_s the friendly rabbit_o
-follows the sweet dog_s the sweet sheep_o
-admires the big hare_s the little cat_o
-calls the big rabbit_s the sweet deer_o
-admires the big deer_o the friendly sheep_s
-hears the friendly dog_s the big dog_o
-sees the nice sheep_o the sweet deer_s
-hugs the pretty hare_o the friendly rabbit_s
-sees the sweet sheep_s the deer_o
-admires the little hare_s the pretty cat_o
-admires the big cat_s the little rabbit_o
-calls the pretty hare_o the little deer_s
-admires the friendly hare_s the sweet sheep_o
-hears the big hare_o the friendly sheep_s
-hears the pretty deer_s the pretty cat_o
-follows the deer_o the nice hare_s
-admires the little dog_o the nice dog_s
-hears the pretty hare_o the sheep_s
-calls the hare_s the nice rabbit_o
-sees the pretty hare_s the sweet cat_o
-follows the sweet rabbit_s the friendly hare_o
-sees the pretty sheep_s the big cat_o
-calls the big sheep_s the friendly rabbit_o
-sees the nice cat_s the big dog_o
-calls the big sheep_s the sweet deer_o
-calls the friendly deer_s the friendly cat_o
-admires the friendly hare_s the pretty deer_o
-hears the sweet hare_s the big dog_o
-follows the friendly hare_o the pretty hare_s
-admires the nice hare_s the pretty cat_o
-hugs the sweet dog_o the dog_s
-calls the dog_o the pretty rabbit_s
-calls the hare_s the friendly rabbit_o
-sees the pretty cat_s the rabbit_o
-hears the little rabbit_s the friendly hare_o
-hugs the sweet dog_s the little deer_o
-follows the rabbit_o the big rabbit_s
-hugs the pretty dog_s the sweet rabbit_o
-admires the pretty hare_s the big rabbit_o
-hears the nice rabbit_s the friendly cat_o
-sees the big hare_o the nice hare_s
-hears the rabbit_s the sweet dog_o
-hugs the friendly dog_o the nice sheep_s
-sees the nice dog_o the big sheep_s
-admires the big rabbit_o the sweet rabbit_s
-hears the friendly hare_o the sweet rabbit_s
-sees the friendly dog_s the nice dog_o
-sees the nice deer_o the big sheep_s
-hears the friendly deer_s the big sheep_o
-calls the big rabbit_s the big hare_o
-admires the nice dog_o the nice sheep_s
-sees the cat_o the pretty cat_s
-calls the big cat_s the pretty sheep_o
-hugs the sheep_o the dog_s
-hugs the little deer_s the nice deer_o
-hears the big rabbit_o the nice sheep_s
-hugs the big rabbit_s the pretty rabbit_o
-hears the big deer_o the big rabbit_s
-hears the nice cat_s the pretty deer_o
-hugs the pretty cat_o the nice rabbit_s
-calls the friendly dog_o the sweet deer_s
-hears the nice rabbit_o the pretty sheep_s
-hears the rabbit_s the deer_o
-hears the little hare_o the deer_s
-follows the sheep_o the sweet rabbit_s
-hears the sweet sheep_s the friendly dog_o
-follows the pretty rabbit_s the big rabbit_o
-sees the little deer_o the big hare_s
-follows the little rabbit_s the pretty rabbit_o
-admires the friendly hare_s the friendly deer_o
-hears the little cat_o the sweet dog_s
-hugs the hare_s the pretty sheep_o
-sees the friendly cat_o the big rabbit_s
-calls the little rabbit_s the little cat_o
-hugs the little deer_o the sweet deer_s
-calls the nice rabbit_o the pretty dog_s
-hears the nice hare_o the little hare_s
-sees the sheep_s the big cat_o
-sees the little deer_s the sweet sheep_o
-hugs the dog_s the little dog_o
-calls the pretty hare_o the sweet deer_s
-follows the friendly rabbit_s the sweet cat_o
-sees the sweet hare_o the nice dog_s
-admires the sheep_o the big hare_s
-hugs the friendly rabbit_o the pretty dog_s
-calls the nice hare_o the big hare_s
-calls the cat_o the nice rabbit_s
-admires the cat_s the sweet hare_o
-calls the sweet dog_o the pretty deer_s
-admires the pretty rabbit_s the sweet deer_o
-sees the pretty sheep_s the sweet sheep_o
-hears the sweet hare_o the little sheep_s
-hears the sweet dog_o the pretty rabbit_s
-admires the sweet hare_s the dog_o
-sees the big sheep_s the friendly hare_o
-sees the little sheep_s the rabbit_o
-calls the rabbit_s the little dog_o
-admires the sweet dog_o the pretty dog_s
-follows the hare_o the deer_s
-sees the pretty cat_s the sweet dog_o
-hears the nice cat_s the nice hare_o
-admires the little sheep_s the pretty cat_o
-follows the deer_o the pretty dog_s
-follows the big rabbit_s the friendly deer_o
-sees the little deer_s the hare_o
-sees the little sheep_s the friendly hare_o
-calls the little sheep_o the nice hare_s
-sees the sweet hare_s the friendly cat_o
-follows the big hare_o the nice rabbit_s
-calls the sheep_s the sweet hare_o
-sees the pretty dog_o the dog_s
-admires the pretty sheep_s the big dog_o
-admires the sweet dog_o the rabbit_s
-hugs the sweet rabbit_o the friendly deer_s
-hears the pretty dog_o the sweet hare_s
-sees the big cat_o the big rabbit_s
-admires the big dog_o the little rabbit_s
-calls the nice dog_s the big deer_o
-hugs the big sheep_s the friendly sheep_o
-sees the friendly dog_s the big sheep_o
-admires the sweet sheep_s the pretty deer_o
-calls the pretty rabbit_o the sweet rabbit_s
-admires the little sheep_o the big dog_s
-follows the little hare_s the friendly cat_o
-hears the big cat_s the friendly deer_o
-follows the sweet rabbit_s the little cat_o
-sees the big deer_o the pretty cat_s
-hears the sweet dog_o the big dog_s
-admires the little cat_o the nice sheep_s
-calls the little hare_o the sweet hare_s
-follows the friendly sheep_s the little sheep_o
-hears the pretty rabbit_s the deer_o
-admires the nice dog_s the pretty deer_o
-calls the sweet hare_s the big deer_o
-hears the sweet sheep_s the nice cat_o
-sees the nice sheep_s the little rabbit_o
-admires the friendly hare_o the little hare_s
-hears the friendly deer_o the friendly cat_s
-calls the nice deer_s the pretty sheep_o
-admires the pretty rabbit_o the little hare_s
-follows the sweet rabbit_s the big dog_o
-hugs the little deer_s the nice rabbit_o
-sees the friendly cat_s the rabbit_o
-hears the big dog_o the friendly deer_s
-admires the little deer_o the little dog_s
-sees the friendly deer_o the pretty rabbit_s
-hears the friendly rabbit_o the sweet rabbit_s
-sees the sweet cat_s the friendly rabbit_o
-hugs the little cat_s the nice rabbit_o
-calls the nice cat_s the big cat_o
-hugs the pretty cat_o the sweet sheep_s
-follows the sweet deer_o the sweet sheep_s
-sees the pretty deer_s the sweet hare_o
-admires the big dog_o the hare_s
-hears the pretty sheep_s the little deer_o
-sees the sweet hare_s the pretty sheep_o
-calls the sweet rabbit_s the cat_o
-admires the rabbit_s the little rabbit_o
-hugs the friendly hare_o the sweet sheep_s
-calls the friendly rabbit_o the friendly dog_s
-admires the big sheep_s the big dog_o
-calls the pretty hare_s the nice rabbit_o
-hears the big dog_s the friendly hare_o
-sees the little dog_o the nice deer_s
-sees the friendly hare_s the friendly rabbit_o
-hugs the little sheep_s the sweet cat_o
-hears the little sheep_s the rabbit_o
-admires the nice deer_o the pretty sheep_s
-hugs the friendly sheep_o the friendly hare_s
-follows the friendly rabbit_s the friendly hare_o
-follows the friendly cat_o the little sheep_s
-hears the nice cat_s the little deer_o
-hears the nice deer_s the sweet deer_o
-follows the little hare_o the sweet sheep_s
-hugs the sweet hare_o the little hare_s
-hears the big dog_o the pretty cat_s
-sees the deer_o the friendly dog_s
-calls the big sheep_s the pretty dog_o
-hugs the big hare_o the nice rabbit_s
-admires the big sheep_s the deer_o
-calls the little dog_s the big dog_o
-sees the friendly rabbit_s the nice deer_o
-admires the sweet hare_o the little rabbit_s
-follows the little dog_s the little hare_o
-hugs the big sheep_s the sweet sheep_o
-admires the nice hare_o the little hare_s
-hugs the nice hare_s the nice deer_o
-sees the big hare_o the sweet rabbit_s
-admires the little sheep_o the dog_s
-hears the little dog_o the little deer_s
-sees the big hare_s the nice dog_o
-calls the sweet dog_o the little deer_s
-calls the sweet rabbit_s the sweet sheep_o
-admires the pretty rabbit_o the nice hare_s
-hears the little hare_o the friendly cat_s
-hugs the big sheep_o the pretty sheep_s
-sees the rabbit_o the sweet sheep_s
-sees the big rabbit_s the sweet hare_o
-calls the little hare_o the nice rabbit_s
-sees the big deer_s the hare_o
-sees the big cat_o the rabbit_s
-hears the hare_s the pretty hare_o
-hugs the nice rabbit_s the nice dog_o
-follows the pretty rabbit_o the little sheep_s
-calls the pretty rabbit_o the nice rabbit_s
-sees the sweet rabbit_o the big rabbit_s
-sees the sheep_s the sweet rabbit_o
-sees the sweet dog_s the nice cat_o
-follows the pretty hare_s the friendly sheep_o
-admires the sweet hare_s the friendly rabbit_o
-sees the big rabbit_s the pretty rabbit_o
-calls the sweet rabbit_s the big dog_o
-sees the cat_s the sweet sheep_o
-sees the pretty cat_o the pretty hare_s
-calls the hare_s the sweet deer_o
-hears the rabbit_s the big deer_o
-calls the friendly sheep_o the nice cat_s
-calls the cat_o the rabbit_s
-calls the sweet cat_o the rabbit_s
-calls the sweet sheep_o the sweet cat_s
-hugs the hare_s the friendly rabbit_o
-admires the nice sheep_o the sweet dog_s
-admires the dog_o the rabbit_s
-hugs the dog_o the nice dog_s
-hugs the big rabbit_s the nice hare_o
-hears the sweet hare_o the pretty sheep_s
-hugs the friendly deer_s the big deer_o
-hugs the deer_s the big deer_o
-hears the little sheep_o the friendly deer_s
-hears the dog_s the nice dog_o
-hears the friendly deer_s the deer_o
-hugs the big cat_o the sweet hare_s
-follows the nice rabbit_o the sheep_s
-hears the nice cat_o the sweet sheep_s
-hugs the friendly rabbit_o the nice deer_s
-sees the nice dog_s the nice cat_o
-hears the big hare_o the sweet rabbit_s
-calls the sweet dog_s the little cat_o
-admires the pretty rabbit_s the big hare_o
-follows the big deer_o the little sheep_s
-hugs the nice dog_s the nice deer_o
-hears the nice rabbit_s the little cat_o
-calls the pretty sheep_s the little deer_o
-hears the pretty dog_s the friendly deer_o
-hugs the little cat_s the big cat_o
-admires the big rabbit_s the little dog_o
-calls the friendly deer_o the big deer_s
-hears the nice deer_o the pretty deer_s
-hears the cat_s the sweet deer_o
-admires the little deer_s the pretty cat_o
-sees the little rabbit_s the friendly rabbit_o
-follows the big dog_o the little rabbit_s
-calls the big cat_o the pretty hare_s
-sees the sweet dog_s the sweet deer_o
-calls the friendly hare_o the sweet cat_s
-sees the sweet dog_s the friendly rabbit_o
-admires the big deer_o the cat_s
-hugs the big deer_s the hare_o
-sees the friendly deer_s the pretty hare_o
-hugs the sheep_o the big sheep_s
-sees the sweet cat_s the nice hare_o
-hears the big rabbit_s the sheep_o
-admires the nice hare_s the nice cat_o
-hugs the big sheep_s the dog_o
-follows the sweet sheep_s the nice deer_o
-hears the big sheep_s the big dog_o
-admires the nice sheep_o the rabbit_s
-calls the little rabbit_o the friendly cat_s
-hugs the sweet dog_s the friendly deer_o
-admires the little cat_o the pretty rabbit_s
-admires the friendly cat_s the sweet deer_o
-admires the sheep_s the pretty sheep_o
-calls the nice sheep_o the friendly deer_s
-calls the nice dog_o the nice sheep_s
-sees the sweet deer_s the dog_o
-hears the sweet sheep_s the friendly hare_o
-hears the hare_s the cat_o
-sees the cat_s the pretty hare_o
-admires the sweet rabbit_o the nice cat_s
-admires the dog_o the deer_s
-admires the friendly cat_o the nice hare_s
-calls the little sheep_o the sweet rabbit_s
-sees the cat_s the pretty cat_o
-follows the nice hare_o the friendly cat_s
-follows the little rabbit_o the sweet dog_s
-calls the pretty hare_s the pretty dog_o
-hears the friendly deer_o the little sheep_s
-follows the little dog_o the sweet sheep_s
-sees the pretty hare_s the big rabbit_o
-follows the big sheep_s the pretty hare_o
-admires the rabbit_o the sweet cat_s
-sees the pretty cat_s the nice rabbit_o
-follows the pretty hare_s the nice cat_o
-hugs the big rabbit_o the little dog_s
-follows the little cat_s the friendly deer_o
-hears the nice deer_s the sweet cat_o
-sees the friendly hare_o the big rabbit_s
-hugs the little deer_o the sweet dog_s
-calls the nice sheep_o the sheep_s
-admires the big rabbit_o the sweet sheep_s
-hears the little hare_o the pretty cat_s
-follows the friendly rabbit_s the big dog_o
-calls the big deer_s the dog_o
-hears the sheep_s the nice deer_o
-follows the nice hare_s the friendly deer_o
-sees the pretty deer_s the big dog_o
-admires the big deer_o the nice dog_s
-follows the big cat_o the pretty deer_s
-calls the friendly deer_s the deer_o
-sees the sweet dog_s the big rabbit_o
-hears the nice rabbit_s the friendly sheep_o
-hugs the hare_o the cat_s
-admires the rabbit_s the cat_o
-admires the sheep_o the big dog_s
-calls the nice rabbit_s the nice hare_o
-calls the big sheep_o the nice dog_s
-follows the sweet sheep_o the sweet hare_s
-admires the sweet sheep_s the little deer_o
-hugs the little cat_s the pretty cat_o
-hugs the little dog_s the pretty cat_o
-calls the friendly cat_s the sheep_o
-hugs the little rabbit_o the cat_s
-follows the friendly rabbit_o the nice deer_s
-hugs the friendly dog_s the pretty sheep_o
-admires the big deer_o the friendly rabbit_s
-follows the friendly sheep_o the hare_s
-admires the dog_s the friendly deer_o
-follows the little hare_s the little dog_o
-follows the friendly deer_s the sweet rabbit_o
-sees the friendly hare_s the sweet dog_o
-sees the pretty rabbit_o the deer_s
-admires the little hare_o the nice cat_s
-hears the big hare_s the big sheep_o
-sees the little deer_o the little sheep_s
-follows the dog_s the deer_o
-sees the sweet rabbit_o the nice sheep_s
-follows the sweet dog_o the big dog_s
-hears the sweet deer_s the sweet hare_o
-hugs the big sheep_s the deer_o
-calls the little hare_o the sweet dog_s
-sees the friendly hare_s the friendly sheep_o
-hears the sheep_s the nice sheep_o
-hugs the big hare_s the little deer_o
-follows the rabbit_o the pretty dog_s
-hears the pretty sheep_s the nice deer_o
-hugs the big hare_s the big sheep_o
-follows the nice dog_s the big deer_o
-sees the nice cat_o the big deer_s
-follows the nice deer_s the rabbit_o
-hugs the cat_s the big rabbit_o
-follows the big deer_o the big dog_s
-sees the friendly dog_s the rabbit_o
-calls the cat_o the pretty deer_s
-sees the pretty sheep_o the big hare_s
-sees the big sheep_o the deer_s
-sees the little sheep_o the sheep_s
-sees the little sheep_s the little hare_o
-admires the little rabbit_s the cat_o
-follows the friendly sheep_o the little sheep_s
-hears the big deer_o the big cat_s
-calls the big deer_s the sweet rabbit_o
-follows the pretty rabbit_o the pretty cat_s
-sees the big cat_s the little cat_o
-admires the friendly deer_o the sweet sheep_s
-hears the big deer_o the sweet dog_s
-follows the sheep_s the little dog_o
-sees the pretty dog_s the friendly dog_o
-hugs the nice cat_s the pretty sheep_o
-admires the nice deer_s the friendly hare_o
-calls the rabbit_s the little deer_o
-admires the hare_o the sweet sheep_s
-hears the nice cat_s the big rabbit_o
-hugs the big sheep_o the little rabbit_s
-hugs the big cat_s the hare_o
-calls the little cat_o the hare_s
-sees the pretty dog_o the friendly cat_s
-admires the deer_o the sweet sheep_s
-hugs the dog_s the sweet sheep_o
-hugs the big rabbit_o the little rabbit_s
-calls the pretty dog_s the sweet sheep_o
-hears the pretty dog_s the cat_o
-sees the cat_s the deer_o
-follows the nice rabbit_s the cat_o
 follows the sweet dog_o the little rabbit_s
-sees the pretty hare_s the little hare_o
-sees the little hare_o the deer_s
-hugs the nice hare_o the sweet rabbit_s
-sees the big sheep_o the big cat_s
-hears the nice sheep_s the nice dog_o
-calls the sweet dog_o the pretty rabbit_s
-sees the nice sheep_o the sweet cat_s
-sees the sweet deer_s the big dog_o
-calls the friendly deer_o the pretty rabbit_s
-sees the sweet rabbit_o the little rabbit_s
-admires the sweet sheep_s the big sheep_o
-follows the deer_o the pretty deer_s
-hears the hare_s the nice sheep_o
-admires the friendly cat_o the nice rabbit_s
-sees the nice sheep_s the friendly dog_o
-sees the big dog_s the little dog_o
-calls the little sheep_o the sweet dog_s
-follows the nice cat_s the friendly dog_o
-follows the little rabbit_s the big dog_o
-admires the pretty sheep_s the sweet dog_o
-admires the little deer_o the big cat_s
-sees the little dog_o the nice hare_s
-admires the pretty cat_o the little sheep_s
-calls the friendly dog_s the nice deer_o
-hears the nice hare_o the big dog_s
-follows the friendly rabbit_s the friendly dog_o
-hugs the sweet hare_s the big rabbit_o
-follows the sweet hare_o the little hare_s
-hugs the rabbit_o the nice deer_s
-follows the friendly sheep_o the little cat_s
-follows the sweet hare_s the friendly hare_o
-hears the little deer_s the nice hare_o
-sees the pretty deer_o the friendly dog_s
-hears the pretty cat_o the nice sheep_s
-sees the pretty sheep_s the nice rabbit_o
-follows the little hare_o the nice deer_s
-sees the little sheep_o the big rabbit_s
-hears the pretty sheep_o the little rabbit_s
-hears the sweet rabbit_s the little sheep_o
-hugs the big deer_s the sweet rabbit_o
-calls the pretty dog_o the sweet deer_s
-follows the pretty cat_o the big cat_s
-hugs the pretty rabbit_o the cat_s
-sees the big rabbit_o the pretty hare_s
-hugs the nice rabbit_o the pretty rabbit_s
-hugs the sweet cat_o the friendly cat_s
-sees the pretty rabbit_s the friendly dog_o
-sees the cat_s the friendly dog_o
-sees the deer_s the friendly deer_o
-sees the pretty cat_o the pretty dog_s
-follows the friendly cat_o the nice cat_s
-hugs the big dog_s the friendly sheep_o
-follows the little dog_o the sweet dog_s
-hears the big sheep_o the deer_s
-follows the big rabbit_s the deer_o
-sees the nice sheep_o the pretty deer_s
-hugs the sweet dog_s the sheep_o
-hears the big dog_o the little deer_s
-admires the deer_s the big rabbit_o
-hugs the little deer_s the little hare_o
-calls the little dog_o the friendly sheep_s
-admires the nice cat_o the friendly dog_s
-admires the pretty cat_o the sheep_s
-hears the rabbit_o the deer_s
-hugs the pretty hare_o the nice hare_s
-hugs the pretty rabbit_o the nice sheep_s
-follows the hare_s the big rabbit_o
-calls the friendly deer_s the big rabbit_o
-hears the sweet hare_o the big hare_s
-sees the sweet hare_s the little hare_o
-sees the big hare_s the big cat_o
-admires the pretty dog_o the sweet rabbit_s
-calls the cat_o the pretty cat_s
-admires the sweet rabbit_s the pretty hare_o
-hugs the pretty cat_o the little sheep_s
-hugs the sweet dog_o the sweet cat_s
-admires the dog_s the pretty sheep_o
-calls the dog_s the little sheep_o
-hugs the nice sheep_s the hare_o
-admires the pretty hare_s the pretty dog_o
-hears the little dog_s the big rabbit_o
-follows the friendly cat_o the friendly hare_s
-sees the sweet deer_o the deer_s
-hears the nice deer_o the friendly dog_s
-calls the sweet deer_s the friendly sheep_o
-sees the pretty sheep_o the little dog_s
-admires the friendly cat_s the friendly hare_o
-hugs the big sheep_o the friendly cat_s
-follows the nice hare_s the little dog_o
-hugs the rabbit_o the pretty rabbit_s
-sees the nice deer_s the nice dog_o
-admires the nice cat_s the big hare_o
-admires the pretty sheep_o the big sheep_s
-hugs the friendly hare_o the friendly cat_s
-follows the little deer_s the nice dog_o
-hugs the big dog_o the pretty sheep_s
-follows the sweet cat_s the pretty hare_o
-hears the friendly cat_s the pretty hare_o
-follows the sweet sheep_s the nice rabbit_o
-admires the pretty rabbit_s the big dog_o
-hears the nice dog_s the sweet sheep_o
-follows the hare_s the nice dog_o
-calls the big dog_s the pretty deer_o
-calls the little sheep_o the cat_s
-hugs the deer_o the cat_s
-hears the sweet cat_o the pretty cat_s
-hears the nice cat_o the little hare_s
-follows the cat_s the pretty deer_o
-follows the little dog_o the friendly cat_s
-calls the little sheep_s the little hare_o
-sees the pretty hare_s the friendly rabbit_o
-hugs the little rabbit_o the pretty deer_s
-hugs the friendly hare_o the deer_s
-admires the big cat_s the nice hare_o
-follows the sweet rabbit_o the big sheep_s
-calls the pretty rabbit_o the friendly dog_s
-sees the sweet deer_s the pretty cat_o
-follows the little hare_s the nice deer_o
-sees the nice deer_s the little sheep_o
-admires the nice deer_o the dog_s
-hears the pretty cat_s the big hare_o
-sees the nice sheep_o the hare_s
-admires the sweet cat_o the hare_s
-hears the nice rabbit_s the little deer_o
-calls the friendly rabbit_o the nice hare_s
-hears the little rabbit_o the nice cat_s
-sees the little sheep_o the rabbit_s
-calls the little dog_o the nice hare_s
-sees the friendly hare_o the big sheep_s
-admires the pretty rabbit_s the big deer_o
-admires the pretty hare_o the friendly cat_s
-sees the big rabbit_s the friendly cat_o
-hugs the little cat_s the big sheep_o
-hugs the sweet cat_s the pretty rabbit_o
-admires the friendly deer_s the little dog_o
-hugs the little cat_s the sweet rabbit_o
-hears the sweet dog_o the deer_s
-calls the friendly cat_s the little sheep_o
-hears the nice cat_o the pretty sheep_s
-follows the friendly sheep_s the big dog_o
-sees the little hare_s the little rabbit_o
-admires the nice dog_o the friendly hare_s
-admires the big deer_s the big rabbit_o
-hugs the little hare_s the sweet hare_o
-admires the big dog_o the sweet cat_s
-hugs the sweet hare_o the sweet rabbit_s
-calls the nice hare_o the little sheep_s
-hugs the sweet sheep_o the big deer_s
-hears the big deer_o the sweet rabbit_s
-sees the little dog_s the big cat_o
-follows the big deer_s the dog_o
-hears the friendly rabbit_s the little deer_o
-follows the nice sheep_o the big sheep_s
-admires the little hare_o the nice sheep_s
-sees the pretty sheep_s the big dog_o
-calls the pretty sheep_o the sweet sheep_s
-follows the big cat_o the deer_s
-calls the sweet sheep_o the cat_s
-follows the pretty rabbit_o the friendly rabbit_s
-hugs the pretty dog_s the little dog_o
-admires the hare_o the friendly sheep_s
-calls the sweet cat_s the pretty cat_o
-admires the sweet cat_o the sweet sheep_s
-hears the little rabbit_o the hare_s
-hears the sweet sheep_s the little sheep_o
-hugs the sweet cat_o the little rabbit_s
-follows the pretty hare_o the big hare_s
-follows the friendly hare_o the sweet hare_s
-follows the sweet rabbit_s the sweet dog_o
-follows the nice deer_o the nice cat_s
-sees the big hare_s the nice sheep_o
-follows the rabbit_s the big deer_o
-follows the nice hare_o the sweet dog_s
-sees the friendly sheep_s the sweet cat_o
-hears the sheep_o the friendly deer_s
-calls the friendly rabbit_s the pretty hare_o
-sees the friendly deer_o the friendly cat_s
-sees the big dog_o the friendly sheep_s
-sees the little cat_o the pretty cat_s
-hugs the little cat_s the friendly dog_o
-follows the little hare_s the big dog_o
-follows the sweet sheep_o the cat_s
-admires the sweet cat_o the nice deer_s
-follows the big cat_s the nice rabbit_o
-follows the big dog_o the big rabbit_s
-follows the little dog_s the big rabbit_o
-sees the sweet deer_s the big sheep_o
-admires the nice sheep_o the friendly cat_s
-admires the pretty rabbit_o the friendly dog_s
-sees the little dog_s the sweet sheep_o
-hugs the little hare_s the little sheep_o
-sees the friendly rabbit_o the sweet dog_s
-hears the friendly sheep_s the little hare_o
-calls the friendly sheep_s the pretty sheep_o
-hears the pretty rabbit_s the pretty cat_o
-follows the little dog_o the little sheep_s
-hears the big deer_o the deer_s
-sees the little hare_o the friendly rabbit_s
-sees the pretty sheep_o the friendly sheep_s
-hugs the pretty hare_s the rabbit_o
-admires the little deer_s the sweet rabbit_o
-hugs the little dog_s the friendly hare_o
-hears the deer_s the little hare_o
-sees the deer_s the pretty cat_o
-hugs the sweet rabbit_s the little deer_o
-admires the big cat_s the little deer_o
-sees the nice dog_s the pretty sheep_o
-hugs the cat_s the friendly sheep_o
-hugs the big hare_o the sheep_s
-calls the sweet sheep_o the little sheep_s
-calls the sweet sheep_s the nice dog_o
-hears the little dog_o the nice hare_s
-admires the little rabbit_o the sweet deer_s
-hugs the big dog_s the cat_o
-calls the big dog_o the deer_s
-calls the nice deer_s the sweet deer_o
-follows the nice sheep_s the big rabbit_o
-follows the little sheep_o the little deer_s
-calls the nice sheep_s the big cat_o
-hears the friendly dog_o the big dog_s
-calls the sweet dog_o the big hare_s
-sees the sweet cat_o the hare_s
-admires the little rabbit_s the little hare_o
-admires the nice dog_s the big sheep_o
-calls the sweet sheep_s the pretty sheep_o
-hears the little hare_o the friendly dog_s
-sees the friendly deer_s the nice hare_o
-admires the sheep_o the nice rabbit_s
-hugs the little rabbit_s the pretty dog_o
-hears the nice hare_s the little deer_o
-admires the little cat_o the nice dog_s
-follows the sweet sheep_o the pretty rabbit_s
-hears the big cat_o the sweet rabbit_s
-hears the nice rabbit_s the little hare_o
-admires the friendly dog_o the pretty hare_s
-admires the sweet dog_s the sweet cat_o
-hears the pretty deer_s the friendly cat_o
-admires the nice rabbit_o the nice deer_s
-hears the little hare_o the friendly rabbit_s
-hears the little cat_s the big hare_o
-follows the dog_o the little cat_s
-sees the nice cat_o the little cat_s
-hears the big rabbit_s the little rabbit_o
-calls the nice dog_s the nice rabbit_o
-hugs the pretty hare_s the friendly deer_o
-calls the pretty dog_s the little cat_o
-hears the little sheep_s the cat_o
-sees the nice dog_s the big sheep_o
-follows the friendly hare_o the pretty rabbit_s
-hugs the nice deer_o the deer_s
-follows the little hare_s the little cat_o
-admires the sheep_o the pretty dog_s
-hears the friendly hare_s the sweet rabbit_o
-admires the sweet hare_o the cat_s
-hugs the friendly cat_s the sweet sheep_o
-admires the sweet deer_o the friendly deer_s
-calls the deer_s the big cat_o
-follows the friendly dog_o the big sheep_s
-hugs the friendly hare_o the rabbit_s
-hugs the deer_s the nice rabbit_o
-hugs the sweet cat_s the sweet dog_o
-hears the little rabbit_o the pretty cat_s
-follows the pretty cat_s the friendly deer_o
-admires the sweet hare_s the little cat_o
-calls the little deer_o the friendly dog_s
-admires the sweet sheep_o the nice hare_s
-admires the friendly sheep_o the big cat_s
-hugs the friendly cat_s the sweet cat_o
-follows the hare_o the big dog_s
-calls the pretty deer_o the big deer_s
-follows the nice dog_s the pretty hare_o
-calls the friendly dog_o the little cat_s
-hears the sweet deer_o the little cat_s
-admires the pretty dog_s the pretty hare_o
-hears the sweet hare_o the pretty rabbit_s
-sees the pretty hare_s the nice sheep_o
-hugs the friendly sheep_s the pretty sheep_o
-sees the deer_s the little dog_o
-admires the sheep_s the big hare_o
-admires the sweet rabbit_o the sweet deer_s
-admires the little cat_o the big rabbit_s
-sees the little sheep_s the nice cat_o
-follows the pretty rabbit_o the rabbit_s
-hears the big dog_o the nice cat_s
-hugs the friendly cat_s the little cat_o
-hugs the big dog_o the nice hare_s
-hugs the pretty deer_s the sweet hare_o
-hears the sweet cat_s the friendly rabbit_o
-admires the big cat_o the nice sheep_s
-hugs the little deer_s the rabbit_o
-calls the nice deer_s the little dog_o
-sees the friendly sheep_o the pretty deer_s
-hugs the nice cat_s the friendly deer_o
-calls the nice cat_s the big sheep_o
-hears the deer_s the pretty deer_o
-admires the big hare_s the nice sheep_o
-admires the pretty dog_o the big sheep_s
-admires the big sheep_o the nice rabbit_s
-calls the hare_s the nice sheep_o
-follows the sweet hare_s the pretty cat_o
-admires the nice deer_o the nice sheep_s
-hears the friendly deer_s the big rabbit_o
-hears the hare_o the nice hare_s
-admires the sweet hare_o the deer_s
-calls the pretty dog_s the sweet cat_o
-hears the nice deer_o the little sheep_s
-calls the friendly cat_o the nice rabbit_s
-follows the pretty cat_s the friendly sheep_o
-hugs the sweet dog_s the friendly rabbit_o
-admires the nice cat_o the little hare_s
-hears the little cat_o the friendly dog_s
-hears the sweet hare_s the sweet sheep_o
-sees the pretty hare_o the big cat_s
-calls the little sheep_o the deer_s
-admires the big sheep_s the nice dog_o
-hears the friendly deer_o the nice sheep_s
-sees the friendly cat_o the sweet rabbit_s
-hears the sheep_o the sweet rabbit_s
-hugs the nice rabbit_o the sweet sheep_s
-sees the nice rabbit_o the pretty sheep_s
-hears the big deer_o the nice rabbit_s
-follows the pretty dog_o the little cat_s
-hears the nice sheep_o the nice cat_s
-follows the nice deer_s the sheep_o
-follows the friendly rabbit_s the pretty deer_o
-admires the pretty deer_s the pretty dog_o
-hugs the friendly deer_s the pretty dog_o
-calls the pretty sheep_o the friendly rabbit_s
-follows the little deer_s the deer_o
-sees the nice hare_o the pretty hare_s
-calls the sweet hare_s the pretty dog_o
-sees the little deer_s the pretty hare_o
-calls the little cat_s the sweet sheep_o
-admires the friendly cat_s the pretty rabbit_o
-calls the little dog_s the rabbit_o
-calls the little dog_s the pretty deer_o
-admires the sweet deer_s the friendly dog_o
-hugs the pretty deer_s the sheep_o
-admires the friendly deer_s the little cat_o
-admires the sheep_o the sweet hare_s
-follows the nice rabbit_o the nice hare_s
-follows the nice dog_o the rabbit_s
-admires the friendly rabbit_o the sweet sheep_s
-calls the pretty rabbit_s the nice cat_o
-sees the sweet hare_s the little deer_o
-hugs the big deer_o the hare_s
-admires the deer_s the sheep_o
-hears the little sheep_o the big sheep_s
-hears the friendly dog_s the friendly cat_o
-hears the little sheep_o the sweet hare_s
-hears the pretty deer_s the hare_o
-calls the little cat_s the big deer_o
-hugs the big deer_o the nice deer_s
-hugs the friendly cat_s the friendly sheep_o
-hears the rabbit_o the hare_s
-calls the pretty rabbit_s the nice deer_o
-follows the sweet rabbit_s the pretty cat_o
-follows the pretty cat_s the pretty deer_o
-hears the pretty deer_s the nice hare_o
-follows the big dog_s the big rabbit_o
-hugs the pretty dog_o the nice hare_s
-hugs the rabbit_s the hare_o
-follows the big dog_o the sweet rabbit_s
-sees the pretty sheep_s the dog_o
-hears the friendly deer_o the hare_s
-hears the sweet dog_s the pretty deer_o
-hears the big dog_o the hare_s
-hears the nice sheep_o the pretty cat_s
-calls the big dog_o the pretty sheep_s
-calls the little cat_o the cat_s
-calls the dog_o the nice hare_s
-follows the friendly sheep_s the nice dog_o
-hugs the nice deer_s the nice sheep_o
-admires the nice sheep_o the sheep_s
-admires the nice cat_o the nice dog_s
-calls the little cat_o the nice cat_s
-follows the little deer_s the cat_o
-follows the pretty hare_o the nice sheep_s
-calls the big dog_s the big deer_o
-admires the hare_s the sweet rabbit_o
-hears the dog_s the friendly cat_o
-hears the nice deer_s the nice rabbit_o
-calls the sweet hare_o the friendly sheep_s
-calls the nice rabbit_s the friendly deer_o
-calls the pretty deer_s the friendly deer_o
-hugs the sweet sheep_s the big dog_o
-calls the friendly deer_o the little deer_s
-hears the big cat_s the pretty hare_o
-hugs the pretty cat_s the deer_o
-hears the nice sheep_o the sweet cat_s
-hears the nice deer_s the hare_o
-admires the sweet dog_o the deer_s
-follows the nice sheep_s the sweet dog_o
-hugs the friendly hare_o the sweet hare_s
-hears the rabbit_s the friendly cat_o
-calls the pretty sheep_s the pretty dog_o
-sees the nice cat_s the friendly sheep_o
-follows the little sheep_s the pretty dog_o
-sees the pretty rabbit_o the nice sheep_s
-calls the friendly rabbit_o the sweet dog_s
-follows the friendly cat_s the nice cat_o
-calls the sweet dog_o the friendly sheep_s
-sees the big cat_s the pretty sheep_o
-admires the pretty cat_o the big hare_s
-hears the friendly cat_s the nice cat_o
-sees the little rabbit_o the deer_s
-hugs the little hare_s the big sheep_o
-sees the pretty sheep_s the little rabbit_o
-hears the hare_s the pretty rabbit_o
-calls the nice hare_o the little dog_s
-follows the big sheep_s the nice cat_o
-sees the sweet cat_o the pretty rabbit_s
-hears the pretty cat_s the nice rabbit_o
-calls the nice cat_o the pretty dog_s
-hugs the sweet sheep_s the nice sheep_o
-sees the big rabbit_o the sweet cat_s
-hugs the pretty dog_s the big rabbit_o
-hugs the pretty dog_o the nice cat_s
-hugs the friendly dog_o the deer_s
-follows the big cat_s the nice deer_o
-calls the sweet hare_o the pretty deer_s
-hears the little cat_o the sweet hare_s
-hugs the friendly rabbit_o the nice dog_s
-admires the big dog_s the nice hare_o
-admires the pretty sheep_o the nice cat_s
-hugs the big dog_o the friendly cat_s
-hugs the little hare_o the nice dog_s
-sees the pretty deer_s the big rabbit_o
-hears the pretty deer_s the nice sheep_o
-sees the little deer_o the pretty cat_s
-sees the sweet cat_s the sweet deer_o
-hears the friendly deer_o the little cat_s
-admires the friendly dog_s the nice deer_o
-calls the nice cat_s the little cat_o
-admires the pretty dog_o the nice hare_s
-hears the nice dog_s the dog_o
-admires the little sheep_o the little cat_s
-follows the nice hare_o the little sheep_s
-sees the dog_s the little dog_o
-admires the dog_s the friendly rabbit_o
-admires the nice cat_s the pretty cat_o
-follows the nice hare_o the nice rabbit_s
-hugs the pretty sheep_s the nice rabbit_o
-admires the sweet rabbit_o the sweet cat_s
-follows the sweet sheep_s the deer_o
-hugs the big cat_o the nice hare_s
-hears the nice deer_o the nice dog_s
-hugs the sweet cat_s the little deer_o
-admires the nice hare_s the sheep_o
-hugs the dog_s the nice hare_o
-admires the pretty deer_s the nice hare_o
-follows the pretty hare_s the friendly hare_o
-hugs the big dog_s the pretty hare_o
-follows the big cat_o the big dog_s
-hugs the nice hare_o the cat_s
-hears the pretty hare_o the sweet cat_s
-admires the friendly rabbit_o the big rabbit_s
-hears the sweet sheep_o the little rabbit_s
-admires the big hare_s the friendly hare_o
-hugs the little hare_o the pretty cat_s
-calls the sweet sheep_o the big rabbit_s
-admires the little dog_s the big cat_o
-calls the little cat_s the cat_o
-admires the sweet sheep_s the little dog_o
-hears the friendly sheep_s the big dog_o
-hears the big cat_o the big deer_s
-calls the pretty dog_o the sweet rabbit_s
-admires the dog_s the big cat_o
-admires the little sheep_s the pretty rabbit_o
-hears the pretty sheep_s the friendly rabbit_o
-admires the friendly dog_s the pretty deer_o
-follows the sweet rabbit_s the little deer_o
-calls the big cat_o the sweet deer_s
-follows the big cat_s the deer_o
-admires the hare_s the rabbit_o
-follows the friendly cat_o the nice deer_s
-admires the nice dog_o the big cat_s
-admires the big deer_s the little sheep_o
-calls the big cat_s the sheep_o
-sees the nice sheep_s the little cat_o
-follows the big deer_s the little dog_o
-sees the pretty hare_o the deer_s
-admires the rabbit_o the nice hare_s
-admires the rabbit_o the nice sheep_s
-calls the big deer_o the friendly deer_s
-sees the rabbit_o the little rabbit_s
-calls the pretty hare_s the deer_o
-hears the big hare_o the big rabbit_s
-admires the cat_s the sheep_o
-admires the big dog_s the pretty hare_o
-hears the hare_o the deer_s
-hugs the deer_o the pretty hare_s
-hears the little sheep_o the nice sheep_s
-admires the nice hare_s the pretty hare_o
-hugs the little deer_s the little sheep_o
-sees the sweet cat_o the little dog_s
-follows the big sheep_s the pretty dog_o
-calls the sweet rabbit_o the little dog_s
-hears the big rabbit_o the sweet dog_s
-admires the nice sheep_s the big deer_o
-sees the big deer_o the little cat_s
-hugs the friendly hare_o the little sheep_s
-hugs the pretty deer_o the sweet sheep_s
-sees the big hare_o the dog_s
-sees the friendly dog_s the little hare_o
-hears the sweet deer_s the pretty cat_o
-admires the nice rabbit_o the pretty dog_s
-hugs the nice dog_s the pretty sheep_o
-sees the big dog_o the sweet sheep_s
-calls the friendly hare_s the big dog_o
-calls the sweet rabbit_s the dog_o
-admires the sheep_s the sweet cat_o
-sees the nice cat_o the deer_s
-hears the nice rabbit_o the nice sheep_s
-admires the dog_s the big hare_o
-follows the pretty sheep_o the little deer_s
-admires the cat_s the big cat_o
-follows the pretty dog_o the friendly rabbit_s
-sees the friendly rabbit_s the big rabbit_o
-calls the little sheep_s the big rabbit_o
-follows the big dog_o the sweet dog_s
-hears the sweet cat_o the nice rabbit_s
-admires the big dog_s the little hare_o
-hugs the sweet rabbit_o the friendly dog_s
-follows the big dog_s the deer_o
-admires the pretty rabbit_o the little rabbit_s
-hugs the friendly deer_o the little rabbit_s
-hugs the big dog_o the sheep_s
-calls the nice hare_s the nice sheep_o
-follows the nice rabbit_s the nice cat_o
-hugs the nice sheep_s the deer_o
-hears the little dog_s the little deer_o
-follows the pretty sheep_s the sweet rabbit_o
-admires the big hare_s the big deer_o
-hears the friendly sheep_o the friendly deer_s
-follows the friendly hare_o the hare_s
-admires the sweet deer_o the sweet sheep_s
-sees the nice rabbit_o the pretty deer_s
-calls the sweet hare_s the little cat_o
-calls the big rabbit_s the friendly hare_o
-sees the sweet sheep_o the pretty hare_s
-follows the little hare_s the cat_o
-hugs the nice rabbit_o the cat_s
-calls the sheep_s the little deer_o
-hears the hare_o the big cat_s
-hears the nice dog_o the friendly rabbit_s
-hears the pretty deer_s the little rabbit_o
-calls the big rabbit_o the little rabbit_s
-calls the sweet rabbit_s the nice deer_o
-follows the cat_o the sweet deer_s
-hears the pretty deer_o the pretty cat_s
-sees the pretty hare_s the friendly cat_o
-admires the little hare_o the friendly sheep_s
-sees the sweet hare_s the dog_o
-hugs the sheep_s the friendly hare_o
-hears the little rabbit_o the deer_s
-sees the sweet cat_o the big dog_s
-hears the big cat_s the friendly hare_o
-sees the pretty deer_s the little cat_o
-follows the hare_o the nice cat_s
-hugs the pretty dog_s the sweet dog_o
-hears the sheep_s the big rabbit_o
-follows the pretty sheep_o the little dog_s
-follows the cat_s the sweet dog_o
-sees the pretty sheep_s the friendly hare_o
-hears the pretty cat_s the little dog_o
-calls the pretty cat_o the little hare_s
-sees the pretty rabbit_s the friendly rabbit_o
-admires the friendly hare_s the cat_o
-sees the pretty rabbit_o the nice deer_s
-hears the sweet dog_s the pretty hare_o
-calls the little dog_o the big deer_s
-hugs the sweet dog_s the little cat_o
-sees the big sheep_s the cat_o
-admires the nice dog_s the sweet hare_o
-hugs the friendly deer_o the sweet sheep_s
-follows the deer_s the friendly hare_o
-sees the dog_s the rabbit_o
-follows the friendly hare_o the friendly cat_s
-admires the big rabbit_o the nice sheep_s
-calls the friendly cat_o the pretty rabbit_s
-sees the friendly cat_o the sweet dog_s
-follows the pretty deer_s the big dog_o
-calls the rabbit_s the little rabbit_o
-admires the little rabbit_s the nice sheep_o
-calls the little deer_s the rabbit_o
-admires the nice sheep_s the nice rabbit_o
-follows the rabbit_o the friendly deer_s
-hears the nice sheep_o the rabbit_s
-follows the sheep_s the nice deer_o
-hugs the sweet dog_s the sweet deer_o
-hugs the nice cat_o the sweet rabbit_s
-admires the nice hare_o the nice cat_s
-hugs the nice hare_s the deer_o
-follows the pretty cat_o the hare_s
-hears the cat_o the sweet rabbit_s
-hears the friendly deer_o the cat_s
-admires the dog_s the big rabbit_o
-hugs the hare_o the friendly rabbit_s
-follows the big hare_o the sweet cat_s
-admires the cat_o the sweet rabbit_s
-hears the rabbit_o the sweet rabbit_s
-follows the little rabbit_s the sweet dog_o
-sees the dog_s the friendly dog_o
+sees the friendly rabbit_o the nice sheep_s
 sees the friendly deer_o the nice cat_s
-calls the sweet dog_o the sweet sheep_s
-hugs the big hare_s the friendly dog_o
-sees the friendly hare_s the friendly deer_o
+sees the friendly hare_o the sweet sheep_s
+hugs the friendly dog_o the big hare_s
+sees the friendly deer_o the friendly hare_s
 hears the cat_o the sweet dog_s
-sees the pretty cat_s the friendly sheep_o
-hears the little dog_s the friendly cat_o
-hugs the pretty sheep_o the sweet dog_s
-calls the pretty dog_o the little dog_s
+sees the friendly sheep_o the pretty cat_s
+hears the friendly cat_o the little dog_s
+hugs the sweet dog_s the pretty sheep_o
+calls the little dog_s the pretty dog_o
 hugs the friendly hare_s the pretty dog_o
 admires the friendly dog_o the sheep_s
-hears the friendly sheep_s the nice deer_o
+hears the nice deer_o the friendly sheep_s
 sees the sweet sheep_o the nice cat_s
-calls the pretty sheep_o the nice cat_s
+follows the friendly sheep_s the big rabbit_o
 follows the nice deer_o the little hare_s
 hears the sheep_o the big cat_s
 sees the friendly sheep_o the friendly rabbit_s
-hugs the little deer_o the sweet hare_s
-hugs the friendly rabbit_s the sweet sheep_o
-sees the pretty cat_o the friendly deer_s
+hugs the sweet hare_s the little deer_o
+hugs the sweet sheep_o the friendly rabbit_s
+sees the friendly deer_s the pretty cat_o
 hugs the nice dog_s the deer_o
-hugs the nice cat_s the sweet deer_o
+hugs the sweet deer_o the nice cat_s
 sees the nice rabbit_s the pretty dog_o
-hugs the sweet dog_s the sweet cat_o
+hugs the sweet cat_o the sweet dog_s
 hears the sweet deer_s the deer_o
 admires the friendly rabbit_o the sweet rabbit_s
 sees the nice hare_s the big deer_o
-hears the big dog_o the sweet sheep_s
+hears the little sheep_s the big sheep_o
 follows the sweet hare_s the little hare_o
-follows the friendly sheep_s the little hare_o
 calls the friendly sheep_o the nice dog_s
 admires the friendly hare_s the deer_o
-hugs the hare_o the friendly deer_s
-sees the sweet sheep_s the sweet hare_o
-hears the little dog_o the little hare_s
+hugs the friendly deer_s the hare_o
+follows the friendly dog_o the little sheep_s
+hears the little hare_s the little dog_o
 sees the sweet sheep_o the nice hare_s
-follows the pretty rabbit_o the sweet deer_s
-hugs the pretty hare_o the rabbit_s
+follows the sweet deer_s the pretty rabbit_o
+hugs the rabbit_s the pretty hare_o
 sees the cat_o the friendly sheep_s
-follows the pretty rabbit_o the nice sheep_s
-sees the little deer_o the nice dog_s
-sees the big dog_o the friendly hare_s
-hears the pretty dog_o the big cat_s
+sees the sweet sheep_s the big dog_o
+sees the friendly hare_s the big dog_o
+hears the big cat_s the pretty dog_o
 hugs the sweet dog_s the pretty cat_o
-follows the pretty deer_s the nice dog_o
+follows the nice dog_o the pretty deer_s
 follows the cat_o the deer_s
-hears the little deer_o the nice sheep_s
-calls the big hare_o the little sheep_s
-follows the cat_o the friendly deer_s
-sees the big deer_s the friendly hare_o
+hears the nice dog_o the nice sheep_s
+calls the friendly deer_o the little sheep_s
+sees the friendly hare_o the big deer_s
 admires the nice cat_o the little dog_s
-hugs the sweet rabbit_s the sweet cat_o
+hugs the sweet cat_o the sweet rabbit_s
 follows the big rabbit_s the little dog_o
-sees the pretty rabbit_o the big hare_s
-hugs the deer_o the nice deer_s
-hugs the pretty cat_o the rabbit_s
-hugs the nice deer_s the sweet sheep_o
-hears the pretty rabbit_s the nice cat_o
-calls the big dog_o the friendly deer_s
-sees the little sheep_s the sheep_o
+sees the big hare_s the pretty rabbit_o
+hugs the nice deer_s the deer_o
+hugs the rabbit_s the pretty cat_o
+hugs the sweet sheep_o the nice deer_s
+hears the nice cat_o the pretty rabbit_s
+calls the friendly deer_s the big dog_o
+sees the sheep_o the little sheep_s
 admires the pretty rabbit_s the little cat_o
 hears the friendly deer_s the dog_o
-sees the little sheep_o the cat_s
+sees the cat_s the little sheep_o
 admires the nice cat_o the nice hare_s
-hears the pretty deer_s the sweet rabbit_o
-calls the friendly cat_s the nice dog_o
-hears the big sheep_s the nice dog_o
+hears the sweet rabbit_o the pretty deer_s
+calls the nice dog_o the friendly cat_s
 hears the nice hare_s the dog_o
 hugs the cat_o the big sheep_s
 hears the big dog_s the pretty rabbit_o
-hugs the nice rabbit_s the friendly cat_o
+hugs the friendly cat_o the nice rabbit_s
 admires the pretty deer_s the big rabbit_o
-follows the big sheep_o the friendly sheep_s
 hugs the sweet cat_o the hare_s
 follows the friendly rabbit_o the little dog_s
-sees the sweet rabbit_s the nice cat_o
+sees the nice cat_o the sweet rabbit_s
 hugs the deer_s the big sheep_o
 calls the nice cat_s the pretty sheep_o
 sees the nice sheep_o the pretty cat_s
-hugs the big dog_s the sweet deer_o
+hugs the sweet deer_o the big dog_s
 admires the friendly sheep_o the sweet rabbit_s
-hears the little rabbit_s the rabbit_o
-admires the pretty rabbit_o the pretty deer_s
+hears the rabbit_o the little rabbit_s
+admires the pretty deer_s the pretty rabbit_o
 calls the nice dog_s the little rabbit_o
 sees the big deer_s the pretty cat_o
-calls the dog_s the nice deer_o
-hugs the pretty cat_s the sheep_o
-hugs the nice dog_s the sweet cat_o
+calls the nice deer_o the dog_s
+hugs the sheep_o the pretty cat_s
+hugs the sweet cat_o the nice dog_s
 calls the dog_s the pretty cat_o
-hugs the friendly hare_s the nice rabbit_o
-hugs the pretty deer_o the cat_s
-follows the deer_s the nice sheep_o
-sees the big cat_s the sweet hare_o
+hugs the nice rabbit_o the friendly hare_s
+hugs the cat_s the pretty deer_o
+follows the nice sheep_o the deer_s
+sees the sweet hare_o the big cat_s
 sees the friendly rabbit_o the big deer_s
 sees the pretty deer_s the dog_o
-sees the pretty cat_o the pretty deer_s
-sees the little hare_o the big deer_s
-follows the sweet rabbit_o the sweet sheep_s
-hugs the pretty rabbit_o the nice rabbit_s
+sees the pretty deer_s the pretty cat_o
+sees the big deer_s the little hare_o
+admires the little sheep_s the big dog_o
+admires the friendly hare_o the little sheep_s
 sees the sweet rabbit_o the nice dog_s
 admires the friendly rabbit_o the big hare_s
-hugs the pretty hare_s the friendly sheep_o
+hugs the friendly sheep_o the pretty hare_s
 admires the sweet dog_o the friendly deer_s
 hears the sweet deer_s the little cat_o
-follows the friendly hare_s the cat_o
-hears the big rabbit_o the sheep_s
-hears the pretty dog_o the nice rabbit_s
+follows the cat_o the friendly hare_s
+hears the sheep_s the big rabbit_o
+hears the nice rabbit_s the pretty dog_o
 follows the pretty cat_s the hare_o
-hears the deer_o the little sheep_s
-calls the pretty hare_o the friendly rabbit_s
+hears the little sheep_s the deer_o
+calls the friendly rabbit_s the pretty hare_o
 hears the nice dog_o the little cat_s
-hugs the nice sheep_s the pretty rabbit_o
 hugs the nice cat_s the big deer_o
-calls the big dog_o the sweet deer_s
-hugs the nice deer_s the sweet deer_o
+calls the sweet deer_s the big dog_o
+hugs the sweet deer_o the nice deer_s
 sees the friendly rabbit_o the friendly hare_s
 follows the big dog_s the pretty cat_o
 admires the friendly cat_o the big hare_s
 hears the sweet rabbit_s the big hare_o
 admires the friendly hare_s the little rabbit_o
-hugs the nice sheep_s the pretty cat_o
 hears the nice deer_o the sweet deer_s
 sees the pretty dog_s the pretty hare_o
 admires the little deer_s the hare_o
 calls the nice rabbit_o the friendly dog_s
-hugs the big sheep_s the big dog_o
 follows the sheep_o the big hare_s
-hugs the cat_s the friendly hare_o
-follows the dog_o the sweet rabbit_s
+hugs the friendly hare_o the cat_s
+follows the sweet rabbit_s the dog_o
 calls the friendly deer_o the nice hare_s
 admires the rabbit_s the deer_o
-admires the pretty dog_s the nice sheep_o
-hears the big sheep_s the sweet cat_o
-hears the big sheep_s the little cat_o
-hears the big rabbit_o the nice deer_s
-admires the sweet hare_o the little sheep_s
+admires the nice sheep_o the pretty dog_s
+hears the nice deer_s the big rabbit_o
+hugs the sweet dog_o the nice sheep_s
 admires the little deer_s the pretty hare_o
-calls the nice dog_s the friendly rabbit_o
+admires the friendly deer_o the big sheep_s
 admires the friendly cat_s the dog_o
 sees the sweet hare_s the hare_o
-admires the little dog_s the nice dog_o
-hears the little cat_s the rabbit_o
+admires the nice dog_o the little dog_s
+hears the rabbit_o the little cat_s
 follows the dog_s the big hare_o
-sees the pretty hare_s the sweet hare_o
+sees the sweet hare_o the pretty hare_s
 calls the big cat_s the dog_o
 hugs the cat_o the pretty dog_s
 admires the nice hare_s the big rabbit_o
 hears the nice dog_o the big cat_s
-sees the nice sheep_o the big sheep_s
-calls the sweet deer_s the nice sheep_o
+calls the nice sheep_o the sweet deer_s
 hears the nice sheep_o the nice rabbit_s
-admires the friendly rabbit_s the nice rabbit_o
-calls the friendly dog_s the sweet rabbit_o
-calls the pretty hare_o the pretty dog_s
+admires the nice rabbit_o the friendly rabbit_s
+sees the big sheep_s the big cat_o
+calls the pretty dog_s the pretty hare_o
 hugs the nice hare_s the dog_o
-hears the dog_s the sweet deer_o
-admires the big deer_o the pretty rabbit_s
-calls the little hare_s the nice dog_o
-hugs the big hare_o the little deer_s
-hugs the big hare_o the little rabbit_s
+hears the sweet deer_o the dog_s
+admires the pretty rabbit_s the big deer_o
+calls the nice dog_o the little hare_s
+hugs the little deer_s the big hare_o
+hugs the little rabbit_s the big hare_o
 follows the sweet hare_o the deer_s
 sees the big deer_s the pretty sheep_o
 sees the rabbit_o the friendly deer_s
-calls the big sheep_o the little deer_s
-hugs the friendly rabbit_o the sweet sheep_s
-calls the friendly dog_s the rabbit_o
+calls the little deer_s the big sheep_o
+calls the sweet sheep_s the little hare_o
+calls the rabbit_o the friendly dog_s
 calls the sweet dog_s the big deer_o
-calls the big deer_s the nice cat_o
-sees the pretty cat_s the friendly dog_o
+calls the nice cat_o the big deer_s
+sees the friendly dog_o the pretty cat_s
 calls the sweet cat_o the sheep_s
-calls the big deer_s the sheep_o
-sees the cat_s the friendly rabbit_o
-hears the little cat_o the pretty cat_s
+calls the sheep_o the big deer_s
+sees the friendly rabbit_o the cat_s
+hears the pretty cat_s the little cat_o
 calls the friendly sheep_o the big hare_s
-calls the nice hare_s the sweet hare_o
-sees the little cat_o the nice sheep_s
-admires the deer_s the sweet rabbit_o
-admires the sweet cat_s the sheep_o
-hears the little rabbit_o the sweet dog_s
+calls the sweet hare_o the nice hare_s
+admires the sweet rabbit_o the deer_s
+admires the sheep_o the sweet cat_s
+hears the sweet dog_s the little rabbit_o
 sees the sweet hare_o the sweet rabbit_s
-hears the little rabbit_s the cat_o
-admires the big hare_s the sweet cat_o
-admires the friendly cat_s the sweet dog_o
-follows the sweet sheep_s the friendly dog_o
+hears the cat_o the little rabbit_s
+admires the sweet cat_o the big hare_s
+admires the sweet dog_o the friendly cat_s
+hugs the little sheep_s the little deer_o
 admires the pretty cat_s the big hare_o
 follows the rabbit_s the pretty sheep_o
 sees the friendly sheep_o the nice cat_s
 hears the nice dog_s the little sheep_o
 follows the sweet cat_o the big deer_s
-follows the friendly dog_s the rabbit_o
-admires the friendly sheep_s the friendly cat_o
-calls the hare_o the pretty rabbit_s
-follows the little sheep_o the sweet sheep_s
+sees the nice sheep_s the pretty rabbit_o
+admires the friendly cat_o the friendly sheep_s
+calls the pretty rabbit_s the hare_o
+hears the sweet sheep_s the pretty hare_o
 sees the pretty deer_s the big deer_o
 hugs the big rabbit_s the little dog_o
-hears the pretty dog_s the friendly cat_o
-follows the big rabbit_o the pretty dog_s
-follows the pretty dog_o the sweet rabbit_s
+hears the friendly cat_o the pretty dog_s
+admires the nice sheep_s the little cat_o
+follows the sweet rabbit_s the pretty dog_o
 hugs the nice cat_o the friendly hare_s
-calls the nice deer_s the cat_o
-follows the little sheep_s the friendly deer_o
-hugs the little rabbit_s the sweet deer_o
-hugs the little sheep_o the pretty dog_s
-admires the little hare_s the nice rabbit_o
-calls the big sheep_o the friendly hare_s
+calls the cat_o the nice deer_s
+admires the big sheep_s the big deer_o
+hugs the sweet deer_o the little rabbit_s
+hugs the pretty dog_s the little sheep_o
+admires the nice rabbit_o the little hare_s
+calls the friendly hare_s the big sheep_o
 hugs the little rabbit_s the little cat_o
-sees the pretty dog_o the big deer_s
-sees the big hare_s the sheep_o
-sees the pretty deer_o the pretty cat_s
-sees the little deer_o the nice hare_s
+sees the big deer_s the pretty dog_o
+sees the sheep_o the big hare_s
+sees the pretty cat_s the pretty deer_o
+sees the nice hare_s the little deer_o
 hugs the little cat_s the little dog_o
-calls the deer_o the friendly deer_s
-hears the big cat_o the sweet sheep_s
+calls the friendly deer_s the deer_o
+hears the nice rabbit_o the little sheep_s
 admires the pretty deer_s the dog_o
-hears the pretty sheep_o the big cat_s
-hears the big hare_o the sheep_s
-follows the big rabbit_s the sweet dog_o
-admires the pretty sheep_s the nice deer_o
+hears the big cat_s the pretty sheep_o
+hears the sheep_s the big hare_o
+follows the sweet dog_o the big rabbit_s
+admires the nice deer_o the pretty sheep_s
 hugs the sweet dog_o the little deer_s
-admires the big hare_o the little rabbit_s
+admires the little rabbit_s the big hare_o
 hears the nice rabbit_o the cat_s
-hugs the big sheep_o the sweet cat_s
-admires the pretty rabbit_s the sweet sheep_o
-calls the little dog_o the pretty deer_s
+hugs the sweet cat_s the big sheep_o
+admires the sweet sheep_o the pretty rabbit_s
+calls the pretty deer_s the little dog_o
 sees the nice deer_o the pretty hare_s
 follows the nice deer_o the rabbit_s
-hears the sweet cat_s the nice deer_o
+hears the nice deer_o the sweet cat_s
 hears the nice dog_o the little deer_s
 follows the nice hare_o the friendly hare_s
 follows the sweet deer_s the pretty dog_o
 calls the sweet rabbit_o the rabbit_s
 hugs the little hare_s the little dog_o
-sees the nice sheep_s the friendly deer_o
-sees the nice dog_s the sweet cat_o
+sees the sweet cat_o the nice dog_s
 hugs the big hare_s the big deer_o
 admires the nice hare_s the little deer_o
-hugs the little sheep_s the nice deer_o
+calls the friendly deer_o the nice sheep_s
 hugs the friendly deer_o the friendly dog_s
 hears the sweet rabbit_s the big deer_o
 admires the friendly deer_o the big hare_s
-hears the hare_o the sweet deer_s
+hears the sweet deer_s the hare_o
 follows the sweet sheep_o the little cat_s
 hears the nice rabbit_o the big rabbit_s
 sees the sweet sheep_o the little dog_s
-hugs the big hare_o the nice cat_s
-sees the pretty rabbit_s the little cat_o
+hugs the nice cat_s the big hare_o
+hugs the nice dog_o the big sheep_s
 hugs the nice dog_s the little sheep_o
-calls the sweet rabbit_s the big rabbit_o
+hugs the nice sheep_s the big deer_o
 calls the sweet rabbit_o the friendly dog_s
 hugs the nice cat_o the big rabbit_s
-sees the big dog_o the big cat_s
-calls the pretty deer_o the big cat_s
+sees the big cat_s the big dog_o
+calls the big cat_s the pretty deer_o
 follows the friendly cat_o the little dog_s
 follows the nice cat_o the deer_s
 hears the pretty hare_s the pretty sheep_o
 hears the friendly rabbit_o the pretty sheep_s
 sees the hare_s the pretty dog_o
-follows the little deer_s the nice deer_o
-admires the sweet cat_s the nice sheep_o
-admires the little deer_o the pretty cat_s
-hears the sweet dog_s the friendly cat_o
+follows the nice deer_o the little deer_s
+admires the nice sheep_o the sweet cat_s
+admires the pretty cat_s the little deer_o
+hears the friendly cat_o the sweet dog_s
 follows the nice cat_o the little cat_s
 calls the big cat_s the little cat_o
 admires the pretty hare_s the big sheep_o
-hears the nice rabbit_s the friendly deer_o
+hears the friendly deer_o the nice rabbit_s
 hugs the friendly cat_s the big sheep_o
-hears the nice hare_s the sweet hare_o
-hears the little hare_s the sweet rabbit_o
-calls the big deer_o the nice sheep_s
-follows the little deer_o the nice cat_s
+hears the sweet hare_o the nice hare_s
+hears the sweet rabbit_o the little hare_s
+follows the nice cat_s the little deer_o
 hugs the friendly cat_s the deer_o
-sees the friendly dog_s the friendly cat_o
-sees the nice dog_s the nice deer_o
+sees the friendly cat_o the friendly dog_s
+sees the nice deer_o the nice dog_s
 hugs the rabbit_o the little deer_s
-hears the friendly rabbit_s the sheep_o
-sees the big sheep_s the rabbit_o
-hugs the little cat_o the friendly hare_s
-admires the big sheep_s the nice rabbit_o
+hears the sheep_o the friendly rabbit_s
+sees the rabbit_o the big sheep_s
+hugs the friendly hare_s the little cat_o
 calls the pretty rabbit_s the pretty dog_o
 sees the rabbit_s the hare_o
 follows the friendly sheep_o the nice rabbit_s
-calls the dog_o the sweet sheep_s
+calls the sweet sheep_s the dog_o
 hears the friendly deer_o the sweet deer_s
-hugs the deer_s the nice cat_o
-calls the cat_s the friendly dog_o
-follows the pretty rabbit_o the pretty hare_s
-calls the nice rabbit_s the sweet hare_o
+hugs the nice cat_o the deer_s
+calls the friendly dog_o the cat_s
+follows the pretty hare_s the pretty rabbit_o
+calls the sweet hare_o the nice rabbit_s
 hugs the sweet rabbit_o the friendly cat_s
-admires the big sheep_o the pretty deer_s
-calls the little deer_s the nice deer_o
+admires the pretty deer_s the big sheep_o
+calls the nice deer_o the little deer_s
 follows the friendly hare_o the nice cat_s
-admires the friendly rabbit_s the rabbit_o
+admires the rabbit_o the friendly rabbit_s
 hugs the cat_o the big rabbit_s
 hugs the pretty rabbit_s the little dog_o
 admires the friendly cat_s the big sheep_o
-calls the big deer_s the little sheep_o
+sees the little sheep_s the little rabbit_o
 hears the cat_s the pretty dog_o
-sees the pretty rabbit_s the friendly deer_o
+sees the friendly deer_o the pretty rabbit_s
 admires the cat_o the deer_s
-hears the friendly rabbit_s the friendly hare_o
-follows the little sheep_s the friendly hare_o
-sees the little rabbit_o the friendly cat_s
+hears the friendly hare_o the friendly rabbit_s
+hugs the big sheep_s the big dog_o
+sees the friendly cat_s the little rabbit_o
 hears the sweet dog_s the deer_o
 hugs the pretty deer_s the big rabbit_o
-hugs the pretty sheep_o the big sheep_s
-admires the sweet cat_s the nice dog_o
+admires the nice dog_o the sweet cat_s
 follows the big rabbit_s the big deer_o
-calls the little rabbit_o the sweet deer_s
+calls the sweet deer_s the little rabbit_o
 calls the friendly deer_s the big sheep_o
 calls the big deer_s the pretty deer_o
-hears the sweet sheep_s the big cat_o
-admires the nice deer_s the sheep_o
-hears the big rabbit_s the friendly hare_o
-hugs the pretty rabbit_s the sheep_o
-follows the nice deer_s the pretty deer_o
-follows the little hare_o the little deer_s
-hugs the friendly rabbit_o the big sheep_s
+admires the sheep_o the nice deer_s
+hears the friendly hare_o the big rabbit_s
+hugs the sheep_o the pretty rabbit_s
+hears the sweet sheep_s the little cat_o
+follows the little deer_s the little hare_o
 hugs the nice rabbit_s the deer_o
-follows the pretty rabbit_o the big rabbit_s
+follows the big rabbit_s the pretty rabbit_o
 hears the nice sheep_o the sweet deer_s
 hugs the friendly hare_o the little deer_s
-hugs the little deer_s the sweet cat_o
+hugs the sweet cat_o the little deer_s
 hugs the sweet cat_o the friendly dog_s
 calls the pretty sheep_s the dog_o
 sees the nice rabbit_s the little deer_o
 sees the friendly cat_o the friendly sheep_s
 admires the sweet rabbit_o the big dog_s
-admires the pretty dog_o the friendly deer_s
-hears the little cat_s the friendly cat_o
-hears the pretty hare_o the big cat_s
+admires the friendly deer_s the pretty dog_o
+hears the friendly cat_o the little cat_s
+hears the big cat_s the pretty hare_o
 admires the friendly hare_o the sweet cat_s
-follows the little sheep_o the pretty deer_s
+follows the pretty deer_s the little sheep_o
 hears the sweet cat_o the sweet deer_s
-admires the nice sheep_s the big rabbit_o
-sees the nice sheep_s the pretty deer_o
 sees the deer_s the little rabbit_o
 hears the pretty cat_s the pretty deer_o
 hugs the nice rabbit_o the nice deer_s
 sees the dog_s the deer_o
 hears the sweet dog_o the little deer_s
 sees the nice rabbit_o the sheep_s
-calls the pretty deer_o the hare_s
+calls the hare_s the pretty deer_o
 hears the little dog_s the little cat_o
-follows the sweet sheep_s the friendly deer_o
-hears the little dog_s the sweet deer_o
+admires the sweet dog_o the little sheep_s
+hears the sweet deer_o the little dog_s
 hugs the little deer_s the deer_o
 hears the nice cat_s the pretty hare_o
 follows the cat_s the deer_o
-sees the sweet sheep_s the big deer_o
+hugs the friendly hare_o the nice sheep_s
 admires the little dog_s the pretty dog_o
 sees the sweet rabbit_o the big deer_s
 hears the nice sheep_o the nice dog_s
 follows the sweet dog_o the nice hare_s
-hears the little rabbit_s the friendly rabbit_o
-admires the hare_o the little sheep_s
+hears the friendly rabbit_o the little rabbit_s
+admires the little sheep_s the hare_o
 calls the hare_s the little rabbit_o
-sees the dog_o the friendly rabbit_s
+sees the friendly rabbit_s the dog_o
 sees the pretty rabbit_s the little sheep_o
-sees the little hare_o the sweet cat_s
-sees the nice deer_s the sweet dog_o
+sees the sweet cat_s the little hare_o
+sees the sweet dog_o the nice deer_s
 hugs the little hare_s the pretty deer_o
 hugs the nice rabbit_o the big hare_s
 hugs the sheep_s the pretty deer_o
-follows the little sheep_o the pretty dog_s
-sees the friendly dog_s the sweet sheep_o
+follows the pretty dog_s the little sheep_o
+sees the sweet sheep_o the friendly dog_s
 admires the nice cat_o the nice deer_s
-admires the pretty hare_s the little deer_o
-sees the little cat_o the pretty rabbit_s
+hugs the friendly sheep_o the little sheep_s
+sees the pretty rabbit_s the little cat_o
 calls the nice cat_o the big dog_s
-follows the pretty cat_o the pretty hare_s
-admires the little deer_o the friendly hare_s
-sees the friendly deer_o the little sheep_s
-sees the big deer_o the friendly dog_s
-calls the pretty cat_o the deer_s
-sees the pretty dog_o the sweet cat_s
+follows the pretty hare_s the pretty cat_o
+admires the friendly hare_s the little deer_o
+sees the friendly dog_s the big deer_o
+calls the deer_s the pretty cat_o
+sees the sweet cat_s the pretty dog_o
 calls the sweet rabbit_s the little sheep_o
 follows the pretty rabbit_s the big hare_o
-admires the little deer_o the hare_s
+admires the hare_s the little deer_o
 sees the sheep_o the nice sheep_s
 sees the hare_s the little cat_o
 sees the sweet rabbit_o the little dog_s
 admires the sweet cat_o the deer_s
 follows the nice rabbit_s the pretty rabbit_o
-hears the pretty rabbit_s the nice hare_o
+hears the nice hare_o the pretty rabbit_s
 calls the pretty dog_s the little sheep_o
-calls the cat_s the sweet sheep_o
-follows the pretty sheep_o the deer_s
+calls the sweet sheep_o the cat_s
+follows the deer_s the pretty sheep_o
 hears the big dog_s the pretty deer_o
-admires the little dog_o the friendly sheep_s
+admires the friendly sheep_s the little dog_o
 hears the friendly deer_s the pretty sheep_o
 calls the friendly rabbit_o the little hare_s
-follows the big deer_o the nice dog_s
+follows the nice dog_s the big deer_o
 sees the cat_o the little cat_s
 hugs the pretty cat_s the little dog_o
 calls the nice hare_s the hare_o
-admires the friendly cat_s the nice cat_o
-sees the big hare_o the friendly sheep_s
+admires the nice cat_o the friendly cat_s
+sees the friendly sheep_s the big hare_o
 admires the sweet deer_o the friendly hare_s
 follows the little cat_s the pretty dog_o
-sees the big cat_s the nice rabbit_o
+sees the nice rabbit_o the big cat_s
 calls the sweet sheep_o the big cat_s
-admires the little deer_s the friendly dog_o
+admires the friendly dog_o the little deer_s
 admires the friendly hare_o the friendly deer_s
 hears the cat_s the little rabbit_o
 follows the nice deer_o the little cat_s
 hears the cat_s the little sheep_o
-hears the friendly hare_s the nice rabbit_o
+hears the nice rabbit_o the friendly hare_s
 sees the nice hare_o the pretty dog_s
-calls the little cat_s the friendly dog_o
+calls the friendly dog_o the little cat_s
 calls the nice cat_o the nice deer_s
 sees the nice deer_o the sheep_s
-admires the dog_s the sheep_o
+admires the sheep_o the dog_s
 hears the nice rabbit_o the sheep_s
 calls the friendly rabbit_o the nice dog_s
-sees the big sheep_o the friendly dog_s
-sees the pretty sheep_o the nice cat_s
-follows the nice rabbit_s the sweet hare_o
+sees the friendly dog_s the big sheep_o
+sees the nice cat_s the pretty sheep_o
+follows the sweet hare_o the nice rabbit_s
 hugs the sweet rabbit_s the big deer_o
 calls the friendly rabbit_s the big rabbit_o
 sees the nice dog_o the pretty cat_s
 admires the hare_s the little sheep_o
-calls the hare_o the little cat_s
-follows the little deer_s the friendly hare_o
+calls the little cat_s the hare_o
+follows the friendly hare_o the little deer_s
 follows the sweet deer_o the big deer_s
 sees the friendly deer_o the deer_s
-admires the sweet deer_s the sweet sheep_o
-hears the pretty cat_o the friendly hare_s
+admires the sweet sheep_o the sweet deer_s
+hears the friendly hare_s the pretty cat_o
 hears the friendly cat_o the sweet hare_s
 admires the pretty dog_s the pretty rabbit_o
-calls the pretty hare_o the sweet cat_s
-admires the little rabbit_o the rabbit_s
-hears the big cat_o the little sheep_s
+calls the sweet cat_s the pretty hare_o
+admires the rabbit_s the little rabbit_o
 sees the friendly sheep_s the little sheep_o
 sees the nice hare_s the big cat_o
 hears the friendly sheep_o the rabbit_s
-sees the little hare_s the sheep_o
+sees the sheep_o the little hare_s
 hugs the friendly rabbit_o the cat_s
 hears the little dog_s the little rabbit_o
 hears the sweet deer_o the friendly cat_s
-admires the friendly rabbit_s the sweet deer_o
-hugs the little dog_s the sweet rabbit_o
+admires the sweet deer_o the friendly rabbit_s
+hugs the sweet rabbit_o the little dog_s
 hugs the sweet deer_s the pretty dog_o
-follows the pretty rabbit_s the sweet rabbit_o
+follows the sweet rabbit_o the pretty rabbit_s
 hugs the rabbit_o the friendly rabbit_s
-sees the sweet deer_s the sweet rabbit_o
-admires the sweet hare_s the nice rabbit_o
-admires the friendly cat_o the sweet sheep_s
+sees the sweet rabbit_o the sweet deer_s
+admires the nice rabbit_o the sweet hare_s
 follows the sweet rabbit_o the friendly deer_s
-hugs the big hare_o the friendly dog_s
+hugs the friendly dog_s the big hare_o
 calls the nice dog_s the little dog_o
 sees the cat_o the nice rabbit_s
 calls the sweet hare_s the big rabbit_o
-hugs the little hare_o the little cat_s
+hugs the little cat_s the little hare_o
 calls the nice sheep_o the deer_s
-hugs the little cat_o the sweet sheep_s
-calls the big rabbit_s the friendly sheep_o
+follows the sweet sheep_s the little rabbit_o
+calls the friendly sheep_o the big rabbit_s
 follows the little cat_s the pretty sheep_o
 follows the nice cat_o the pretty hare_s
 hugs the nice hare_o the pretty sheep_s
 calls the sweet rabbit_o the nice dog_s
-follows the sweet cat_s the nice rabbit_o
+follows the nice rabbit_o the sweet cat_s
 hugs the friendly deer_s the deer_o
-hears the friendly rabbit_s the sweet dog_o
+hears the sweet dog_o the friendly rabbit_s
 sees the sweet deer_o the big cat_s
 follows the friendly sheep_s the pretty dog_o
 calls the friendly rabbit_o the sweet hare_s
-calls the sweet sheep_s the friendly deer_o
-follows the dog_s the pretty sheep_o
+sees the nice sheep_s the big dog_o
 hugs the nice cat_s the big rabbit_o
 hugs the rabbit_o the hare_s
-sees the deer_o the nice sheep_s
-admires the nice cat_s the friendly rabbit_o
+sees the nice sheep_s the deer_o
+admires the friendly rabbit_o the nice cat_s
 sees the friendly hare_o the sweet cat_s
-sees the sweet hare_s the sweet sheep_o
+sees the sweet sheep_o the sweet hare_s
 hugs the nice deer_s the big dog_o
-follows the pretty sheep_o the dog_s
+follows the dog_s the pretty sheep_o
 calls the rabbit_s the pretty sheep_o
 admires the little cat_s the hare_o
-sees the hare_o the pretty deer_s
+sees the nice cat_o the little sheep_s
 follows the rabbit_o the friendly dog_s
 sees the friendly dog_o the dog_s
 hears the friendly dog_o the sweet deer_s
 hears the nice sheep_o the friendly hare_s
-sees the little sheep_s the friendly sheep_o
 sees the nice dog_s the big deer_o
-calls the pretty rabbit_o the hare_s
+calls the hare_s the pretty rabbit_o
 hugs the sheep_s the big dog_o
-sees the big hare_s the friendly dog_o
+sees the friendly dog_o the big hare_s
 calls the cat_s the pretty dog_o
-hugs the little sheep_o the nice sheep_s
 calls the pretty deer_s the little deer_o
-follows the pretty cat_o the nice dog_s
+follows the nice dog_s the pretty cat_o
 admires the sweet dog_o the nice deer_s
-follows the big cat_o the pretty cat_s
-admires the nice deer_s the nice hare_o
-calls the nice rabbit_o the sweet sheep_s
+follows the pretty cat_s the big cat_o
+admires the nice hare_o the nice deer_s
+sees the nice cat_o the sweet sheep_s
 admires the friendly rabbit_o the sweet hare_s
 hears the little hare_s the pretty sheep_o
-calls the big deer_o the friendly dog_s
-hugs the little dog_o the pretty deer_s
-hears the little rabbit_o the friendly hare_s
-admires the friendly hare_s the nice dog_o
-admires the little dog_o the sheep_s
+calls the friendly dog_s the big deer_o
+hugs the pretty deer_s the little dog_o
+hears the friendly hare_s the little rabbit_o
+admires the nice dog_o the friendly hare_s
+admires the sheep_s the little dog_o
 calls the friendly sheep_o the sweet dog_s
-admires the rabbit_s the friendly rabbit_o
+admires the friendly rabbit_o the rabbit_s
 hears the pretty dog_s the little dog_o
-follows the pretty dog_s the nice rabbit_o
-sees the pretty hare_o the big hare_s
+follows the nice rabbit_o the pretty dog_s
+sees the big hare_s the pretty hare_o
 admires the nice hare_o the sweet deer_s
-calls the pretty deer_s the rabbit_o
+calls the rabbit_o the pretty deer_s
 hears the sweet deer_s the big sheep_o
 hears the sweet deer_s the little hare_o
-follows the pretty hare_s the nice dog_o
-hears the pretty rabbit_s the nice rabbit_o
-calls the big dog_o the little rabbit_s
-hugs the pretty dog_o the nice rabbit_s
-calls the big rabbit_s the rabbit_o
+follows the nice dog_o the pretty hare_s
+hears the nice rabbit_o the pretty rabbit_s
+calls the little rabbit_s the big dog_o
+hugs the nice rabbit_s the pretty dog_o
+calls the rabbit_o the big rabbit_s
 hears the nice deer_o the little dog_s
-calls the big rabbit_o the deer_s
-hugs the sweet sheep_o the little sheep_s
-sees the pretty sheep_s the friendly dog_o
+calls the deer_s the big rabbit_o
+hugs the sweet hare_o the nice sheep_s
+sees the friendly dog_o the pretty sheep_s
 hugs the nice rabbit_o the sweet cat_s
 calls the friendly dog_o the big sheep_s
-follows the big dog_s the friendly deer_o
+follows the friendly deer_o the big dog_s
 follows the nice hare_s the little cat_o
 hugs the sweet rabbit_o the pretty sheep_s
-follows the sweet cat_s the deer_o
-calls the dog_o the big deer_s
+admires the sweet deer_o the little sheep_s
+calls the big deer_s the dog_o
 follows the pretty deer_s the pretty sheep_o
 admires the sweet cat_o the big deer_s
-follows the big hare_o the deer_s
+follows the deer_s the big hare_o
 follows the big cat_s the pretty deer_o
 sees the sweet cat_o the big hare_s
-admires the big sheep_o the deer_s
+admires the deer_s the big sheep_o
 follows the little dog_s the dog_o
 calls the friendly rabbit_o the pretty dog_s
 admires the friendly cat_o the pretty dog_s
@@ -1542,526 +515,520 @@ admires the little hare_s the little cat_o
 hugs the friendly hare_s the big cat_o
 calls the friendly cat_s the hare_o
 sees the friendly cat_o the pretty cat_s
-hears the friendly deer_s the sheep_o
+hears the sheep_o the friendly deer_s
 hears the friendly rabbit_o the sweet dog_s
 calls the big deer_s the little cat_o
-calls the pretty sheep_o the nice deer_s
+calls the nice deer_s the pretty sheep_o
 calls the sweet cat_s the big deer_o
-calls the little hare_o the rabbit_s
+calls the rabbit_s the little hare_o
 sees the nice hare_o the friendly rabbit_s
-admires the sweet sheep_s the nice hare_o
+hugs the sweet sheep_s the pretty cat_o
 follows the sweet hare_s the deer_o
 sees the friendly deer_s the dog_o
 sees the sheep_o the pretty hare_s
 calls the sweet dog_s the big hare_o
 hugs the dog_s the little deer_o
-hugs the sweet hare_s the nice dog_o
+hugs the nice dog_o the sweet hare_s
 hears the nice cat_s the deer_o
 admires the nice hare_o the hare_s
 hears the pretty cat_s the little sheep_o
-sees the little hare_s the nice hare_o
-hears the little dog_o the little rabbit_s
-hears the big deer_o the nice cat_s
+sees the nice hare_o the little hare_s
+hears the little rabbit_s the little dog_o
+hears the nice cat_s the big deer_o
 admires the sweet rabbit_o the big cat_s
-hears the cat_s the friendly hare_o
+hears the friendly hare_o the cat_s
 hugs the friendly sheep_s the pretty hare_o
-hears the pretty rabbit_o the friendly sheep_s
-hears the pretty deer_o the friendly deer_s
+hears the friendly sheep_s the pretty rabbit_o
+hears the friendly deer_s the pretty deer_o
 follows the sweet cat_o the pretty deer_s
-calls the big rabbit_s the nice deer_o
+calls the nice deer_o the big rabbit_s
 calls the nice sheep_o the little dog_s
-sees the little deer_o the sweet cat_s
+calls the friendly rabbit_o the little sheep_s
 hugs the rabbit_o the little cat_s
-hugs the pretty cat_s the nice deer_o
+hugs the nice deer_o the pretty cat_s
 hears the sweet dog_o the sheep_s
 hugs the friendly sheep_s the big deer_o
 hears the nice hare_s the pretty rabbit_o
-sees the little hare_s the sweet rabbit_o
-sees the little sheep_o the sweet cat_s
-sees the big rabbit_s the nice sheep_o
-hears the sweet hare_s the nice dog_o
-admires the nice sheep_o the little deer_s
-follows the nice sheep_s the sheep_o
-follows the pretty sheep_s the cat_o
+sees the sweet rabbit_o the little hare_s
+sees the sweet cat_s the little sheep_o
+sees the nice sheep_o the big rabbit_s
+hears the nice dog_o the sweet hare_s
+calls the sweet dog_o the sweet sheep_s
+follows the sheep_o the nice sheep_s
+follows the cat_o the pretty sheep_s
 sees the big rabbit_s the deer_o
-hears the big hare_s the nice deer_o
+hears the nice deer_o the big hare_s
 calls the friendly dog_s the big cat_o
-hears the big rabbit_o the friendly hare_s
+hears the friendly hare_s the big rabbit_o
 calls the friendly deer_o the friendly cat_s
-follows the nice dog_s the little dog_o
-calls the pretty rabbit_o the sweet hare_s
-follows the pretty deer_s the friendly deer_o
-hugs the pretty hare_o the sheep_s
+admires the little sheep_s the little dog_o
+calls the sweet hare_s the pretty rabbit_o
+follows the friendly deer_o the pretty deer_s
+hugs the sheep_s the pretty hare_o
 hugs the friendly hare_o the friendly deer_s
-admires the big cat_o the sheep_s
-sees the little sheep_o the big dog_s
-calls the big rabbit_o the sweet rabbit_s
-calls the little cat_s the rabbit_o
+admires the sheep_s the big cat_o
+sees the big dog_s the little sheep_o
+calls the sweet rabbit_s the big rabbit_o
+calls the little sheep_s the pretty sheep_o
 follows the big cat_s the hare_o
-hears the friendly hare_s the cat_o
-admires the big deer_o the deer_s
+hears the cat_o the friendly hare_s
+admires the deer_s the big deer_o
 sees the sweet deer_o the hare_s
-sees the little sheep_s the sweet rabbit_o
-sees the friendly dog_s the nice deer_o
+sees the nice deer_o the friendly dog_s
 admires the sweet dog_o the big hare_s
 hugs the sweet dog_s the big cat_o
-admires the big sheep_s the friendly dog_o
-admires the little sheep_s the big dog_o
-admires the big dog_o the dog_s
-hears the friendly cat_s the nice deer_o
-hears the pretty hare_s the sweet deer_o
+admires the friendly dog_o the big sheep_s
+admires the dog_s the big dog_o
+hears the nice deer_o the friendly cat_s
+hears the sweet deer_o the pretty hare_s
 follows the friendly dog_s the big rabbit_o
-hears the pretty rabbit_o the cat_s
+hears the cat_s the pretty rabbit_o
 hugs the little dog_s the little sheep_o
-hears the little sheep_o the little hare_s
-calls the big cat_s the sweet hare_o
-hears the nice cat_s the friendly sheep_o
+hears the little hare_s the little sheep_o
+calls the sweet hare_o the big cat_s
+hears the friendly sheep_o the nice cat_s
 follows the pretty dog_s the big rabbit_o
-sees the nice rabbit_s the sweet dog_o
-hugs the friendly cat_s the sweet hare_o
+sees the sweet dog_o the nice rabbit_s
+hugs the sweet hare_o the friendly cat_s
 hugs the friendly sheep_s the big cat_o
-admires the pretty deer_o the friendly rabbit_s
+admires the friendly rabbit_s the pretty deer_o
 hears the nice deer_o the friendly deer_s
-calls the friendly dog_s the sweet hare_o
+calls the sweet hare_o the friendly dog_s
 hugs the friendly deer_o the sheep_s
 hears the nice sheep_s the little dog_o
-follows the big sheep_s the sweet deer_o
+follows the sweet deer_o the big sheep_s
 hears the nice deer_s the little dog_o
-calls the sweet rabbit_s the friendly dog_o
-follows the big rabbit_s the friendly sheep_o
-calls the big dog_o the little deer_s
-calls the pretty cat_o the pretty rabbit_s
-sees the nice rabbit_s the sweet rabbit_o
-sees the little dog_o the cat_s
+calls the friendly dog_o the sweet rabbit_s
+follows the friendly sheep_o the big rabbit_s
+calls the little deer_s the big dog_o
+calls the pretty rabbit_s the pretty cat_o
+sees the sweet rabbit_o the nice rabbit_s
+sees the cat_s the little dog_o
 hears the little hare_s the little rabbit_o
-follows the big cat_o the dog_s
-follows the pretty hare_o the nice cat_s
+follows the dog_s the big cat_o
+follows the nice cat_s the pretty hare_o
 calls the nice hare_o the little hare_s
 follows the nice cat_s the pretty deer_o
-hugs the nice dog_s the sweet hare_o
-follows the big hare_o the sweet rabbit_s
+hugs the sweet hare_o the nice dog_s
+follows the sweet rabbit_s the big hare_o
 admires the sweet deer_s the big dog_o
 hears the sweet rabbit_o the sweet deer_s
-sees the nice sheep_s the sweet deer_o
+sees the sweet deer_o the nice sheep_s
 hears the cat_s the big deer_o
 sees the friendly rabbit_o the friendly sheep_s
 follows the rabbit_o the little sheep_s
 calls the sweet deer_s the big hare_o
-sees the cat_s the nice deer_o
-sees the pretty deer_s the sheep_o
-admires the little dog_o the pretty sheep_s
-hears the little deer_o the big hare_s
-calls the friendly sheep_s the nice hare_o
+sees the nice deer_o the cat_s
+sees the sheep_o the pretty deer_s
+admires the pretty sheep_s the little dog_o
+hears the big hare_s the little deer_o
+calls the nice hare_o the friendly sheep_s
 admires the friendly sheep_s the little hare_o
 admires the pretty deer_s the little sheep_o
-sees the big rabbit_s the sweet sheep_o
-hears the dog_s the nice hare_o
-follows the deer_s the nice deer_o
-hugs the big sheep_s the friendly rabbit_o
-hears the friendly deer_o the sweet sheep_s
+sees the sweet sheep_o the big rabbit_s
+hears the nice hare_o the dog_s
+follows the nice deer_o the deer_s
+hugs the friendly rabbit_o the big sheep_s
+sees the friendly rabbit_o the little sheep_s
 admires the sweet dog_o the hare_s
-sees the sweet cat_s the nice cat_o
-hugs the nice sheep_s the sweet cat_o
+sees the nice cat_o the sweet cat_s
+hugs the sweet cat_o the nice sheep_s
 follows the friendly sheep_o the big dog_s
 admires the friendly sheep_o the sweet dog_s
-hugs the pretty dog_s the rabbit_o
-admires the big cat_s the friendly rabbit_o
-hears the big dog_s the nice sheep_o
-calls the little hare_s the nice sheep_o
-hears the cat_s the nice dog_o
-follows the big rabbit_o the little sheep_s
+hugs the rabbit_o the pretty dog_s
+admires the friendly rabbit_o the big cat_s
+hears the nice sheep_o the big dog_s
+calls the nice sheep_o the little hare_s
+hears the nice dog_o the cat_s
 sees the friendly rabbit_s the pretty cat_o
 hears the rabbit_o the big rabbit_s
-hears the cat_s the friendly dog_o
+hears the friendly dog_o the cat_s
 follows the big dog_s the big cat_o
 admires the nice rabbit_o the big hare_s
-hugs the big hare_o the sweet deer_s
+hugs the sweet deer_s the big hare_o
 calls the sweet hare_o the little deer_s
-calls the pretty rabbit_o the little rabbit_s
+calls the little rabbit_s the pretty rabbit_o
 follows the sheep_o the pretty dog_s
 calls the friendly sheep_o the friendly deer_s
 follows the nice cat_o the big rabbit_s
 follows the friendly deer_o the big cat_s
-sees the big hare_o the big cat_s
-hears the big deer_o the little deer_s
-hears the little rabbit_o the big sheep_s
+sees the big cat_s the big hare_o
+hears the little deer_s the big deer_o
+hears the big sheep_s the little rabbit_o
 follows the friendly hare_o the friendly dog_s
 sees the pretty deer_s the hare_o
-hugs the nice cat_s the friendly dog_o
+hugs the friendly dog_o the nice cat_s
 hugs the pretty rabbit_s the deer_o
-hugs the big rabbit_o the cat_s
-hears the little deer_s the friendly sheep_o
-follows the sweet cat_s the nice deer_o
-follows the little deer_s the nice sheep_o
-follows the nice sheep_s the sweet cat_o
-sees the big sheep_o the little hare_s
+hugs the cat_s the big rabbit_o
+hears the friendly sheep_o the little deer_s
+follows the nice deer_o the sweet cat_s
+follows the nice sheep_o the little deer_s
+follows the sweet cat_o the nice sheep_s
+sees the little hare_s the big sheep_o
 admires the cat_o the sweet sheep_s
 follows the cat_o the sweet hare_s
 hugs the nice rabbit_o the friendly sheep_s
 follows the little hare_s the dog_o
-calls the little sheep_o the big deer_s
-hugs the rabbit_s the sweet dog_o
-follows the sweet deer_s the friendly cat_o
-calls the big sheep_s the friendly deer_o
-hears the big rabbit_s the nice deer_o
+calls the big deer_s the little sheep_o
+hugs the sweet dog_o the rabbit_s
+follows the friendly cat_o the sweet deer_s
+calls the friendly deer_o the big sheep_s
+hears the nice deer_o the big rabbit_s
 hugs the friendly dog_s the big dog_o
-calls the big dog_o the big cat_s
-calls the pretty cat_o the little deer_s
+calls the big cat_s the big dog_o
+calls the little deer_s the pretty cat_o
 hears the friendly sheep_o the nice rabbit_s
 follows the friendly rabbit_o the sweet deer_s
-hugs the little dog_o the pretty sheep_s
-sees the big cat_o the friendly cat_s
-hugs the little dog_o the cat_s
+hugs the pretty sheep_s the little dog_o
+sees the friendly cat_s the big cat_o
+hugs the cat_s the little dog_o
 follows the hare_s the pretty rabbit_o
 sees the friendly cat_s the pretty sheep_o
-follows the friendly dog_s the nice cat_o
-hugs the sweet rabbit_s the nice cat_o
+follows the nice cat_o the friendly dog_s
+hugs the nice cat_o the sweet rabbit_s
 follows the sweet cat_s the dog_o
-follows the deer_o the big deer_s
-calls the little deer_o the nice dog_s
-sees the big rabbit_o the big deer_s
-admires the dog_s the friendly hare_o
-hugs the little sheep_o the friendly rabbit_s
-hears the little dog_s the nice dog_o
+follows the big deer_s the deer_o
+calls the nice dog_s the little deer_o
+sees the big deer_s the big rabbit_o
+admires the friendly hare_o the dog_s
+hugs the friendly rabbit_s the little sheep_o
+hears the nice dog_o the little dog_s
 follows the friendly cat_o the hare_s
 follows the friendly cat_s the little rabbit_o
-calls the pretty rabbit_o the cat_s
-hears the friendly rabbit_o the sweet sheep_s
+calls the cat_s the pretty rabbit_o
 hears the nice dog_o the big deer_s
 follows the rabbit_o the pretty sheep_s
-calls the big sheep_o the friendly sheep_s
+calls the friendly sheep_s the big sheep_o
 sees the nice sheep_s the pretty dog_o
-hears the dog_o the friendly rabbit_s
+hears the friendly rabbit_s the dog_o
 sees the nice deer_s the big dog_o
 follows the nice hare_o the big rabbit_s
-admires the pretty sheep_s the nice rabbit_o
+admires the nice rabbit_o the pretty sheep_s
 hugs the pretty deer_s the pretty dog_o
 admires the sweet dog_s the big sheep_o
 admires the nice deer_s the little hare_o
-hugs the deer_o the pretty cat_s
-hears the little rabbit_o the big cat_s
-hugs the big deer_s the nice sheep_o
+hugs the pretty cat_s the deer_o
+hears the big cat_s the little rabbit_o
+hugs the nice sheep_o the big deer_s
 admires the cat_o the friendly hare_s
-follows the nice dog_s the cat_o
-hears the nice sheep_s the sweet dog_o
+follows the cat_o the nice dog_s
+hears the sweet dog_o the nice sheep_s
 admires the nice cat_o the cat_s
 calls the sweet rabbit_o the pretty deer_s
-hears the dog_s the sweet cat_o
-calls the sweet hare_s the rabbit_o
+hears the sweet cat_o the dog_s
+calls the rabbit_o the sweet hare_s
 hugs the cat_o the dog_s
 sees the sweet cat_o the rabbit_s
 calls the sweet hare_o the deer_s
 hugs the nice hare_s the big deer_o
-calls the pretty dog_s the friendly deer_o
-sees the deer_s the sweet rabbit_o
+calls the friendly deer_o the pretty dog_s
+sees the sweet rabbit_o the deer_s
 sees the rabbit_o the sheep_s
 admires the friendly rabbit_s the pretty sheep_o
-follows the deer_s the rabbit_o
-admires the little cat_o the little dog_s
-calls the big sheep_o the friendly cat_s
+follows the rabbit_o the deer_s
+admires the little dog_s the little cat_o
+calls the friendly cat_s the big sheep_o
 calls the pretty sheep_s the little cat_o
 sees the dog_s the big cat_o
 sees the sweet deer_o the pretty cat_s
-admires the big sheep_o the little rabbit_s
-sees the little rabbit_o the friendly deer_s
-follows the big cat_o the big rabbit_s
+admires the little rabbit_s the big sheep_o
+sees the friendly deer_s the little rabbit_o
+follows the big rabbit_s the big cat_o
 admires the rabbit_s the big sheep_o
-calls the cat_s the nice cat_o
+calls the nice cat_o the cat_s
 sees the sweet cat_s the little deer_o
 admires the pretty cat_s the little hare_o
-hugs the pretty rabbit_o the friendly rabbit_s
+hugs the friendly rabbit_s the pretty rabbit_o
 follows the sweet rabbit_o the friendly rabbit_s
-hugs the big sheep_o the big dog_s
+hugs the big dog_s the big sheep_o
 hugs the nice deer_o the hare_s
-follows the friendly deer_s the cat_o
+follows the cat_o the friendly deer_s
 sees the friendly cat_s the big hare_o
 follows the sweet dog_s the big hare_o
 sees the sweet deer_s the pretty rabbit_o
 follows the rabbit_o the sweet cat_s
 calls the rabbit_o the little cat_s
-hugs the little sheep_o the hare_s
+hugs the hare_s the little sheep_o
 hugs the nice deer_o the big deer_s
 hugs the dog_s the pretty dog_o
 admires the sweet rabbit_s the pretty rabbit_o
-hugs the friendly dog_s the sweet hare_o
+hugs the sweet hare_o the friendly dog_s
 admires the big hare_s the pretty hare_o
-follows the pretty cat_o the rabbit_s
-admires the big dog_s the friendly cat_o
+follows the rabbit_s the pretty cat_o
+admires the friendly cat_o the big dog_s
 calls the nice rabbit_s the little dog_o
 sees the nice sheep_o the little sheep_s
-hears the pretty cat_o the big rabbit_s
+hears the big rabbit_s the pretty cat_o
 hears the big cat_s the pretty cat_o
 follows the friendly dog_s the pretty hare_o
 hears the friendly deer_o the nice hare_s
-admires the big hare_o the little hare_s
+admires the little hare_s the big hare_o
 hugs the pretty deer_s the little rabbit_o
-hears the pretty dog_s the sweet cat_o
+hears the sweet cat_o the pretty dog_s
 hears the dog_s the big deer_o
-hugs the pretty sheep_o the friendly rabbit_s
-calls the big sheep_s the rabbit_o
+hugs the friendly rabbit_s the pretty sheep_o
+calls the rabbit_o the big sheep_s
 calls the nice rabbit_o the pretty hare_s
-hugs the friendly dog_s the nice rabbit_o
+hugs the nice rabbit_o the friendly dog_s
 follows the sweet hare_s the pretty dog_o
-hears the big sheep_o the sweet cat_s
-admires the dog_o the nice rabbit_s
-calls the sweet dog_s the friendly deer_o
-admires the pretty dog_o the little rabbit_s
+hears the sweet cat_s the big sheep_o
+admires the nice rabbit_s the dog_o
+calls the friendly deer_o the sweet dog_s
+admires the little rabbit_s the pretty dog_o
 hears the friendly deer_o the deer_s
 follows the sweet sheep_o the big hare_s
-hears the big rabbit_s the nice sheep_o
+hears the nice sheep_o the big rabbit_s
 hears the friendly deer_o the pretty deer_s
 hugs the big cat_s the pretty rabbit_o
 admires the friendly hare_s the big sheep_o
 admires the friendly deer_s the big rabbit_o
-sees the friendly rabbit_s the cat_o
-admires the little deer_o the pretty hare_s
-calls the pretty sheep_o the little dog_s
-hears the little hare_s the nice cat_o
-calls the little sheep_s the nice sheep_o
+sees the cat_o the friendly rabbit_s
+admires the pretty hare_s the little deer_o
+calls the little dog_s the pretty sheep_o
+hears the nice cat_o the little hare_s
+calls the nice sheep_o the little sheep_s
 hears the sweet sheep_o the deer_s
 hugs the nice rabbit_s the pretty rabbit_o
-admires the nice hare_s the cat_o
-follows the big sheep_o the little dog_s
-hears the big deer_s the nice hare_o
-admires the deer_s the sweet dog_o
-calls the pretty hare_s the friendly hare_o
+admires the cat_o the nice hare_s
+follows the little dog_s the big sheep_o
+hears the nice hare_o the big deer_s
+admires the sweet dog_o the deer_s
+calls the friendly hare_o the pretty hare_s
 calls the nice deer_o the big hare_s
 hugs the little deer_s the pretty dog_o
 admires the little deer_s the big rabbit_o
 hears the big deer_s the little dog_o
-calls the sweet sheep_s the friendly rabbit_o
-sees the pretty rabbit_o the sheep_s
+sees the sweet sheep_s the little hare_o
+sees the sheep_s the pretty rabbit_o
 hugs the friendly cat_o the rabbit_s
 calls the sweet cat_s the deer_o
-calls the pretty sheep_s the nice hare_o
-follows the little dog_o the nice dog_s
+calls the nice hare_o the pretty sheep_s
+follows the nice dog_s the little dog_o
 admires the little dog_s the pretty deer_o
 hugs the rabbit_o the big sheep_s
-hugs the friendly cat_s the nice dog_o
-follows the pretty deer_o the sweet sheep_s
-calls the sweet dog_s the nice rabbit_o
+hugs the nice dog_o the friendly cat_s
+calls the nice rabbit_o the sweet dog_s
 hugs the pretty hare_s the pretty dog_o
 sees the sweet sheep_o the pretty deer_s
-sees the big hare_o the deer_s
-follows the big hare_s the friendly rabbit_o
-calls the sheep_s the friendly rabbit_o
+sees the deer_s the big hare_o
+follows the friendly rabbit_o the big hare_s
+calls the friendly rabbit_o the sheep_s
 hugs the deer_s the pretty deer_o
 calls the rabbit_s the little cat_o
-hugs the big deer_o the friendly deer_s
-follows the deer_o the sweet cat_s
+hugs the friendly deer_s the big deer_o
+follows the sweet cat_s the deer_o
 calls the cat_s the pretty deer_o
-sees the nice sheep_s the nice deer_o
-hugs the pretty sheep_s the friendly hare_o
-hears the dog_o the little cat_s
-calls the friendly cat_s the rabbit_o
-hears the little dog_s the sweet cat_o
+sees the nice deer_o the nice sheep_s
+hugs the friendly hare_o the pretty sheep_s
+hears the little cat_s the dog_o
+calls the rabbit_o the friendly cat_s
+hears the sweet cat_o the little dog_s
 admires the nice rabbit_o the deer_s
-calls the pretty sheep_o the dog_s
-hears the sweet deer_s the nice rabbit_o
-calls the little hare_o the nice cat_s
+calls the dog_s the pretty sheep_o
+hears the nice rabbit_o the sweet deer_s
+calls the nice cat_s the little hare_o
 sees the friendly deer_o the sweet cat_s
-hears the sheep_s the sweet sheep_o
-sees the deer_o the little rabbit_s
-hears the deer_o the pretty rabbit_s
-hears the hare_s the friendly rabbit_o
-follows the pretty deer_o the nice deer_s
-calls the pretty hare_o the sweet dog_s
-sees the big sheep_s the friendly rabbit_o
-follows the pretty rabbit_s the cat_o
-admires the big hare_s the rabbit_o
+hears the sweet sheep_o the sheep_s
+sees the little rabbit_s the deer_o
+hears the pretty rabbit_s the deer_o
+hears the friendly rabbit_o the hare_s
+follows the nice deer_s the pretty deer_o
+calls the sweet dog_s the pretty hare_o
+sees the friendly rabbit_o the big sheep_s
+follows the cat_o the pretty rabbit_s
+admires the rabbit_o the big hare_s
 hears the friendly deer_o the rabbit_s
 sees the sweet deer_o the sweet hare_s
-follows the big sheep_o the deer_s
+follows the deer_s the big sheep_o
 sees the nice rabbit_o the friendly rabbit_s
 admires the big dog_s the pretty dog_o
 follows the rabbit_o the sweet deer_s
 hugs the sweet dog_o the little cat_s
 sees the nice deer_o the sweet cat_s
-hugs the big dog_o the nice rabbit_s
-hears the little cat_s the nice rabbit_o
+hugs the nice rabbit_s the big dog_o
+hears the nice rabbit_o the little cat_s
 admires the sweet dog_o the dog_s
-admires the pretty sheep_o the friendly deer_s
-admires the pretty cat_o the big dog_s
-admires the nice rabbit_s the nice dog_o
-admires the pretty deer_s the nice cat_o
+admires the friendly deer_s the pretty sheep_o
+admires the big dog_s the pretty cat_o
+admires the nice dog_o the nice rabbit_s
+admires the nice cat_o the pretty deer_s
 sees the nice dog_o the sweet hare_s
-follows the rabbit_s the nice sheep_o
+follows the nice sheep_o the rabbit_s
 hears the friendly hare_o the pretty deer_s
-follows the little deer_o the friendly dog_s
+follows the friendly dog_s the little deer_o
 sees the cat_o the pretty deer_s
-hugs the nice sheep_s the nice deer_o
-follows the little cat_o the deer_s
+hugs the nice deer_o the nice sheep_s
+follows the deer_s the little cat_o
 sees the friendly hare_o the nice cat_s
 hears the rabbit_o the cat_s
 hugs the sweet rabbit_o the little cat_s
-hears the little cat_o the nice deer_s
+hears the nice deer_s the little cat_o
 hears the dog_s the little sheep_o
 admires the big rabbit_s the pretty cat_o
 follows the sweet hare_o the big cat_s
 admires the rabbit_o the pretty sheep_s
 sees the sweet sheep_o the rabbit_s
-hears the big cat_s the sweet sheep_o
-calls the pretty rabbit_o the pretty cat_s
-admires the big cat_s the nice deer_o
+hears the sweet sheep_o the big cat_s
+calls the pretty cat_s the pretty rabbit_o
+admires the nice deer_o the big cat_s
 sees the nice dog_s the little deer_o
-follows the little cat_o the nice cat_s
+follows the nice cat_s the little cat_o
 calls the friendly hare_o the nice sheep_s
 hugs the nice rabbit_o the little rabbit_s
-follows the cat_s the friendly hare_o
-calls the little deer_o the nice cat_s
-admires the hare_o the big dog_s
+follows the friendly hare_o the cat_s
+calls the nice cat_s the little deer_o
+admires the big dog_s the hare_o
 follows the sheep_o the friendly hare_s
 hugs the nice sheep_o the deer_s
 follows the sweet dog_o the friendly cat_s
 hugs the friendly rabbit_o the little hare_s
-hears the big rabbit_o the big deer_s
+hears the big deer_s the big rabbit_o
 calls the little sheep_s the dog_o
-sees the little rabbit_o the pretty dog_s
+sees the pretty dog_s the little rabbit_o
 follows the sweet hare_o the hare_s
 hugs the little sheep_s the big sheep_o
-admires the deer_s the nice hare_o
-hugs the deer_s the friendly cat_o
+admires the nice hare_o the deer_s
+hugs the friendly cat_o the deer_s
 hears the sweet sheep_o the pretty hare_s
-admires the little hare_o the sweet deer_s
+admires the sweet deer_s the little hare_o
 hugs the sweet cat_o the nice hare_s
-hugs the little rabbit_o the pretty sheep_s
+hugs the pretty sheep_s the little rabbit_o
 sees the rabbit_o the friendly hare_s
-hears the pretty deer_o the nice sheep_s
+hears the nice sheep_s the pretty deer_o
 calls the friendly hare_s the hare_o
 hears the nice sheep_o the big cat_s
 hugs the rabbit_o the little dog_s
-calls the pretty hare_o the nice dog_s
-sees the pretty dog_o the sweet deer_s
+calls the nice dog_s the pretty hare_o
+sees the sweet deer_s the pretty dog_o
 follows the sheep_o the sweet deer_s
 follows the friendly sheep_o the nice sheep_s
 hugs the pretty rabbit_s the pretty cat_o
-sees the sweet hare_s the cat_o
-hears the sheep_s the sweet rabbit_o
+sees the cat_o the sweet hare_s
+hears the sweet rabbit_o the sheep_s
 calls the nice sheep_o the sweet cat_s
-calls the pretty rabbit_o the little sheep_s
-follows the pretty hare_s the friendly cat_o
+calls the little sheep_s the pretty rabbit_o
+follows the friendly cat_o the pretty hare_s
 admires the sweet rabbit_o the friendly cat_s
-calls the pretty sheep_o the cat_s
+calls the cat_s the pretty sheep_o
 follows the rabbit_o the nice sheep_s
-sees the little sheep_o the nice deer_s
+sees the nice deer_s the little sheep_o
 admires the rabbit_s the little cat_o
 calls the cat_s the big deer_o
 admires the nice dog_o the big sheep_s
 hears the nice rabbit_o the friendly cat_s
 calls the nice cat_s the dog_o
 hears the nice deer_s the big hare_o
-admires the pretty cat_s the sweet sheep_o
-calls the big cat_o the sweet sheep_s
-calls the pretty dog_o the pretty hare_s
-follows the hare_s the sweet cat_o
-follows the little rabbit_o the friendly sheep_s
+admires the sweet sheep_o the pretty cat_s
+calls the pretty hare_s the pretty dog_o
+follows the sweet cat_o the hare_s
+follows the friendly sheep_s the little rabbit_o
 hugs the nice cat_o the little hare_s
 follows the little sheep_s the big dog_o
-admires the little deer_o the pretty sheep_s
+admires the pretty sheep_s the little deer_o
 sees the cat_s the big deer_o
 calls the sweet rabbit_o the sweet cat_s
 follows the friendly rabbit_s the little hare_o
-follows the big cat_o the friendly cat_s
+follows the friendly cat_s the big cat_o
 follows the nice cat_s the dog_o
 admires the friendly deer_s the big sheep_o
 follows the nice sheep_o the big dog_s
 hears the little dog_s the big sheep_o
-hugs the nice rabbit_s the sweet rabbit_o
-hugs the little cat_o the friendly rabbit_s
-sees the little cat_o the sweet rabbit_s
-follows the little sheep_o the little rabbit_s
-calls the big hare_o the friendly deer_s
-follows the pretty dog_o the friendly deer_s
+hugs the sweet rabbit_o the nice rabbit_s
+hugs the friendly rabbit_s the little cat_o
+sees the sweet rabbit_s the little cat_o
+follows the little rabbit_s the little sheep_o
+calls the friendly deer_s the big hare_o
+follows the friendly deer_s the pretty dog_o
 hears the nice dog_s the little rabbit_o
 calls the little cat_s the pretty hare_o
 calls the nice dog_s the pretty deer_o
-hears the pretty dog_o the little rabbit_s
+hears the little rabbit_s the pretty dog_o
 calls the nice deer_s the big rabbit_o
-admires the little deer_s the nice sheep_o
+admires the nice sheep_o the little deer_s
 hears the nice dog_o the sweet sheep_s
 follows the friendly sheep_s the little cat_o
 hears the rabbit_o the sweet sheep_s
 sees the nice hare_s the little dog_o
-admires the nice dog_s the friendly sheep_o
+admires the friendly sheep_o the nice dog_s
 admires the rabbit_o the friendly deer_s
 admires the friendly rabbit_o the nice hare_s
-follows the big rabbit_s the sheep_o
-follows the friendly hare_s the friendly rabbit_o
+follows the sheep_o the big rabbit_s
+follows the friendly rabbit_o the friendly hare_s
 hears the sweet hare_s the pretty dog_o
 hears the sheep_o the friendly hare_s
-hugs the nice dog_s the rabbit_o
+hugs the rabbit_o the nice dog_s
 sees the cat_o the pretty rabbit_s
 hears the friendly cat_o the deer_s
-hears the pretty sheep_o the big dog_s
-hugs the pretty rabbit_o the friendly sheep_s
+hears the big dog_s the pretty sheep_o
+hugs the friendly sheep_s the pretty rabbit_o
 hears the sweet sheep_s the little hare_o
 sees the big rabbit_s the big deer_o
 admires the nice hare_s the little rabbit_o
 hears the friendly rabbit_o the pretty deer_s
 calls the hare_s the big dog_o
 follows the little rabbit_s the pretty sheep_o
-sees the pretty cat_o the little dog_s
-calls the pretty rabbit_s the nice sheep_o
+sees the little dog_s the pretty cat_o
+calls the nice sheep_o the pretty rabbit_s
 hugs the dog_s the big deer_o
 hears the friendly hare_o the pretty hare_s
-admires the big cat_s the friendly cat_o
+admires the friendly cat_o the big cat_s
 follows the nice dog_o the friendly deer_s
 calls the friendly cat_o the rabbit_s
 sees the nice rabbit_s the pretty sheep_o
 follows the pretty deer_s the little deer_o
-sees the big hare_o the big deer_s
-follows the little sheep_s the sweet sheep_o
+sees the big deer_s the big hare_o
+follows the sweet sheep_o the little sheep_s
 follows the nice hare_o the friendly deer_s
-hugs the big rabbit_s the friendly deer_o
+hugs the friendly deer_o the big rabbit_s
 hugs the nice rabbit_s the pretty hare_o
 follows the pretty sheep_s the big deer_o
-admires the friendly rabbit_s the friendly dog_o
-hears the pretty cat_o the little hare_s
-sees the pretty cat_o the big sheep_s
-hears the pretty cat_o the sheep_s
-sees the pretty hare_s the friendly dog_o
-hears the sweet deer_s the friendly rabbit_o
+admires the friendly dog_o the friendly rabbit_s
+hears the little hare_s the pretty cat_o
+sees the big sheep_s the pretty cat_o
+hears the sheep_s the pretty cat_o
+sees the friendly dog_o the pretty hare_s
+hears the friendly rabbit_o the sweet deer_s
 sees the nice dog_o the dog_s
 admires the little dog_s the hare_o
-admires the pretty sheep_o the big deer_s
+admires the big deer_s the pretty sheep_o
 follows the deer_s the big rabbit_o
-hugs the pretty sheep_s the friendly dog_o
+hugs the friendly dog_o the pretty sheep_s
 sees the pretty rabbit_s the pretty deer_o
-calls the pretty hare_o the deer_s
-calls the deer_s the sweet sheep_o
-hugs the little dog_o the little rabbit_s
+calls the deer_s the pretty hare_o
+calls the sweet sheep_o the deer_s
+hugs the little rabbit_s the little dog_o
 hears the friendly dog_o the sweet sheep_s
-sees the dog_o the big sheep_s
-calls the friendly hare_s the sweet dog_o
-follows the big dog_s the sweet hare_o
-hears the little deer_o the friendly rabbit_s
+sees the big sheep_s the dog_o
+calls the sweet dog_o the friendly hare_s
+follows the sweet hare_o the big dog_s
+hears the friendly rabbit_s the little deer_o
 calls the nice rabbit_o the big dog_s
-sees the big sheep_s the nice rabbit_o
+sees the nice rabbit_o the big sheep_s
 calls the nice sheep_s the big sheep_o
-hugs the nice hare_s the cat_o
+hugs the cat_o the nice hare_s
 sees the sheep_o the pretty cat_s
 hugs the friendly dog_o the nice deer_s
-follows the pretty rabbit_o the sweet rabbit_s
+follows the sweet rabbit_s the pretty rabbit_o
 admires the big deer_s the little cat_o
 hugs the friendly deer_o the big dog_s
 calls the sweet deer_s the pretty deer_o
-admires the pretty rabbit_o the pretty hare_s
+admires the pretty hare_s the pretty rabbit_o
 follows the sweet cat_s the pretty rabbit_o
-calls the pretty dog_o the sweet sheep_s
+calls the sweet sheep_s the pretty dog_o
 hugs the nice rabbit_o the big deer_s
 sees the nice hare_o the big hare_s
 hugs the friendly dog_o the friendly sheep_s
 calls the nice dog_s the deer_o
 hugs the big sheep_s the little cat_o
-hugs the big hare_s the rabbit_o
-admires the friendly rabbit_s the sweet cat_o
+hugs the rabbit_o the big hare_s
+admires the sweet cat_o the friendly rabbit_s
 admires the sweet hare_o the pretty sheep_s
 calls the sweet sheep_o the little cat_s
-hugs the little deer_o the cat_s
+hugs the cat_s the little deer_o
 hugs the pretty cat_s the pretty rabbit_o
-follows the little cat_o the dog_s
-hugs the little dog_o the sweet rabbit_s
-calls the little cat_s the sweet dog_o
+follows the dog_s the little cat_o
+hugs the sweet rabbit_s the little dog_o
+calls the sweet dog_o the little cat_s
 follows the sweet sheep_o the nice hare_s
-sees the hare_s the sweet sheep_o
-sees the little dog_s the nice cat_o
+sees the sweet sheep_o the hare_s
+sees the nice cat_o the little dog_s

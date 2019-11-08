@@ -106,7 +106,8 @@ def main():
                                     sent = [en_verb, en_obj, en_subj, '\t',
                                             nl_subj, nl_verb, nl_obj]
 
-                            par_corp.write(" ".join(sent)+'\n')
+                            par_corp.write(
+                                ' '.join(sent).replace(' \t ', '\t') + '\n')
 
         else:
             print('Incorrect argument. Use one of the following: vos, vso, '

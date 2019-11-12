@@ -18,7 +18,7 @@ else
         python get_accuracy.py "${1}" "${2}" "${3}"
 
     elif [[ "$3" == "each" ]]; then
-        for num in {50..1050..50}; do
+        for num in {50..1000..50}; do
             python OpenNMT-py/translate.py -model data/"${1}"/trained_model_"${2}"_step_"${num}".pt \
                                            -src data/"${1}"/src_test.txt \
                                            -output data/"${1}"/out_test_"${2}"_step_"${num}".txt \

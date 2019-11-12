@@ -1,5 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
+#SBATCH --output=slurm/translate-job-%j.log
 #SBATCH --time=30:00
 #SBATCH --mem=200MB
 #SBATCH --partition=regular

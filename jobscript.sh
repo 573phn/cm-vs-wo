@@ -1,5 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
+#SBATCH --output=slurm/initial-job-%j.log
 #SBATCH --time=5:00
 #SBATCH --mem=100MB
 #SBATCH --partition=short

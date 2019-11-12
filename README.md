@@ -34,18 +34,18 @@ cm-vs-wo
 ## Usage
 After [getting the project up and running](#getting-started), a job script can be submitted to [the Peregrine HPC cluster](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en) to pre-process data, train a model and/or translate data using the following command:
 ```bash
-sbatch jobscript.sh [preprocess|train|translate|ptt] [vso|vos|mix|all] [attn|noat|both]
+sbatch jobscript.sh [preprocess|train|translate|ptt] [vso|vos|mix|all] [attn|noat|both] [last|each]
 ```
 
 ### Examples
-Pre-process, train and translate all three corpora at once using a model with and a model without attention:
+Pre-process, train and translate all three corpora at once using a model with and a model without attention, then calculate the accuracy at each 50 steps the model has been trained:
 ```bash
-sbatch jobscript.sh ptt all both
+sbatch jobscript.sh ptt all both each
 ```
 
-Only train the VSO model (assuming the data has already been pre-processed), using a model with attention:
+Only train the VSO model (assuming the data has already been pre-processed), using a model with attention (the fourth parameter `[last|each]` is required, but won't be used because the translation process is never started):
 ```bash
-sbatch jobscript.sh train vso attn
+sbatch jobscript.sh train vso attn each
 ```
 
 ## Built with

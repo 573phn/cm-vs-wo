@@ -4,12 +4,15 @@
 #SBATCH --mem=100MB
 #SBATCH --partition=short
 
-if [ "$#" -ne 3 ]; then
-    echo "$0: Incorrect number of arguments used, halting execution."
+if [ "$#" -ne 4 ]; then
+    echo "jobscript.sh: Incorrect number of arguments used, halting execution."
     exit
 fi
 
-if [[ "$1" =~ ^(preprocess|train|translate|ptt)$ ]] && [[ "$2" =~ ^(vso|vos|mix|all)$ ]] && [[ "$3" =~ ^(attn|noat|both)$ ]]; then
+if [[ "$1" =~ ^(preprocess|train|translate|ptt)$ ]] && \
+   [[ "$2" =~ ^(vso|vos|mix|all)$ ]] && \
+   [[ "$3" =~ ^(attn|noat|both)$ ]] && \
+   [[ "$4" =~ ^(last|each)$ ]]; then
     # Load Python module
     module load Python
 
@@ -73,31 +76,31 @@ if [[ "$1" =~ ^(preprocess|train|translate|ptt)$ ]] && [[ "$2" =~ ^(vso|vos|mix|
     if [[ "$1" == "translate" ]] || [[ "$1" == "ptt" ]]; then
         if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
             if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
-                sbatch translate.sh vso attn
+                sbatch translate.sh vso attn "${4}"
             fi
             if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
-                sbatch translate.sh vso noat
+                sbatch translate.sh vso noat "${4}"
             fi
         fi
         if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
             if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
-                sbatch translate.sh vos attn
+                sbatch translate.sh vos attn "${4}"
             fi
             if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
-                sbatch translate.sh vos noat
+                sbatch translate.sh vos noat "${4}"
             fi
         fi
         if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
             if [[ "$3" == "attn" ]] || [[ "$3" == "both" ]]; then
-                sbatch translate.sh mix attn
+                sbatch translate.sh mix attn "${4}"
             fi
             if [[ "$3" == "noat" ]] || [[ "$3" == "both" ]]; then
-                sbatch translate.sh mix noat
+                sbatch translate.sh mix noat "${4}"
             fi
         fi
     fi
 
 else
-    echo "$0: Invalid arguments used, halting execution."
+    echo "jobscript.sh: Invalid arguments used, halting execution."
     exit
 fi

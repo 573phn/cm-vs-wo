@@ -10,9 +10,10 @@ if [ "$#" -ne 3 ]; then
     exit
 else
     if [[ "$3" == "last" ]]; then
-        python OpenNMT-py/translate.py -model data/"${1}"/trained_model_"${2}"_step_1000.pt \
+        num=1000
+        python OpenNMT-py/translate.py -model data/"${1}"/trained_model_"${2}"_step_"${num}".pt \
                                        -src data/"${1}"/src_test.txt \
-                                       -output data/"${1}"/out_test_"${2}"_step_1000.txt \
+                                       -output data/"${1}"/out_test_"${2}"_step_"${num}".txt \
                                        -batch_size 1
         python get_accuracy.py "${1}" "${2}" "${3}"
 

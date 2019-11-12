@@ -37,7 +37,8 @@ def main():
         if steps == "each":
             for num in arange(50, 1050, 50):
                 print(f'Accuracy after {num} steps: '
-                      f'{calculate_accuracy(corpus, model, num)}%')
+                      f'{calculate_accuracy(corpus, model, num)}% ({corpus}, '
+                      f'{model})')
 
         elif steps == "last":
             num = 1000

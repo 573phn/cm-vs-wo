@@ -42,7 +42,8 @@ def main():
         elif steps == "last":
             num = 1000
             print(f'Accuracy after {num} steps: '
-                  f'{calculate_accuracy(corpus, model, num)}%')
+                  f'{calculate_accuracy(corpus, model, num)}% ({corpus}, '
+                  f'{model})')
 
     else:
         print('Invalid arguments used. Use [vos|vsp|mix] [attn|noat] '

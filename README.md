@@ -43,7 +43,7 @@ Pre-process, train and translate all three corpora at once using a model with an
 sbatch jobscript.sh ptt all both each
 ```
 
-Only train the VSO model (assuming the data has already been pre-processed), using a model with attention (the fourth parameter `[last|each]` is required, but won't be used because the translation process is never started):
+Only train the VSO model (assuming the data has already been pre-processed), using a model with attention (the fourth parameter `[last|each]` is required, but will not be used because the translation process is never started):
 ```bash
 sbatch jobscript.sh train vso attn each
 ```

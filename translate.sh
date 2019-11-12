@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
-#SBATCH --time=2:00:00
-#SBATCH --mem=3GB
+#SBATCH --time=30:00
+#SBATCH --mem=200MB
 #SBATCH --partition=regular
 #SBATCH --dependency=singleton
 

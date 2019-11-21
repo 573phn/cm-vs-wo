@@ -13,6 +13,7 @@ def main():
     with open(f'{corpus}/par_corp.txt', 'r') as f:
         par_corp = f.readlines()
 
+	par_corp.sort()
     shuffle(par_corp)
 
     split_1 = int(0.8 * len(par_corp))

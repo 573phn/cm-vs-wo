@@ -8,9 +8,9 @@ from sys import argv
 from numpy import arange
 
 
-def calculate_accuracy(corpus, model, num):
+def calculate_accuracy(corpus, model, num, username):
     with open(f'data/{corpus}/tgt_test.txt') as tgt_file, \
-         open(f'data/{corpus}/out_test_{model}_step_{num}.txt') as out_file:
+         open(f'/data/{username}/cm-vs-wo/data/{corpus}/out_test_{model}_step_{num}.txt') as out_file:
         tgt = tgt_file.readlines()
         out = out_file.readlines()
 
@@ -22,11 +22,11 @@ def calculate_accuracy(corpus, model, num):
 
 
 def main():
-    if len(argv) < 4 or len(argv) > 4:
-        print('get_accuracy.py requires 3 arguments: [vos|vsp|mix] [attn|noat]'
-              ' [last|each]')
+    if len(argv) < 5 or len(argv) > 5:
+        print('get_accuracy.py requires 4 arguments: [vos|vsp|mix] [attn|noat]'
+              ' [last|each] [username]')
     elif (
-            len(argv) == 4 and
+            len(argv) == 5 and
             argv[1] in ('vos', 'vso', 'mix') and
             argv[2] in ('attn', 'noat') and
             argv[3] in ('last', 'each')
@@ -48,7 +48,7 @@ def main():
 
     else:
         print('Invalid arguments used. Use [vos|vsp|mix] [attn|noat] '
-              '[last|each]')
+              '[last|each] [username]')
 
 
 if __name__ == '__main__':

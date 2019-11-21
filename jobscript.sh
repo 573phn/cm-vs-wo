@@ -18,32 +18,32 @@ if [[ "$1" =~ ^(preprocess|train|translate|ptt)$ ]] && \
     module load Python
 
     # Activate virtual environment
-    source env/bin/activate
+    source /data/"${USER}"/cm-vs-wo/env/bin/activate
 
     # Make environment variable to use GPUs
     export CUDA_VISIBLE_DEVICES=0,1
 
     if [[ "$1" == "preprocess" ]] || [[ "$1" == "ptt" ]]; then
         if [[ "$2" == "vso" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/preprocess.py -train_src data/vso/src_train.txt \
-                                            -train_tgt data/vso/tgt_train.txt \
-                                            -valid_src data/vso/src_val.txt \
-                                            -valid_tgt data/vso/tgt_val.txt \
-                                            -save_data data/vso/prepared_data
+            python /data/"${USER}"/OpenNMT-py/preprocess.py -train_src data/vso/src_train.txt \
+															-train_tgt data/vso/tgt_train.txt \
+															-valid_src data/vso/src_val.txt \
+															-valid_tgt data/vso/tgt_val.txt \
+															-save_data /data/"${USER}"/cm-vs-wo/data/vso/prepared_data
         fi
         if [[ "$2" == "vos" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/preprocess.py -train_src data/vos/src_train.txt \
-                                            -train_tgt data/vos/tgt_train.txt \
-                                            -valid_src data/vos/src_val.txt \
-                                            -valid_tgt data/vos/tgt_val.txt \
-                                            -save_data data/vos/prepared_data
+            python /data/"${USER}"/OpenNMT-py/preprocess.py -train_src data/vos/src_train.txt \
+															-train_tgt data/vos/tgt_train.txt \
+															-valid_src data/vos/src_val.txt \
+															-valid_tgt data/vos/tgt_val.txt \
+															-save_data /data/"${USER}"/cm-vs-wo/data/vos/prepared_data
         fi
         if [[ "$2" == "mix" ]] || [[ "$2" == "all" ]]; then
-            python OpenNMT-py/preprocess.py -train_src data/mix/src_train.txt \
-                                            -train_tgt data/mix/tgt_train.txt \
-                                            -valid_src data/mix/src_val.txt \
-                                            -valid_tgt data/mix/tgt_val.txt \
-                                            -save_data data/mix/prepared_data
+            python /data/"${USER}"/OpenNMT-py/preprocess.py -train_src data/mix/src_train.txt \
+															-train_tgt data/mix/tgt_train.txt \
+															-valid_src data/mix/src_val.txt \
+															-valid_tgt data/mix/tgt_val.txt \
+															-save_data /data/"${USER}"/cm-vs-wo/data/mix/prepared_data
         fi
     fi
 

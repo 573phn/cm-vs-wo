@@ -1,36 +1,34 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/translate-job-%j.log
-#SBATCH --time=1:00:00
-#SBATCH --mem=200MB
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:v100:1
+#SBATCH --time=2:00:00
+#SBATCH --mem=400MB
+#SBATCH --partition=regular
 #SBATCH --dependency=singleton
 
-if [ "$#" -ne 3 ]; then
-    echo "translate.sh: Incorrect number of arguments used, halting execution."
-    exit
-else
-    if [[ "$3" == "last" ]]; then
-        num=1000
-        python /data/"${USER}"/OpenNMT-py/translate.py -model /data/"${USER}"/cm-vs-wo/data/"${1}"/trained_model_"${2}"_step_"${num}".pt \
-													   -src data/"${1}"/src_test.txt \
-													   -output /data/"${USER}"/cm-vs-wo/data/"${1}"/out_test_"${2}"_step_"${num}".txt \
-													   -batch_size 1 \
-													   -gpu 0
-        python get_accuracy.py "${1}" "${2}" "${3}" "${USER}"
+DATALOC='/data/'"${USER}"'/cm-vs-wo'
 
-    elif [[ "$3" == "each" ]]; then
-        for num in {50..1000..50}; do
-            python /data/"${USER}"/OpenNMT-py/translate.py -model /data/"${USER}"/cm-vs-wo/data/"${1}"/trained_model_"${2}"_step_"${num}".pt \
-														   -src data/"${1}"/src_test.txt \
-														   -output /data/"${USER}"/cm-vs-wo/data/"${1}"/out_test_"${2}"_step_"${num}".txt \
-														   -batch_size 1 \
-														   -gpu 0
-        done
-        python get_accuracy.py "${1}" "${2}" "${3}" "${USER}"
-    else
-        echo "translate.sh: Incorrect arguments used, halting execution."
-        exit
-    fi
+if [[ "$3" == "noat" ]]; then
+    MODEL="none"
+elif [[ "$3" == "attn" ]]; then
+    MODEL="general"
+fi
+
+if [[ "$5" == "last" ]]; then
+    NUM=1000
+    python "${DATALOC}"/OpenNMT-py/translate.py -model "${DATALOC}"/data/"${1}"/trained_model_"${2}"_"${MODEL}"_"${4}".pt \
+                                                -src "${DATALOC}"/data/src_test.txt \
+                                                -output "${DATALOC}"/data/"${1}"/out_test_"${2}"_"${MODEL}"_"${4}"_step_"${NUM}".txt \
+                                                -batch_size 1
+    python get_accuracy.py "${1}" "${2}" "${3}" "${4}" "${5}" "${USER}"
+
+elif [[ "$5" == "each" ]]; then
+    for NUM in {50..1000..50}; do
+        python "${DATALOC}"/OpenNMT-py/translate.py -model "${DATALOC}"/data/"${1}"/trained_model_"${2}"_"${MODEL}"_"${4}".pt \
+                                                    -src "${DATALOC}"/data/src_test.txt \
+                                                    -output "${DATALOC}"/data/"${1}"/out_test_"${2}"_"${MODEL}"_"${4}"_step_"${NUM}".txt \
+                                                    -batch_size 1
+   
+    done
+    python get_accuracy.py "${1}" "${2}" "${3}" "${4}" "${5}" "${USER}"
 fi

@@ -27,14 +27,14 @@ def combine_nouns_and_adjs(nouns_and_adjs):
 
 
 def main():
-    if len(argv) < 2:
-        print('Add one of the following arguments: vos, vso, mix')
-    elif len(argv) > 2:
-        print('Too many arguments')
-    elif len(argv) == 2:
+    if len(argv) != 3:
+        print('scfg_generator.py requires two arguments.')
+        print('Usage: scfg_generator.py [vso|vos|mix] $USER')
+    elif len(argv) == 3:
         if argv[1] in ('vos', 'vso', 'mix'):
-            corpus = argv[1]
-            open(f'{corpus}/par_corp.txt', 'w+').close()
+            wo, username = argv[1:]
+            dataloc = f'/data/{username}/cm-vs-wo'
+            open(f'{dataloc}/data/{wo}/par_corp.txt', 'w+').close()
 
             nouns = [('the hare', 'de haas'),
                      ('the cat', 'de kat'),
@@ -79,19 +79,19 @@ def main():
 
                     # Avoid subject and object being the same
                     if en_subj != en_obj and nl_subj != nl_obj:
-                        with open(f'{corpus}/par_corp.txt', 'a') as par_corp:
+                        with open(f'{dataloc}/data/{wo}/par_corp.txt', 'a') as par_corp:
                             # Fixed order (EN:VSO NL:SVO)
-                            if corpus == 'vso':
+                            if wo == 'vso':
                                 sent = [en_verb, en_subj, en_obj, '\t',
                                         nl_subj, nl_verb, nl_obj]
 
                             # Fixed order (EN:VOS NL:SVO)
-                            elif corpus == 'vos':
+                            elif wo == 'vos':
                                 sent = [en_verb, en_obj, en_subj, '\t',
                                         nl_subj, nl_verb, nl_obj]
 
                             # Mixed order (EN:VSO&VOS NL:SVO) + case marking
-                            elif corpus == 'mix':
+                            elif wo == 'mix':
 
                                 # Makes sure there is an even amount of VSO
                                 # and VOS sentences
@@ -110,8 +110,8 @@ def main():
                                 ' '.join(sent).replace(' \t ', '\t') + '\n')
 
         else:
-            print('Incorrect argument. Use one of the following: vos, vso, '
-                  'mix')
+            print('Incorrect argument(s) used.')
+            print('Usage: scfg_generator.py [vso|vos|mix] $USER')
 
 
 if __name__ == '__main__':

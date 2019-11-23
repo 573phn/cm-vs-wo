@@ -8,9 +8,11 @@ from sys import argv
 from numpy import arange
 
 
-def calculate_accuracy(corpus, model, num, username):
-    with open(f'data/{corpus}/tgt_test.txt') as tgt_file, \
-         open(f'/data/{username}/cm-vs-wo/data/{corpus}/out_test_{model}_step_{num}.txt') as out_file:
+def calculate_accuracy(wo, encdec, model, seed, num, username):
+	dataloc = f'/data/{username}/cm-vs-wo'
+    with open(f'{dataloc}/data/{wo}/tgt_test.txt') as tgt_file, \
+         open(f'{dataloc}/data/{wo}/out_test_{encdec}_{model}_{seed}_step_{num}.txt') as out_file:
+
         tgt = tgt_file.readlines()
         out = out_file.readlines()
 
@@ -22,33 +24,32 @@ def calculate_accuracy(corpus, model, num, username):
 
 
 def main():
-    if len(argv) < 5 or len(argv) > 5:
-        print('get_accuracy.py requires 4 arguments: [vos|vsp|mix] [attn|noat]'
-              ' [last|each] [username]')
+    if len(argv) != 7:
+        print('get_accuracy.py requires 6 arguments: [vso|vos|mix] [rnn|transformer] [attn|noat] seed [each|last] username')
+
     elif (
-            len(argv) == 5 and
+            len(argv) == 7 and
             argv[1] in ('vos', 'vso', 'mix') and
-            argv[2] in ('attn', 'noat') and
-            argv[3] in ('last', 'each')
+            argv[2] in ('rnn', 'transformer') and
+            argv[3] in ('attn', 'noat') and
+            argv[4].isdigit() and
+            argv[5] in ('last', 'each')
           ):
-        corpus = argv[1]
-        model = argv[2]
-        steps = argv[3]
+        wo, encdec, model, seed, steps, username = argv[1:]
+
         if steps == "each":
             for num in arange(50, 1050, 50):
                 print(f'Accuracy after {num} steps: '
-                      f'{calculate_accuracy(corpus, model, num)}% ({corpus}, '
-                      f'{model})')
+                      f'{calculate_accuracy(wo, encdec, model, seed, num, username)}% (word order: {wo}, '
+                      f'encoder/decoder: {encdec}, model: {model}, seed: {seed})')
 
         elif steps == "last":
             num = 1000
-            print(f'Accuracy after {num} steps: '
-                  f'{calculate_accuracy(corpus, model, num)}% ({corpus}, '
-                  f'{model})')
-
+			print(f'Accuracy after {num} steps: '
+				  f'{calculate_accuracy(wo, encdec, model, seed, num, username)}% (word order: {wo}, '
+				  f'encoder/decoder: {encdec}, model: {model}, seed: {seed})')
     else:
-        print('Invalid arguments used. Use [vos|vsp|mix] [attn|noat] '
-              '[last|each] [username]')
+        print('Invalid arguments used. Use [vso|vos|mix] [rnn|transformer] [attn|noat] seed [each|last] username')
 
 
 if __name__ == '__main__':

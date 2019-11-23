@@ -1,27 +1,24 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/train-job-%j.log
-#SBATCH --time=5:00
-#SBATCH --mem=6GB
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:k40:2
+#SBATCH --time=30:00
+#SBATCH --mem=500MB
+#SBATCH --partition=regular
 
-if [ "$#" -ne 2 ]; then
-    echo "$0: Incorrect number of arguments used, halting execution."
-    exit
-else
-    if [[ "$2" == "noat" ]]; then
-        MODEL="none"
-    else
-        MODEL="general"
-    fi
+DATALOC='/data/'"${USER}"'/cm-vs-wo'
 
-    python /data/"${USER}"/OpenNMT-py/train.py -data /data/"${USER}"/cm-vs-wo/data/"${1}"/prepared_data \
-											   -save_model /data/"${USER}"/cm-vs-wo/data/"${1}"/trained_model_"${2}" \
-											   -world_size 2 \
-											   -gpu_ranks 0 1 \
-											   -train_steps 1000 \
-											   -valid_steps 100 \
-											   -save_checkpoint_steps 50 \
-											   -global_attention "${MODEL}"
+if [[ "$3" == "noat" ]]; then
+	MODEL="none"
+elif [[ "$3" == "attn" ]]; then
+	MODEL="general"
 fi
+
+python "${DATALOC}"/OpenNMT-py/train.py -data "${DATALOC}"/data/"${1}"/prepared_data \
+									    -save_model "${DATALOC}"/data/"${1}"/trained_model_"${2}"_"${MODEL}"_"${4}" \
+									    -train_steps 1000 \
+									    -valid_steps 100 \
+									    -save_checkpoint_steps 50 \
+									    -global_attention "${MODEL}" \
+									    -seed "${4}" \
+									    -encoder_type "${2}" \
+									    -decoder_type "${2}"

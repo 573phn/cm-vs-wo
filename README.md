@@ -81,7 +81,7 @@ When using `preprocess`, the following files are created in `/data/$USER/cm-vs-w
 bash jobscript.sh train [vso|vos|mix] [rnn|transformer] [attn|noat] seed
 ```
 When using `train`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `trained_model_E_M_S_step_0.pt`: the trained model, where
+* `trained_model_E_M_S_step_N.pt`: the trained model, where
   * E is rnn or transformer
   * M is attn (with attention) or noat (without attention)
   * S is the seed used for training the model
@@ -91,12 +91,13 @@ When using `train`, the following files are created in `/data/$USER/cm-vs-wo/dat
 ```bash
 bash jobscript.sh translate [vso|vos|mix] [rnn|transformer] [attn|noat] seed [each|last]
 ```
-When using `translate`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
+The `[each|last]` argument determines whether translation and accuracy calculation will only be done using the last step (step 1000) or for each 50 steps. When using `translate`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
 * `out_test_E_M_S_step_N.txt`: sentences as translated by the model, where
   * E is rnn or transformer
   * M is attn (with attention) or noat (without attention)
   * S is the seed used for training the model
   * N is the number of steps the model has been trained
+Accuracy scores are printed to the slurm log file in `/home/$USER/cm-vs-wo/slurm/translate-job-ID.log`, where ID is the job ID.
 
 ## Built with
 * [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) - A [PyTorch](https://pytorch.org/) port of [OpenNMT](http://opennmt.net/), an open-source neural machine translation system

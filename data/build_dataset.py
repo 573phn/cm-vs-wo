@@ -27,9 +27,16 @@ def main():
 
             split_1 = int(0.8 * len(par_corp))
             split_2 = int(0.9 * len(par_corp))
-            train = [tuple(line.strip().split('\t')) for line in par_corp[:split_1]]
-            val = [tuple(line.strip().split('\t')) for line in par_corp[split_1:split_2]]
-            test = [tuple(line.strip().split('\t')) for line in par_corp[split_2:]]
+
+            train = []
+            for line in par_corp[:split_1]:
+                train.append(tuple(line.strip().split('\t')))
+            val = []
+            for line in par_corp[split_1:split_2]:
+                val.append(tuple(line.strip().split('\t')))
+            test = []
+            for line in par_corp[split_2:]:
+                test.append(tuple(line.strip().split('\t')))
 
             # print(f'Total lines in corpus: {len(par_corp)}')
             # print(f'Training lines: {len(train)}')

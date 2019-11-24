@@ -79,7 +79,8 @@ def main():
 
                     # Avoid subject and object being the same
                     if en_subj != en_obj and nl_subj != nl_obj:
-                        with open(f'{dataloc}/data/{wo}/par_corp.txt', 'a') as par_corp:
+                        with open(f'{dataloc}/data/{wo}/par_corp.txt',
+                                  'a') as par_corp:
                             # Fixed order (EN:VSO NL:SVO)
                             if wo == 'vso':
                                 sent = [en_verb, en_subj, en_obj, '\t',

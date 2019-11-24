@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-""" Generates a parallel corpus.
-    Usage: python3 scfg_generator.py [vso|vos|mix]
-    Output file will be generated in [vso|vos|mix]/par_corp.txt """
+""" Generates a parallel corpus. """
 
 from itertools import product
 from sys import argv

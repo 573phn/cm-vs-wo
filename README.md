@@ -52,10 +52,10 @@ This command will reproduce the research and results of my thesis. The steps it 
 1. Makes the VOS, VSO and MIX corpus
 2. Pre-processes each corpus
 3. Trains the following models for each corpus:
-..* RNN with Attention
-..* RNN without Attention
-..* Transformer with Attention
-..* Transformer without Attention
+  * RNN with Attention
+  * RNN without Attention
+  * Transformer with Attention
+  * Transformer without Attention
 4. Tests each model and calculates its accuracy per training checkpoint
 
 ### Make or pre-process corpus
@@ -82,10 +82,10 @@ bash jobscript.sh train [vso|vos|mix] [rnn|transformer] [attn|noat] seed
 ```
 When using `train`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
 * `trained_model_E_M_S_step_0.pt`: the trained model, where
-..* E is rnn or transformer
-..* M is attn (with attention) or noat (without attention)
-..* S is the seed used for training the model
-..* N is the number of steps (a checkpoint is saved after every 50 steps)
+  * E is rnn or transformer
+  * M is attn (with attention) or noat (without attention)
+  * S is the seed used for training the model
+  * N is the number of steps (a checkpoint is saved after every 50 steps)
 
 ### Translate test set using trained model
 ```bash
@@ -93,10 +93,10 @@ bash jobscript.sh translate [vso|vos|mix] [rnn|transformer] [attn|noat] seed [ea
 ```
 When using `translate`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
 * `out_test_E_M_S_step_N.txt`: sentences as translated by the model, where
-..* E is rnn or transformer
-..* M is attn (with attention) or noat (without attention)
-..* S is the seed used for training the model
-..* N is the number of steps the model has been trained
+  * E is rnn or transformer
+  * M is attn (with attention) or noat (without attention)
+  * S is the seed used for training the model
+  * N is the number of steps the model has been trained
 
 ## Built with
 * [OpenNMT-py](https://github.com/OpenNMT/OpenNMT-py) - A [PyTorch](https://pytorch.org/) port of [OpenNMT](http://opennmt.net/), an open-source neural machine translation system

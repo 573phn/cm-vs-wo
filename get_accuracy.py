@@ -34,7 +34,7 @@ def main():
             argv[1] in ('vos', 'vso', 'mix') and
             argv[2] in ('rnn', 'transformer') and
             argv[3] in ('attn', 'noat') and
-            argv[4].isdigit() and
+            argv[4].lstrip('-').isdigit() and
             argv[5] in ('last', 'each')
           ):
         wo, encdec, model, seed, steps, username = argv[1:]

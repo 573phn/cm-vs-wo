@@ -68,7 +68,7 @@ elif [ "$#" -eq 5 ]; then
 elif [ "$#" -eq 6 ]; then
   if [[ "$1" == "translate" ]] && \
      [[ "$2" =~ ^(vso|vos|mix)$ ]] && \
-     [[ "$3" =~ ^(rnn|tranformer)$ ]] && \
+     [[ "$3" =~ ^(rnn|transformer)$ ]] && \
      [[ "$4" =~ ^(attn|noat)$ ]] && \
      [[ "$5" =~ ^-?[0-9]+$ ]] && \
      [[ "$6" =~ ^(each|last)$ ]]; then

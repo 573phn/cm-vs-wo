@@ -1,9 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/initial-job-%j.log
-#SBATCH --time=1-00:00:00
-#SBATCH --mem=1GB
+#SBATCH --time=5:00
+#SBATCH --mem=50MB
 #SBATCH --partition=regular
+
+echo "${@}"
 
 ERROR=$(cat <<-END
   jobscript.sh: Incorrect usage.
@@ -34,10 +36,11 @@ if [ "$#" -eq 1 ] && [[ "$1" == "thesis" ]]; then
     for ENCDEC in rnn transformer; do
       for MODEL in attn noat; do
         sbatch train.sh "${WO}" "${ENCDEC}" "${MODEL}" -1
-        sbatch translate.sh "${WO}" "${ENCDEC}" "${MODEL}" -1 each
       done
     done
   done
+  sbatch delay.sh
+
 elif [ "$#" -eq 2 ]; then
   if [[ "$1" =~ ^(make|preprocess)$ ]] && [[ "$2" =~ ^(vso|vos|mix)$ ]]; then
     if [[ "$1" == "make" ]]; then

@@ -1,10 +1,11 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/translate-job-%j.log
-#SBATCH --time=2:00:00
+#SBATCH --time=1:30:00
 #SBATCH --mem=1GB
 #SBATCH --partition=regular
-#SBATCH --dependency=singleton
+
+echo "${@}"
 
 DATALOC='/data/'"${USER}"'/cm-vs-wo'
 

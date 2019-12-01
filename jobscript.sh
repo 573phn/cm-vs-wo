@@ -16,23 +16,24 @@ ERROR=$(cat <<-END
 END
 )
 
-DATALOC='/data/'"${USER}"'/cm-vs-wo'
+HOMEDIR='/home/'"${USER}"'/cm-vs-wo'
+DATADIR='/data/'"${USER}"'/cm-vs-wo'
 
 # Load Python module
 module load Python/3.6.4-intel-2018a
 
 # Activate virtual environment
-source "${DATALOC}"/env/bin/activate
+source "${DATADIR}"/env/bin/activate
 
 if [ "$#" -eq 1 ] && [[ "$1" == "thesis" ]]; then
   for WO in vso vos mix; do
     python data/scfg_generator.py "${WO}" "${USER}"
     python data/build_dataset.py "${WO}" "${USER}"
-    python "${DATALOC}"/OpenNMT-py/preprocess.py -train_src "${DATALOC}"/data/"${WO}"/src_train.txt \
-                                                 -train_tgt "${DATALOC}"/data/"${WO}"/tgt_train.txt \
-                                                 -valid_src "${DATALOC}"/data/"${WO}"/src_val.txt \
-                                                 -valid_tgt "${DATALOC}"/data/"${WO}"/tgt_val.txt \
-                                                 -save_data "${DATALOC}"/data/"${WO}"/prepared_data
+    python "${DATADIR}"/OpenNMT-py/preprocess.py -train_src "${HOMEDIR}"/data/"${WO}"/src_train.txt \
+                                                 -train_tgt "${HOMEDIR}"/data/"${WO}"/tgt_train.txt \
+                                                 -valid_src "${HOMEDIR}"/data/"${WO}"/src_val.txt \
+                                                 -valid_tgt "${HOMEDIR}"/data/"${WO}"/tgt_val.txt \
+                                                 -save_data "${DATADIR}"/data/"${WO}"/ppd
     for ENCDEC in rnn transformer; do
       for MODEL in attn noat; do
         sbatch train.sh "${WO}" "${ENCDEC}" "${MODEL}" -1
@@ -47,11 +48,11 @@ elif [ "$#" -eq 2 ]; then
       python data/scfg_generator.py "${2}" "${USER}"
       python data/build_dataset.py "${2}" "${USER}"
     elif [[ "$1" == "preprocess" ]]; then
-      python "${DATALOC}"/OpenNMT-py/preprocess.py -train_src "${DATALOC}"/data/"${2}"/src_train.txt \
-                                                   -train_tgt "${DATALOC}"/data/"${2}"/tgt_train.txt \
-                                                   -valid_src "${DATALOC}"/data/"${2}"/src_val.txt \
-                                                   -valid_tgt "${DATALOC}"/data/"${2}"/tgt_val.txt \
-                                                   -save_data "${DATALOC}"/data/"${2}"/prepared_data
+      python "${DATADIR}"/OpenNMT-py/preprocess.py -train_src "${HOMEDIR}"/data/"${2}"/src_train.txt \
+                                                   -train_tgt "${HOMEDIR}"/data/"${2}"/tgt_train.txt \
+                                                   -valid_src "${HOMEDIR}"/data/"${2}"/src_val.txt \
+                                                   -valid_tgt "${HOMEDIR}"/data/"${2}"/tgt_val.txt \
+                                                   -save_data "${DATADIR}"/data/"${2}"/ppd
     fi
   else
     echo "${ERROR}"

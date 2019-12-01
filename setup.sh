@@ -3,23 +3,23 @@
 module load Python/3.6.4-intel-2018a
 
 # Set data location
-DATALOC='/data/'"${USER}"'/cm-vs-wo'
+DATADIR='/data/'"${USER}"'/cm-vs-wo'
 
 # Prepare /data directories
-mkdir "${DATALOC}"
-mkdir "${DATALOC}"/data
-mkdir "${DATALOC}"/data/vso
-mkdir "${DATALOC}"/data/vos
-mkdir "${DATALOC}"/data/mix
+mkdir "${DATADIR}"
+mkdir "${DATADIR}"/data
+mkdir "${DATADIR}"/data/vso
+mkdir "${DATADIR}"/data/vos
+mkdir "${DATADIR}"/data/mix
 
 # Clone OpenNMT-py repository
-git clone -b 1.0.0.rc1 --depth 1 https://github.com/OpenNMT/OpenNMT-py.git "${DATALOC}"/OpenNMT-py
+git clone -b 1.0.0.rc1 --depth 1 https://github.com/OpenNMT/OpenNMT-py.git "${DATADIR}"/OpenNMT-py
 
 # Create virtual environment
-python3 -m venv "${DATALOC}"/env
+python3 -m venv "${DATADIR}"/env
 
 # Activate virtual environment
-source "${DATALOC}"/env/bin/activate
+source "${DATADIR}"/env/bin/activate
 
 # Upgrade pip (inside virtual environment)
 pip install --upgrade pip==19.3.1

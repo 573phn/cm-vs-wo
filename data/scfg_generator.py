@@ -31,8 +31,8 @@ def main():
     elif len(argv) == 3:
         if argv[1] in ('vos', 'vso', 'mix'):
             wo, username = argv[1:]
-            dataloc = f'/data/{username}/cm-vs-wo'
-            open(f'{dataloc}/data/{wo}/par_corp.txt', 'w+').close()
+            homedir = f'/home/{username}/cm-vs-wo'
+            open(f'{homedir}/data/{wo}/par_corp.txt', 'w+').close()
 
             nouns = [('the hare', 'de haas'),
                      ('the cat', 'de kat'),
@@ -77,7 +77,7 @@ def main():
 
                     # Avoid subject and object being the same
                     if en_subj != en_obj and nl_subj != nl_obj:
-                        with open(f'{dataloc}/data/{wo}/par_corp.txt',
+                        with open(f'{homedir}/data/{wo}/par_corp.txt',
                                   'a') as par_corp:
                             # Fixed order (EN:VSO NL:SVO)
                             if wo == 'vso':

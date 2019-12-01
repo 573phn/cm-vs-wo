@@ -9,9 +9,10 @@ from numpy import arange
 
 
 def calculate_accuracy(wo, encdec, model, seed, num, username):
-    dataloc = f'/data/{username}/cm-vs-wo'
-    with open(f'{dataloc}/data/{wo}/tgt_test.txt') as tgt_file, \
-         open(f'{dataloc}/data/{wo}/out_test_{encdec}_{model}_{seed}_step_'
+    datadir = f'/data/{username}/cm-vs-wo'
+    homedir = f'/home/{username}/cm-vs-wo'
+    with open(f'{homedir}/data/{wo}/tgt_test.txt') as tgt_file, \
+         open(f'{datadir}/data/{wo}/out_test_{encdec}_{model}_{seed}_step_'
               f'{num}.txt') as out_file:
 
         tgt = tgt_file.readlines()

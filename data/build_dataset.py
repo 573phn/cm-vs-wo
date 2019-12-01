@@ -16,10 +16,10 @@ def main():
     elif len(argv) == 3:
         if argv[1] in ('vos', 'vso', 'mix'):
             wo = argv[1]
-            dirloc = f'/data/{argv[2]}/cm-vs-wo'
+            homedir = f'/home/{argv[2]}/cm-vs-wo'
             seed(25)
 
-            with open(f'{dirloc}/data/{wo}/par_corp.txt', 'r') as f:
+            with open(f'{homedir}/data/{wo}/par_corp.txt', 'r') as f:
                 par_corp = f.readlines()
 
             par_corp.sort()
@@ -48,27 +48,27 @@ def main():
             src_val, tgt_val = np.array(val).T
             src_test, tgt_test = np.array(test).T
 
-            with open(f'{dirloc}/data/{wo}/src_train.txt', 'w') as f:
+            with open(f'{homedir}/data/{wo}/src_train.txt', 'w') as f:
                 for line in src_train:
                     f.write(f'{line}\n')
 
-            with open(f'{dirloc}/data/{wo}/tgt_train.txt', 'w') as f:
+            with open(f'{homedir}/data/{wo}/tgt_train.txt', 'w') as f:
                 for line in tgt_train:
                     f.write(f'{line}\n')
 
-            with open(f'{dirloc}/data/{wo}/src_val.txt', 'w') as f:
+            with open(f'{homedir}/data/{wo}/src_val.txt', 'w') as f:
                 for line in src_val:
                     f.write(f'{line}\n')
 
-            with open(f'{dirloc}/data/{wo}/tgt_val.txt', 'w') as f:
+            with open(f'{homedir}/data/{wo}/tgt_val.txt', 'w') as f:
                 for line in tgt_val:
                     f.write(f'{line}\n')
 
-            with open(f'{dirloc}/data/{wo}/src_test.txt', 'w') as f:
+            with open(f'{homedir}/data/{wo}/src_test.txt', 'w') as f:
                 for line in src_test:
                     f.write(f'{line}\n')
 
-            with open(f'{dirloc}/data/{wo}/tgt_test.txt', 'w') as f:
+            with open(f'{homedir}/data/{wo}/tgt_test.txt', 'w') as f:
                 for line in tgt_test:
                     f.write(f'{line}\n')
         else:

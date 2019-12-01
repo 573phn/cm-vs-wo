@@ -7,7 +7,7 @@
 
 echo "${@}"
 
-DATALOC='/data/'"${USER}"'/cm-vs-wo'
+DATADIR='/data/'"${USER}"'/cm-vs-wo'
 
 if [[ "$3" == "noat" ]]; then
     MODEL="none"
@@ -16,8 +16,8 @@ elif [[ "$3" == "attn" ]]; then
 fi
 
 if [[ "$2" == "rnn" ]]; then
-    python "${DATALOC}"/OpenNMT-py/train.py -data "${DATALOC}"/data/"${1}"/prepared_data \
-                                            -save_model "${DATALOC}"/data/"${1}"/trained_model_"${2}"_"${3}"_"${4}" \
+    python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
+                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_"${4}" \
                                             -train_steps 1000 \
                                             -valid_steps 100 \
                                             -warmup_steps 40 \
@@ -27,8 +27,8 @@ if [[ "$2" == "rnn" ]]; then
                                             -encoder_type "${2}" \
                                             -decoder_type "${2}"
 elif [[ "$2" == "transformer" ]]; then
-    python "${DATALOC}"/OpenNMT-py/train.py -data "${DATALOC}"/data/"${1}"/prepared_data \
-                                            -save_model "${DATALOC}"/data/"${1}"/trained_model_"${2}"_"${3}"_"${4}" \
+    python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
+                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_"${4}" \
                                             -train_steps 1000 \
                                             -valid_steps 100 \
                                             -warmup_steps 40 \

@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/train-job-%j.log
-#SBATCH --time=2:00:00
-#SBATCH --mem=1GB
+#SBATCH --time=2:30:00
+#SBATCH --mem=4GB
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:k40:2
+#SBATCH --gres=gpu:v100:1
 
 # Print arguments
 echo "${@}"
@@ -26,7 +26,7 @@ module load Python/3.6.4-intel-2018a
 source "${DATADIR}"/env/bin/activate
 
 # Make environment variable to use GPUs
-export CUDA_VISIBLE_DEVICES=0,1
+export CUDA_VISIBLE_DEVICES=0
 
 # Train model
 if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
@@ -36,8 +36,8 @@ if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|gen
                                           -valid_steps 100 \
                                           -warmup_steps 40 \
                                           -save_checkpoint_steps 50 \
-                                          -world_size 2 \
-                                          -gpu_ranks 0 1 \
+                                          -world_size 1 \
+                                          -gpu_ranks 0 \
                                           -global_attention "${3}" \
                                           -encoder_type "${2}" \
                                           -decoder_type "${2}"
@@ -50,8 +50,8 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -valid_steps 100 \
                                             -warmup_steps 40 \
                                             -save_checkpoint_steps 50 \
-                                            -world_size 2 \
-                                            -gpu_ranks 0 1 \
+                                            -world_size 1 \
+                                            -gpu_ranks 0 \
                                             -global_attention general \
                                             -encoder_type "${2}" \
                                             -decoder_type "${2}" \
@@ -64,7 +64,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -batch_size 64 \
                                             -batch_type tokens \
                                             -normalization tokens \
-                                            -optim adam \
+                                            -optim "${3}" \
                                             -adam_beta2 0.998 \
                                             -decay_method noam \
                                             -max_grad_norm 0 \
@@ -78,27 +78,27 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -valid_steps 100 \
                                             -warmup_steps 40 \
                                             -save_checkpoint_steps 50 \
-                                            -world_size 2 \
-                                            -gpu_ranks 0 1 \
+                                            -world_size 1 \
+                                            -gpu_ranks 0 \
                                             -global_attention general \
                                             -encoder_type "${2}" \
                                             -decoder_type "${2}" \
-                                            -layers 2 \
-                                            -rnn_size 500 \
-                                            -word_vec_size 500 \
+                                            -layers 6 \
+                                            -rnn_size 512 \
+                                            -word_vec_size 512 \
                                             -position_encoding \
                                             -max_generator_batches 2 \
                                             -dropout 0.1 \
                                             -batch_size 64 \
                                             -batch_type tokens \
                                             -normalization tokens \
-                                            -optim adam \
+                                            -optim "${3}" \
                                             -adam_beta2 0.998 \
                                             -decay_method noam \
                                             -max_grad_norm 0 \
                                             -param_init 0 \
                                             -param_init_glorot \
-                                            -label_smoothing 0
+                                            -label_smoothing 0.1
   fi
 
 else

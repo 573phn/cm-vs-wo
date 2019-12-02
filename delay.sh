@@ -6,10 +6,21 @@
 #SBATCH --partition=short
 #SBATCH --dependency=singleton
 
+# Print arguments
+echo "${@}"
+
 for WO in vso vos mix; do
-  for ENCDEC in rnn transformer; do
-    for MODEL in attn noat; do
-      sbatch translate.sh "${WO}" "${ENCDEC}" "${MODEL}" -1 each
-    done
+
+  # Translate LSTM with and without attention
+  for GA in general none; do
+    sbatch translate.sh "${WO}" rnn "${GA}"
   done
+
+  # Translate large and small Transformer
+  # for SIZE in large small; do
+  for OPTIM in adam sgd; do
+    # sbatch translate.sh "${WO}" "${OPTIM}" "${SIZE}"
+    sbatch translate.sh "${WO}" transformer "${OPTIM}" small
+  done
+
 done

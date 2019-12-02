@@ -5,26 +5,45 @@
 #SBATCH --mem=1GB
 #SBATCH --partition=regular
 
+# Print arguments
 echo "${@}"
 
+# Set variables
 HOMEDIR='/home/'"${USER}"'/cm-vs-wo'
 DATADIR='/data/'"${USER}"'/cm-vs-wo'
+ERROR=$(cat <<-END
+  translate.sh: Incorrect usage.
+  Correct usage options are:
+  - translate.sh [vso|vos|mix] rnn [none|general]
+  - translate.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
+END
+)
 
-if [[ "$5" == "last" ]]; then
-  NUM=1000
-  python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_"${4}"_step_"${NUM}".pt \
-                                              -src "${HOMEDIR}"/data/"${1}"/src_test.txt \
-                                              -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_"${4}"_step_"${NUM}".txt \
-                                              -batch_size 1
-  python get_accuracy.py "${1}" "${2}" "${3}" "${4}" "${5}" "${USER}"
+# Load Python module
+module load Python/3.6.4-intel-2018a
 
-elif [[ "$5" == "each" ]]; then
+# Activate virtual environment
+source "${DATADIR}"/env/bin/activate
+
+if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
   for NUM in {50..1000..50}; do
-    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_"${4}"_step_"${NUM}".pt \
+    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_step_"${NUM}".pt \
                                                 -src "${HOMEDIR}"/data/"${1}"/src_test.txt \
-                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_"${4}"_step_"${NUM}".txt \
+                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_sgd_onesize_step_"${NUM}".txt \
                                                 -batch_size 1
-
   done
-  python get_accuracy.py "${1}" "${2}" "${3}" "${4}" "${5}" "${USER}"
+  python get_accuracy.py "${1}" rnn "${3}" "${USER}"
+
+elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ ^(sgd|adam)$ ]] && [[ "$4" =~ ^(large|small)$ ]]; then
+  for NUM in {50..1000..50}; do
+    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_step_"${NUM}".pt \
+                                                -src "${HOMEDIR}"/data/"${1}"/src_test.txt \
+                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_general_"${3}"_"${4}"_step_"${NUM}".txt \
+                                                -batch_size 1
+  done
+  python get_accuracy.py "${1}" transformer "${3}" "${4}" "${USER}"
+
+else
+  echo "${ERROR}"
+  exit
 fi

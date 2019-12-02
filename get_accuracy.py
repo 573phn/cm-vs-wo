@@ -8,12 +8,12 @@ from sys import argv
 from numpy import arange
 
 
-def calculate_accuracy(wo, encdec, model, seed, num, username):
+def calculate_accuracy(wo, encdec, ga, optim, size, num, username):
     datadir = f'/data/{username}/cm-vs-wo'
     homedir = f'/home/{username}/cm-vs-wo'
     with open(f'{homedir}/data/{wo}/tgt_test.txt') as tgt_file, \
-         open(f'{datadir}/data/{wo}/out_test_{encdec}_{model}_{seed}_step_'
-              f'{num}.txt') as out_file:
+         open(f'{datadir}/data/{wo}/out_test_{encdec}_{ga}_{optim}_{size}_step'
+              f'_{num}.txt') as out_file:
 
         tgt = tgt_file.readlines()
         out = out_file.readlines()
@@ -26,36 +26,48 @@ def calculate_accuracy(wo, encdec, model, seed, num, username):
 
 
 def main():
-    if len(argv) != 7:
-        print('get_accuracy.py requires 6 arguments: [vso|vos|mix] '
-              '[rnn|transformer] [attn|noat] seed [each|last] username')
-
-    elif (
-            len(argv) == 7 and
+    error = '''get_accuracy.py: Incorrect usage.\n
+               Correct usage options are:\n
+              - get_accuracy.py [vso|vos|mix] rnn [none|general] $USER\n
+              - get_accuracy.py [vso|vos|mix] transformer [sgd|adam]
+              [large|small] $USER\n'''
+    if (
+            len(argv) == 5 and
             argv[1] in ('vos', 'vso', 'mix') and
-            argv[2] in ('rnn', 'transformer') and
-            argv[3] in ('attn', 'noat') and
-            argv[4].lstrip('-').isdigit() and
-            argv[5] in ('last', 'each')
-          ):
-        wo, encdec, model, seed, steps, username = argv[1:]
-
-        if steps == "each":
-            for num in arange(50, 1050, 50):
-                acc = calculate_accuracy(wo, encdec, model, seed, num,
-                                         username)
-                print(f'Accuracy after {num} steps: {acc}% (word order: {wo}, '
-                      f'encoder/decoder: {encdec}, model: {model}, seed: '
-                      f'{seed})')
-
-        elif steps == "last":
-            num = 1000
-            acc = calculate_accuracy(wo, encdec, model, seed, num, username)
-            print(f'Accuracy after {num} steps: {acc}% (word order: {wo}, '
-                  f'encoder/decoder: {encdec}, model: {model}, seed: {seed})')
+            argv[2] == 'rnn' and
+            argv[3] in ('none', 'general')
+    ):
+        wo = argv[1]
+        encdec = argv[2]
+        ga = argv[3]
+        optim = 'sgd'
+        size = 'onesize'
+        username = argv[4]
+        print(wo, encdec, ga, optim, size)
+        for num in arange(50, 1050, 50):
+            acc = calculate_accuracy(wo, encdec, ga, optim, size, num,
+                                     username)
+            print(f'Accuracy after {num} steps: {acc}')
+    elif (
+            len(argv) == 6 and
+            argv[1] in ('vos', 'vso', 'mix') and
+            argv[2] == 'transformer' and
+            argv[3] in ('sgd', 'adam') and
+            argv[4] in ('large', 'small')
+    ):
+        wo = argv[1]
+        encdec = argv[2]
+        ga = 'general'
+        optim = argv[3]
+        size = argv[4]
+        username = argv[5]
+        print(wo, encdec, ga, optim, size)
+        for num in arange(50, 1050, 50):
+            acc = calculate_accuracy(wo, encdec, ga, optim, size, num,
+                                     username)
+            print(f'Accuracy after {num} steps: {acc}')
     else:
-        print('Invalid arguments used. Use [vso|vos|mix] [rnn|transformer] '
-              '[attn|noat] seed [each|last] username')
+        print(error)
 
 
 if __name__ == '__main__':

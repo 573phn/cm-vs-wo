@@ -33,7 +33,7 @@ Files that are generated while pre-processing the data, training the model or tr
   * `[vso|vos|mix]` is the word order
   * `[rnn|transformer]` is the model used
   * `[adam|sgd]` is the optimization method
-  * `[large|small|onesize]` is the size of the model, this is large or small fo Transformer and onesize for RNN
+  * `[large|small|onesize]` is the size of the model, this is `large` or `small` for Transformer and always `onesize` for RNN
   * `N` is the number of steps (a checkpoint is saved after every 50 steps)
 
 ## Files generated after translating data
@@ -41,6 +41,6 @@ Files that are generated while pre-processing the data, training the model or tr
   * `[vso|vos|mix]` is the word order
   * `[rnn|transformer]` is the model used
   * `[adam|sgd]` is the optimization method
-  * `[large|small|onesize]` is the size of the model, this is large or small fo Transformer and onesize for RNN
+  * `[large|small|onesize]` is the size of the model, this is `large` or `small` for Transformer and always `onesize` for RNN
   * `N` is the number of steps the model has been trained
 Accuracy scores are printed to the slurm log file in `/home/$USER/cm-vs-wo/slurm/translate-job-ID.log`, where ID is the job ID.

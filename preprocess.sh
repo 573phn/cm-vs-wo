@@ -2,8 +2,8 @@
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/preprocess-job-%j.log
 #SBATCH --time=5:00
-#SBATCH --mem=50MB
-#SBATCH --partition=short
+#SBATCH --mem=100MB
+#SBATCH --partition=regular
 
 # Print arguments
 echo "${@}"

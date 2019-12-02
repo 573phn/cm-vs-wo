@@ -31,6 +31,8 @@ if [[ "$1" == "train" ]]; then
       done
     done
   done
+  # Wait until all train jobs are done, then start translation jobs
+  sbatch delay.sh translate
 
 elif [[ "$1" == "translate" ]]; then
   for WO in vso vos mix; do

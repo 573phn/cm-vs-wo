@@ -13,8 +13,5 @@ for WO in vso vos mix; do
   sbatch preprocess.sh "${WO}"
 done
 
-# Wait until all job scripts are done running, then start training job scripts
+# Wait until all preprocess jobs are done, then start train jobs
 sbatch delay.sh train
-
-# Wait until all job scripts are done running, then start translation job scripts
-sbatch delay.sh translate

@@ -44,10 +44,11 @@ def main():
         size = 'onesize'
         username = argv[4]
         print(wo, encdec, ga, optim, size)
+        print(f'(steps, accuracy)')
         for num in arange(50, 1050, 50):
             acc = calculate_accuracy(wo, encdec, ga, optim, size, num,
                                      username)
-            print(f'Accuracy after {num} steps: {acc}')
+            print(f'({num}, {acc})')
     elif (
             len(argv) == 6 and
             argv[1] in ('vos', 'vso', 'mix') and
@@ -62,10 +63,11 @@ def main():
         size = argv[4]
         username = argv[5]
         print(wo, encdec, ga, optim, size)
+        print(f'(steps, accuracy)')
         for num in arange(50, 1050, 50):
             acc = calculate_accuracy(wo, encdec, ga, optim, size, num,
                                      username)
-            print(f'Accuracy after {num} steps: {acc}')
+            print(f'({num}, {acc})')
     else:
         print(error)
 

@@ -39,6 +39,9 @@ After going through the steps above, the directory structure should look as foll
     └── $USER
         └── cm-vs-wo
             ├── data
+            │   ├── mix
+            │   ├── vos
+            │   └── vso
             └── slurm
 ```
 
@@ -46,56 +49,52 @@ After going through the steps above, the directory structure should look as foll
 After [getting the project up and running](#getting-started), a job script can be submitted to [the Peregrine HPC cluster](https://www.rug.nl/society-business/centre-for-information-technology/research/services/hpc/facilities/peregrine-hpc-cluster?lang=en). Depending on what you want to do, you can use one of the following commands:
 ### Reproduce thesis research
 ```bash
-bash jobscript.sh thesis
+sbatch thesis.sh
 ```
 This command will reproduce the research and results of my thesis. The steps it will take are as follows:
-1. Makes the VOS, VSO and MIX corpus
-2. Pre-processes each corpus
-3. Trains the following models for each corpus:
-  * RNN with Attention
-  * RNN without Attention
-  * Transformer with Attention
-  * Transformer without Attention
+1. Pre-processes each corpus
+2. Trains the following models for each corpus:
+  * LSTM with Attention
+  * LSTM without Attention
+  * Transformer with with Adam optimization (large)
+  * Transformer with with SGD optimization (large)
+  * Transformer with with Adam optimization (small)
+  * Transformer with with SGD optimization (small)
 4. Tests each model and calculates its accuracy per training checkpoint
 
 ### Make or pre-process corpus
 ```bash
-bash jobscript.sh [make|preprocess] [vso|vos|mix]
+sbatch preprocess.sh [vso|vos|mix]
 ```
-When using `make`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `par_corp.txt`: all sentences in the source and target language
-* `src_train.txt`: sentences of the training set in the source language
-* `tgt_train.txt`: sentences of the training set in the target language
-* `src_val.txt`: sentences of the validation set in the source language
-* `tgt_val.txt`: sentences of the validation set in the target language
-* `src_test.txt`: sentences of the test set in the source language
-* `tgt_test.txt`: sentences of the test set in the target language
-
-When using `preprocess`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `prepared_data.vocab.pt`: serialized PyTorch file containing training data
-* `prepared_data.valid.0.pt`: serialized PyTorch file containing validation data
-* `prepared_data.train.0.pt`: serialized PyTorch file containing vocabulary data
+Creates the following files in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
+* `ppd.vocab.pt`: serialized PyTorch file containing training data
+* `ppd.valid.0.pt`: serialized PyTorch file containing validation data
+* `ppd.train.0.pt`: serialized PyTorch file containing vocabulary data
 
 ### Train a model
 ```bash
-bash jobscript.sh train [vso|vos|mix] [rnn|transformer] [attn|noat] seed
+sbatch train.sh [vso|vos|mix] rnn [none|general]
+sbatch train.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
 ```
-When using `train`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `trained_model_E_M_S_step_N.pt`: the trained model, where
-  * E is rnn or transformer
-  * M is attn (with attention) or noat (without attention)
-  * S is the seed used for training the model
+Creates the following files in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
+* `trained_model_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_step_N.pt`: the trained model, where
+  * [vso|vos|mix] is the word order
+  * [rnn|transformer] is the model used
+  * [adam|sgd] is the optimization method
+  * [large|small|onesize] is the size of the model, this is large or small fo Transformer and onesize for RNN
   * N is the number of steps (a checkpoint is saved after every 50 steps)
 
 ### Translate test set using trained model
 ```bash
-bash jobscript.sh translate [vso|vos|mix] [rnn|transformer] [attn|noat] seed [each|last]
+sbatch translate.sh [vso|vos|mix] rnn [none|general]
+sbatch translate.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
 ```
-The `[each|last]` argument determines whether translation and accuracy calculation will only be done using the last step (step 1000) or for each 50 steps. When using `translate`, the following files are created in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `out_test_E_M_S_step_N.txt`: sentences as translated by the model, where
-  * E is rnn or transformer
-  * M is attn (with attention) or noat (without attention)
-  * S is the seed used for training the model
+Creates the following files in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
+* `out_test_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_step_N.txt`: sentences as translated by the model, where
+  * [vso|vos|mix] is the word order
+  * [rnn|transformer] is the model used
+  * [adam|sgd] is the optimization method
+  * [large|small|onesize] is the size of the model, this is large or small fo Transformer and onesize for RNN
   * N is the number of steps the model has been trained
 Accuracy scores are printed to the slurm log file in `/home/$USER/cm-vs-wo/slurm/translate-job-ID.log`, where ID is the job ID.
 

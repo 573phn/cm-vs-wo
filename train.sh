@@ -2,7 +2,7 @@
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/train-job-%j.log
 #SBATCH --time=2:30:00
-#SBATCH --mem=4GB
+#SBATCH --mem=10GB
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:v100:1
 
@@ -32,73 +32,80 @@ export CUDA_VISIBLE_DEVICES=0
 if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
   python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
                                           -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize \
+                                          -encoder_type rnn \
+                                          -decoder_type rnn \
                                           -train_steps 1000 \
-                                          -valid_steps 100 \
                                           -warmup_steps 40 \
+                                          -valid_steps 100 \
                                           -save_checkpoint_steps 50 \
                                           -world_size 1 \
                                           -gpu_ranks 0 \
-                                          -global_attention "${3}" \
-                                          -encoder_type "${2}" \
-                                          -decoder_type "${2}"
+                                          -global_attention "${3}"
 
 elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ ^(sgd|adam)$ ]] && [[ "$4" =~ ^(large|small)$ ]]; then
   if [[ "$4" == "large" ]]; then
     python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
                                             -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}" \
-                                            -train_steps 1000 \
-                                            -valid_steps 100 \
-                                            -warmup_steps 40 \
-                                            -save_checkpoint_steps 50 \
-                                            -world_size 1 \
-                                            -gpu_ranks 0 \
-                                            -global_attention general \
-                                            -encoder_type "${2}" \
-                                            -decoder_type "${2}" \
                                             -layers 6 \
                                             -rnn_size 512 \
                                             -word_vec_size 512 \
+                                            -transformer_ff 2048 \
+                                            -heads 8 \
+                                            -encoder_type transformer \
+                                            -decoder_type transformer \
                                             -position_encoding \
+                                            -train_steps 1000 \
                                             -max_generator_batches 2 \
                                             -dropout 0.1 \
-                                            -batch_size 64 \
+                                            -batch_size 4096 \
                                             -batch_type tokens \
                                             -normalization tokens \
+                                            -accum_count 2 \
                                             -optim "${3}" \
                                             -adam_beta2 0.998 \
                                             -decay_method noam \
+                                            -warmup_steps 40 \
+                                            -learning_rate 2 \
                                             -max_grad_norm 0 \
                                             -param_init 0 \
                                             -param_init_glorot \
-                                            -label_smoothing 0.1
+                                            -label_smoothing 0.1 \
+                                            -valid_steps 100 \
+                                            -save_checkpoint_steps 50 \
+                                            -world_size 1 \
+                                            -gpu_ranks 0
+
   elif [[ "$4" == "small" ]]; then
     python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
                                             -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}" \
-                                            -train_steps 1000 \
-                                            -valid_steps 100 \
-                                            -warmup_steps 40 \
-                                            -save_checkpoint_steps 50 \
-                                            -world_size 1 \
-                                            -gpu_ranks 0 \
-                                            -global_attention general \
-                                            -encoder_type "${2}" \
-                                            -decoder_type "${2}" \
-                                            -layers 6 \
+                                            -layers 2 \
                                             -rnn_size 512 \
                                             -word_vec_size 512 \
+                                            -transformer_ff 2048 \
+                                            -heads 8 \
+                                            -encoder_type transformer \
+                                            -decoder_type transformer \
                                             -position_encoding \
+                                            -train_steps 1000 \
                                             -max_generator_batches 2 \
                                             -dropout 0.1 \
-                                            -batch_size 64 \
+                                            -batch_size 2048 \
                                             -batch_type tokens \
                                             -normalization tokens \
+                                            -accum_count 2 \
                                             -optim "${3}" \
                                             -adam_beta2 0.998 \
                                             -decay_method noam \
+                                            -warmup_steps 40 \
+                                            -learning_rate 2 \
                                             -max_grad_norm 0 \
                                             -param_init 0 \
                                             -param_init_glorot \
-                                            -label_smoothing 0.1
+                                            -label_smoothing 0.1 \
+                                            -valid_steps 100 \
+                                            -save_checkpoint_steps 50 \
+                                            -world_size 1 \
+                                            -gpu_ranks 0
   fi
 
 else

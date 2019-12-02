@@ -19,32 +19,31 @@ END
 
 if [[ "$1" == "train" ]]; then
   for WO in vso vos mix; do
-    # Train LSTM with and without attention
+    # Train RNN with and without attention
     for GA in general none; do
       sbatch train.sh "${WO}" rnn "${GA}"
     done
 
     # Train large and small Transformer
-    # for SIZE in large small; do
-    for OPTIM in adam sgd; do
-      # sbatch train-transformer.sh "${WO}" "${OPTIM}" "${SIZE}"
-      sbatch train.sh "${WO}" transformer "${OPTIM}" small
+    for SIZE in large small; do
+      for OPTIM in adam sgd; do
+        sbatch train.sh "${WO}" transformer "${OPTIM}" "${SIZE}"
+      done
     done
-    # done
   done
 
 elif [[ "$1" == "translate" ]]; then
   for WO in vso vos mix; do
-    # Translate LSTM with and without attention
+    # Translate RNN with and without attention
     for GA in general none; do
       sbatch translate.sh "${WO}" rnn "${GA}"
     done
 
     # Translate large and small Transformer
-    # for SIZE in large small; do
-    for OPTIM in adam sgd; do
-      # sbatch translate.sh "${WO}" "${OPTIM}" "${SIZE}"
-      sbatch translate.sh "${WO}" transformer "${OPTIM}" small
+    for SIZE in large small; do
+      for OPTIM in adam sgd; do
+        sbatch translate.sh "${WO}" transformer "${OPTIM}" "${SIZE}"
+      done
     done
   done
 

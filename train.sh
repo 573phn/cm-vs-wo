@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/train-job-%j.log
-#SBATCH --time=2:30:00
+#SBATCH --time=10:00
 #SBATCH --mem=10GB
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:v100:1
@@ -57,9 +57,9 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -train_steps 1000 \
                                             -max_generator_batches 2 \
                                             -dropout 0.1 \
-                                            -batch_size 4096 \
-                                            -batch_type tokens \
-                                            -normalization tokens \
+                                            -batch_size 64 \
+                                            -batch_type sents \
+                                            -normalization sents \
                                             -accum_count 2 \
                                             -optim "${3}" \
                                             -adam_beta2 0.998 \
@@ -89,9 +89,9 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -train_steps 1000 \
                                             -max_generator_batches 2 \
                                             -dropout 0.1 \
-                                            -batch_size 2048 \
-                                            -batch_type tokens \
-                                            -normalization tokens \
+                                            -batch_size 64 \
+                                            -batch_type sents \
+                                            -normalization sents \
                                             -accum_count 2 \
                                             -optim "${3}" \
                                             -adam_beta2 0.998 \
@@ -101,7 +101,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -max_grad_norm 0 \
                                             -param_init 0 \
                                             -param_init_glorot \
-                                            -label_smoothing 0.1 \
+                                            -label_smoothing 0.0 \
                                             -valid_steps 100 \
                                             -save_checkpoint_steps 50 \
                                             -world_size 1 \

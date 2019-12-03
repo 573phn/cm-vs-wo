@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=cm-vs-wo
 #SBATCH --output=slurm/translate-job-%j.log
-#SBATCH --time=1:30:00
+#SBATCH --time=1:00:00
 #SBATCH --mem=10GB
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:v100:1

@@ -56,10 +56,10 @@ This command will reproduce the research and results of my thesis. The steps it 
 2. Trains the following models for each corpus:
   * LSTM with Attention
   * LSTM without Attention
-  * Transformer with with Adam optimization (large)
-  * Transformer with with SGD optimization (large)
-  * Transformer with with Adam optimization (small)
-  * Transformer with with SGD optimization (small)
+  * 6-layer Transformer with Adam optimization with label smoothing
+  * 6-layer Transformer with SGD optimization with label smoothing
+  * 2-layer Transformer with Adam optimization without label smoothing
+  * 2-layer Transformer with SGD optimization without label smoothing
 4. Tests each model and calculates its accuracy per training checkpoint
 
 ### Pre-process a corpus

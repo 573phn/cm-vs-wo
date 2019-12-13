@@ -62,7 +62,7 @@ This command will reproduce the research and results of my thesis. The steps it 
   * Transformer with with SGD optimization (small)
 4. Tests each model and calculates its accuracy per training checkpoint
 
-### Make or pre-process corpus
+### Pre-process a corpus
 ```bash
 sbatch preprocess.sh [vso|vos|mix]
 ```

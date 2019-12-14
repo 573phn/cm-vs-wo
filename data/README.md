@@ -29,18 +29,20 @@ Files that are generated while pre-processing the data, training the model or tr
 * `ppd.train.0.pt`: serialized PyTorch file containing vocabulary data
 
 ## Files generated after training a model
-* `trained_model_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_step_N.pt`: the trained model, where
+* `trained_model_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_ls[0_0|0_1]_step_N.pt`: the trained model, where
   * `[vso|vos|mix]` is the word order
   * `[rnn|transformer]` is the model used
   * `[adam|sgd]` is the optimization method
   * `[large|small|onesize]` is the size of the model, this is `large` or `small` for Transformer and always `onesize` for RNN
+  * `[0_0|0_1]` is the amount of label smoothing, which is 0.0 or 0.1, this is always 0.0 for RNN
   * `N` is the number of steps (a checkpoint is saved after every 50 steps)
 
 ## Files generated after translating data
-* `out_test_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_step_N.txt`: sentences as translated by the model, where
+* `out_test_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_ls[0_0|0_1]_step_N.txt`: sentences as translated by the model, where
   * `[vso|vos|mix]` is the word order
   * `[rnn|transformer]` is the model used
   * `[adam|sgd]` is the optimization method
   * `[large|small|onesize]` is the size of the model, this is `large` or `small` for Transformer and always `onesize` for RNN
+  * `[0_0|0_1]` is the amount of label smoothing, which is 0.0 or 0.1, this is always 0.0 for RNN
   * `N` is the number of steps the model has been trained
 Accuracy scores are printed to the slurm log file in `/home/$USER/cm-vs-wo/slurm/translate-job-ID.log`, where ID is the job ID.

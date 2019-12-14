@@ -15,7 +15,7 @@ ERROR=$(cat <<-END
   train.sh: Incorrect usage.
   Correct usage options are:
   - train.sh [vso|vos|mix] rnn [none|general]
-  - train.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
+  - train.sh [vso|vos|mix] transformer [sgd|adam] [large|small] [0.0|0.1]
 END
 )
 
@@ -31,7 +31,7 @@ export CUDA_VISIBLE_DEVICES=0
 # Train model
 if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
   python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
-                                          -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize \
+                                          -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_ls00 \
                                           -encoder_type rnn \
                                           -decoder_type rnn \
                                           -train_steps 1000 \
@@ -42,10 +42,14 @@ if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|gen
                                           -gpu_ranks 0 \
                                           -global_attention "${3}"
 
-elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ ^(sgd|adam)$ ]] && [[ "$4" =~ ^(large|small)$ ]]; then
+elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && \
+     [[ "$2" == "transformer" ]] && \
+     [[ "$3" =~ ^(sgd|adam)$ ]] && \
+     [[ "$4" =~ ^(large|small)$ ]] && \
+     [[ "$5" =~ ^(0.0|0.1)$ ]]; then
   if [[ "$4" == "large" ]]; then
     python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
-                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}" \
+                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./\_}" \
                                             -layers 6 \
                                             -rnn_size 512 \
                                             -word_vec_size 512 \
@@ -69,7 +73,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -max_grad_norm 0 \
                                             -param_init 0 \
                                             -param_init_glorot \
-                                            -label_smoothing 0.1 \
+                                            -label_smoothing "${5}" \
                                             -valid_steps 100 \
                                             -save_checkpoint_steps 50 \
                                             -world_size 1 \
@@ -77,7 +81,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
 
   elif [[ "$4" == "small" ]]; then
     python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
-                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}" \
+                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./\_}" \
                                             -layers 2 \
                                             -rnn_size 512 \
                                             -word_vec_size 512 \
@@ -101,7 +105,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ 
                                             -max_grad_norm 0 \
                                             -param_init 0 \
                                             -param_init_glorot \
-                                            -label_smoothing 0.0 \
+                                            -label_smoothing "${5}" \
                                             -valid_steps 100 \
                                             -save_checkpoint_steps 50 \
                                             -world_size 1 \

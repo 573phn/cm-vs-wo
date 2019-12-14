@@ -54,12 +54,13 @@ sbatch thesis.sh
 This command will reproduce the research and results of my thesis. The steps it will take are as follows:
 1. Pre-processes each corpus
 2. Trains the following models for each corpus:
-  * LSTM with Attention
-  * LSTM without Attention
+  * 2-layer LSTM with attention
+  * 2-layer LSTM without attention
   * 6-layer Transformer with Adam optimization with label smoothing
   * 6-layer Transformer with SGD optimization with label smoothing
   * 2-layer Transformer with Adam optimization without label smoothing
   * 2-layer Transformer with SGD optimization without label smoothing
+  * 2-layer Transformer with SGD optimization with label smoothing
 4. Tests each model and calculates its accuracy per training checkpoint
 
 ### Pre-process a corpus
@@ -74,27 +75,29 @@ Creates the following files in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
 ### Train a model
 ```bash
 sbatch train.sh [vso|vos|mix] rnn [none|general]
-sbatch train.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
+sbatch train.sh [vso|vos|mix] transformer [sgd|adam] [large|small] [0.0|0.1]
 ```
 Creates the following files in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `trained_model_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_step_N.pt`: the trained model, where
+* `trained_model_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_ls[0_0|0_1]_step_N.pt`: the trained model, where
   * `[vso|vos|mix]` is the word order
   * `[rnn|transformer]` is the model used
   * `[adam|sgd]` is the optimization method
   * `[large|small|onesize]` is the size of the model, this is `large` or `small` for Transformer and always `onesize` for RNN
+  * `[0_0|0_1]` is the amount of label smoothing, which is 0.0 or 0.1, this is always 0.0 for RNN
   * `N` is the number of steps (a checkpoint is saved after every 50 steps)
 
 ### Translate test set using trained model
 ```bash
 sbatch translate.sh [vso|vos|mix] rnn [none|general]
-sbatch translate.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
+sbatch translate.sh [vso|vos|mix] transformer [sgd|adam] [large|small] [0.0|0.1]
 ```
 Creates the following files in `/data/$USER/cm-vs-wo/data/[vso|vos|mix]`:
-* `out_test_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_step_N.txt`: sentences as translated by the model, where
+* `out_test_[vso|vos|mix]_[rnn|transformer]_[adam|sgd]_[large|small|onesize]_ls[0_0|0_1]_step_N.txt`: sentences as translated by the model, where
   * `[vso|vos|mix]` is the word order
   * `[rnn|transformer]` is the model used
   * `[adam|sgd]` is the optimization method
   * `[large|small|onesize]` is the size of the model, this is `large` or `small` for Transformer and always `onesize` for RNN
+  * `[0_0|0_1]` is the amount of label smoothing, which is 0.0 or 0.1, this is always 0.0 for RNN
   * `N` is the number of steps the model has been trained
 Accuracy scores are printed to the slurm log file in `/home/$USER/cm-vs-wo/slurm/translate-job-ID.log`, where ID is the job ID.
 

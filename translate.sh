@@ -16,7 +16,7 @@ ERROR=$(cat <<-END
   translate.sh: Incorrect usage.
   Correct usage options are:
   - translate.sh [vso|vos|mix] rnn [none|general]
-  - translate.sh [vso|vos|mix] transformer [sgd|adam] [large|small]
+  - translate.sh [vso|vos|mix] transformer [sgd|adam] [large|small] [0.0|0.1]
 END
 )
 
@@ -31,23 +31,27 @@ export CUDA_VISIBLE_DEVICES=0
 
 if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
   for NUM in {50..1000..50}; do
-    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_step_"${NUM}".pt \
+    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_ls00_step_"${NUM}".pt \
                                                 -src "${HOMEDIR}"/data/"${1}"/src_test.txt \
-                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_sgd_onesize_step_"${NUM}".txt \
+                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_sgd_onesize_ls00_step_"${NUM}".txt \
                                                 -batch_size 1 \
                                                 -gpu 0
   done
   python get_accuracy.py "${1}" rnn "${3}" "${USER}"
 
-elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "transformer" ]] && [[ "$3" =~ ^(sgd|adam)$ ]] && [[ "$4" =~ ^(large|small)$ ]]; then
+elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && \
+     [[ "$2" == "transformer" ]] && \
+     [[ "$3" =~ ^(sgd|adam)$ ]] && \
+     [[ "$4" =~ ^(large|small)$ ]] && \
+     [[ "$5" =~ ^(0.0|0.1)$ ]]; then
   for NUM in {50..1000..50}; do
-    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_step_"${NUM}".pt \
+    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./\_}"_step_"${NUM}".pt \
                                                 -src "${HOMEDIR}"/data/"${1}"/src_test.txt \
-                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_general_"${3}"_"${4}"_step_"${NUM}".txt \
+                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_general_"${3}"_"${4}"_ls"${5/\./\_}"_step_"${NUM}".txt \
                                                 -batch_size 1 \
                                                 -gpu 0
   done
-  python get_accuracy.py "${1}" transformer "${3}" "${4}" "${USER}"
+  python get_accuracy.py "${1}" transformer "${3}" "${4}" "${5}" "${USER}"
 
 else
   echo "${ERROR}"

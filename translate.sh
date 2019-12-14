@@ -31,9 +31,9 @@ export CUDA_VISIBLE_DEVICES=0
 
 if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
   for NUM in {50..1000..50}; do
-    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_ls00_step_"${NUM}".pt \
+    python "${DATADIR}"/OpenNMT-py/translate.py -model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_ls0_0_step_"${NUM}".pt \
                                                 -src "${HOMEDIR}"/data/"${1}"/src_test.txt \
-                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_sgd_onesize_ls00_step_"${NUM}".txt \
+                                                -output "${DATADIR}"/data/"${1}"/out_test_"${2}"_"${3}"_sgd_onesize_ls0_0_step_"${NUM}".txt \
                                                 -batch_size 1 \
                                                 -gpu 0
   done

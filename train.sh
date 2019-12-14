@@ -31,7 +31,7 @@ export CUDA_VISIBLE_DEVICES=0
 # Train model
 if [[ "$1" =~ ^(vso|vos|mix)$ ]] && [[ "$2" == "rnn" ]] && [[ "$3" =~ ^(none|general)$ ]]; then
   python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
-                                          -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_ls00 \
+                                          -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_"${3}"_sgd_onesize_ls0_0 \
                                           -encoder_type rnn \
                                           -decoder_type rnn \
                                           -train_steps 1000 \

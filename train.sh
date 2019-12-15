@@ -49,7 +49,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && \
      [[ "$5" =~ ^(0.0|0.1)$ ]]; then
   if [[ "$4" == "large" ]]; then
     python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
-                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./\_}" \
+                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./_}" \
                                             -layers 6 \
                                             -rnn_size 512 \
                                             -word_vec_size 512 \
@@ -81,7 +81,7 @@ elif [[ "$1" =~ ^(vso|vos|mix)$ ]] && \
 
   elif [[ "$4" == "small" ]]; then
     python "${DATADIR}"/OpenNMT-py/train.py -data "${DATADIR}"/data/"${1}"/ppd \
-                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./\_}" \
+                                            -save_model "${DATADIR}"/data/"${1}"/trained_model_"${2}"_general_"${3}"_"${4}"_ls"${5/\./_}" \
                                             -layers 2 \
                                             -rnn_size 512 \
                                             -word_vec_size 512 \

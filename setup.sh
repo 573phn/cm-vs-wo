@@ -2,8 +2,9 @@
 # Load Python module
 module load Python/3.6.4-intel-2018a
 
-# Set data location
+# Set data locations
 DATADIR='/data/'"${USER}"'/cm-vs-wo'
+HOMEDIR='/home/'"${USER}"'/cm-vs-wo'
 
 # Prepare /data directories
 mkdir "${DATADIR}"
@@ -14,6 +15,9 @@ mkdir "${DATADIR}"/data/mix
 
 # Clone OpenNMT-py repository
 git clone -b 1.0.0.rc1 --depth 1 https://github.com/OpenNMT/OpenNMT-py.git "${DATADIR}"/OpenNMT-py
+
+# Prepare /home directories
+mkdir "${DATADIR}"/slurm
 
 # Create virtual environment
 python3 -m venv "${DATADIR}"/env
